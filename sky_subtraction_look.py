@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 ####
-#script that will plot a sky flux and object flux relative residuals on the same plot to compare the two curves to see if they properly overlay and show good results. Output is sky_flux.pdf. Inputs are interim sky frames and reduced data cube of object without sky subtraction.
+#script that will plot a sky flux and object flux relative residuals on the same plot to compare the two curves to see if they properly overlay and show good results. Output is sky_flux.pdf. Inputs are interim sky frames and reduced data cube of object without sky subtraction. Very messy, needs cleaning.
 ####
 
 import numpy as np
