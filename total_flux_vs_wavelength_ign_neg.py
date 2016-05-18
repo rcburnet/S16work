@@ -10,7 +10,8 @@ import scipy as sp
 import matplotlib.pyplot as plt
 from astropy.io import fits
 
-hdulist1 = fits.open('/home/rcburnet/work/project_data/reflex_end_products/2016-05-16T09:20:10/KMOS.2014-07-11T06:34:52.380_tpl/CL0034-YJ-OB-1_COMBINE_SCI_RECONSTRUCTED_11.fits')
+hdulist1 = fits.open('/home/rcburnet/work/project_data/reflex_end_products/2016-05-16T09:20:10/KMOS.2014-07-11T06:34:52.380_tpl/CL0034-YJ-OB-1_COMBINE_SCI_RECONSTRUCTED_4.fits')	#reduced data cube
+hdulist2 = fits.open('/home/rcburnet/work/project_data/reflex_tmp_products/kmos/kmos_sci_red_1/2016-05-16T15:04:48.737/sci_interim_sky_KMOS.2014-07-11T06:34:52.380.fits')		#sky data cube
 
 #hdulist1 = fits.open('/home/rcburnet/work/project_data/reflex_tmp_products/kmos/kmos_sci_red_1/2016-05-16T15:04:48.737/sci_interim_sky_KMOS.2014-07-11T06:34:52.380.fits')
 
@@ -27,16 +28,21 @@ for i in range(len(hdulist1[1].data)):
 	#test = test[test <= 1e-18]
 	#### second time, ignore values that are larger than mean+#*stdev and smaller than mean-#*stddev 
 	test = hdulist1[1].data[i][~np.isnan(hdulist1[1].data[i])]
-	test = test[test >= np.average(test) - 2*std_flux[i]]
-	test = test[test <= np.average(test) + 2*std_flux[i]]
+	#test = test[test >= np.average(test) - 2*std_flux[i]]
+	#test = test[test <= np.average(test) + 2*std_flux[i]]
 	####
-	total_flux.append(np.sum(test[~np.isnan(test)]))
+	total_flux.append(np.sum(test[~np.isnan(test)])*1e21)
 	x.append(i+1)
 for i in range(len(x)):
 	x[i] = 1+i*0.0001752906692721
 
+total_flux_sky = []
+for i in range(len(hdulist2[1].data)):
+	total_flux_sky.append(np.sum(hdulist2[1].data[i][~np.isnan(hdulist2[1].data[i])]))
+
 f, (ax1, ax2) = plt.subplots(1, 2, sharey=True)
 ax1.plot(x,total_flux)
+ax1.plot(x,total_flux_sky)
 ax2.plot(x,std_flux)
 ax1.set_title('Total Flux vs Wavelength')
 ax2.set_title('Standard Dev. vs Wavelength')
