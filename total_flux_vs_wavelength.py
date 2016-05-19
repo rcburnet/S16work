@@ -20,23 +20,24 @@ for root,dirnames,filenames in os.walk('/home/rcburnet/work/project_data/reflex_
 		hdulist.append(os.path.join(root, filename))
 
 for j in range(len(hdulist)):
-	
-	hdulist1 = fits.open(hdulist[j])
 
-	x = []
-	total_flux = []
-	std_flux = []
+	if not os.path.isfile('./figures/'+hdulist[j][53:]+'.pdf'):
 
-	for i in range(len(hdulist1[1].data)):
-		total_flux.append(np.sum(hdulist1[1].data[i][~np.isnan(hdulist1[1].data[i])]))
-		std_flux.append(np.std(hdulist1[1].data[i][~np.isnan(hdulist1[1].data[i])]))
-		x.append(i+1)
+		hdulist1 = fits.open(hdulist[j])
 
-	for i in range(len(x)):
-        	x[i] = 1+i*0.0001752906692721
+		x = []
+		total_flux = []
+		std_flux = []
 
-	if not os.path.exists('./figures/'+hdulist[j][53:-48]):
-                os.makedirs('./figures/'+hdulist[j][53:-48])
+		for i in range(len(hdulist1[1].data)):
+			total_flux.append(np.sum(hdulist1[1].data[i][~np.isnan(hdulist1[1].data[i])]))
+			std_flux.append(np.std(hdulist1[1].data[i][~np.isnan(hdulist1[1].data[i])]))
+			x.append(i+1)
+        		x[i] = 1+i*0.0001752906692721
+
+		if not os.path.exists('./figures/'+hdulist[j][53:-48]):
+        	        os.makedirs('./figures/'+hdulist[j][53:-48])
+		
 		line1, = plt.plot(x,total_flux)
 		if '0034-YJ' in hdulist[j]:
 			line2, = plt.plot((1.22527,1.22527),(min(total_flux),max(total_flux)))
@@ -44,8 +45,8 @@ for j in range(len(hdulist)):
 			line4, = plt.plot((1.22127,1.22127),(min(total_flux),max(total_flux)))
 		else:
 			line2, = plt.plot((1.22659,1.22659),(min(total_flux),max(total_flux)))
-	                line3, = plt.plot((1.23059,1.23059),(min(total_flux),max(total_flux)))
-        	        line4, = plt.plot((1.22259,1.22259),(min(total_flux),max(total_flux)))
+		        line3, = plt.plot((1.23059,1.23059),(min(total_flux),max(total_flux)))
+       		        line4, = plt.plot((1.22259,1.22259),(min(total_flux),max(total_flux)))
 		line5, = plt.plot((1.0,1.35882),(0.0,0.0))
 		line2.set_dashes([4,2,2,2])
 		line3.set_dashes([2,2])
@@ -61,6 +62,7 @@ for j in range(len(hdulist)):
 		plt.setp(line3, linewidth=0.1, color='r')
 		plt.setp(line4, linewidth=0.1, color='r')
 		plt.setp(line5, linewidth=0.1)
+		print './figures/'+hdulist[j][53:]+'.pdf'
 		plt.savefig('./figures/'+hdulist[j][53:]+'.pdf')
 		plt.close()
 		hdulist1.close()

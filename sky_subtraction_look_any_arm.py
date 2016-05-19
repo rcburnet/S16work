@@ -17,7 +17,7 @@ hdulist=[]	#list to hold all interim sky fits files
 
 hdufits_of_obj_4 = []
 
-for root,dirnames,filenames in os.walk('/home/rcburnet/work/project_data/reflex_tmp_products/kmos/kmos_sci_red_1/2016-05-16T15:04:48.737/'):
+for root,dirnames,filenames in os.walk('/home/rcburnet/work/project_data/old_reflex_files/reflex_tmp_products/kmos/kmos_sci_red_1/2016-05-16T15:04:48.737/'):
         for filename in fnmatch.filter(filenames, 'sci_interim_sky_*'):
                 hdulist.append(os.path.join(root, filename))
 	for filename in fnmatch.filter(filenames, 'sci_interim_object_*'):
@@ -36,8 +36,8 @@ for j in range(len(hdulist)):
 	x = []					#wavelength array
         total_flux = []				#temporary total flux array, used for each fits file
 
-        for i in range(len(hdulist1[13].data)):	#look at IFU1 data and loop through data array
-		total_flux.append(np.sum(hdulist1[13].data[i][~np.isnan(hdulist1[13].data[i])]))	#sum all flux and append to temporary total flux array
+        for i in range(len(hdulist1[20].data)):	#look at IFU1 data and loop through data array
+		total_flux.append(np.sum(hdulist1[20].data[i][~np.isnan(hdulist1[20].data[i])]))	#sum all flux and append to temporary total flux array
 		x.append(i+1)			#add 1 for every loop iteration to x
 	
 #		if i == 947:	#location of largest peak
@@ -55,11 +55,11 @@ for j in range(len(hdufits_of_obj_4)):
 	
 	total_flux = []
 	
-	for i in range(len(hdufits_obj[13].data)):	#loop into object fits file data
+	for i in range(len(hdufits_obj[20].data)):	#loop into object fits file data
 		#total_flux.append(np.sum(hdufits_obj[1].data[i][~np.isnan(hdufits_obj[1].data[i])][abs(hdufits_obj[1].data[i][~np.isnan(hdufits_obj[1].data[i])])<1000]))	#sum all flux and append to temporary total flux array, only accepts values between specified threshold
-		total_flux.append(np.sum(hdufits_obj[13].data[i][~np.isnan(hdufits_obj[13].data[i])]))      #sum all flux and append to temporary total flux array
+		total_flux.append(np.sum(hdufits_obj[20].data[i][~np.isnan(hdufits_obj[20].data[i])]))      #sum all flux and append to temporary total flux array
 		if i == 947:		#location of largest peak
-			y.append(hdufits_obj[13].data[i])	
+			y.append(hdufits_obj[20].data[i])	
 	total_flux_tot.append(total_flux)	#append temproary total flux array to total flux array
 
 mean = []	#array to hold mean sky flux for each wavelength
@@ -84,13 +84,13 @@ line1, = plt.plot(x,total_flux_tot[0], label='Sky 2014-07-11T06:42:39.007')
 line9 = plt.plot(x,total_flux_tot[4],label='Obj 2014-07-11T06:50:52.037')
 line10, = plt.plot(x,total_flux_tot[5],label='Obj 2014-07-11T06:59:01.745')
 line7, = plt.plot(x,total_flux_tot[2],label='Sky 2014-07-11T07:06:49.051')
-plt.title('Total Flux vs Wavelength of Skies and Object of Target 12 (IFU 13)',fontsize=10)
+plt.title('Total Flux vs Wavelength of Skies and Object of Target 11 (IFU 20)',fontsize=10)
 plt.xlabel('Wavelength (microns)',fontsize=10)
 plt.ylabel('Total Flux',fontsize=10)
 plt.axis('tight')
 fig = plt.gcf()
 fig.set_size_inches(18.5, 5.5)
-plt.ylim(-0.5,0.5)
+#plt.ylim(-0.5,0.5)
 line1.set_dashes([1])
 #line6.set_dashes([4,2,2,2])
 line7.set_dashes([1])

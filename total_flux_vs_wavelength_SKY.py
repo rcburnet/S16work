@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 from matplotlib import rc
 from astropy.io import fits
 
-hdulist1 = fits.open('/home/rcburnet/work/project_data/reflex_tmp_products/kmos/kmos_sci_red_1/2016-05-16T15:04:48.737/sci_interim_sky_KMOS.2014-07-11T06:34:52.380.fits')
+hdulist1 = fits.open('/home/rcburnet/work/project_data/old_reflex_files/reflex_tmp_products/kmos/kmos_sci_red_1/2016-05-16T15:04:48.737/sci_interim_sky_KMOS.2014-07-11T06:34:52.380.fits')
 
 for i in range(len(hdulist1)):
 
