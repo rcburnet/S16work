@@ -1,0 +1,2270 @@
+SIMPLE  =                    T / Standard FITS                                  
+BITPIX  =                    8 / # of bits per pix value                        
+NAXIS   =                    0 / # of axes in data array                        
+EXTEND  =                    T / FITS Extension may be present                  
+ORIGIN  = 'ESO-PARANAL'        / European Southern Observatory                  
+DATE    = '2014-07-11T06:42:28.4250' / Date the file was written                
+TELESCOP= 'ESO-VLT-U1'         / ESO <TEL>                                      
+INSTRUME= 'KMOS    '           / Instrument used.                               
+OBJECT  = 'CL0034_karma.cat'   / Original target.                               
+RA      =             8.676277 / [deg] 00:34:42.3 RA (J2000) pointing           
+DEC     =            -43.13419 / [deg] -43:08:03.0 DEC (J2000) pointing         
+EQUINOX =                 2000 / Standard FK5                                   
+RADECSYS= 'FK5     '           / Coordinate system                              
+EXPTIME =          450.0000000 / Integration time                               
+MJD-OBS =       56849.27421736 / 2014-07-11T06:34:52.3798                       
+DATE-OBS= '2014-07-11T06:34:52.3798' / Observing date                           
+UTC     =            23691.000 / [s] 06:34:51.000 UTC                           
+LST     =            76177.321 / [s] 21:09:37.321 LST                           
+PI-COI  = 'UNKNOWN '           / PI-COI name.                                   
+OBSERVER= 'UNKNOWN '           / Name of observer.                              
+ORIGFILE= 'KMOS_SPEC_OBS192_0019.fits' / Original File Name                     
+HIERARCH ESO ADA ABSROT END = 198.13408 / [deg] Abs rot angle at exp end        
+HIERARCH ESO ADA ABSROT PPOS = 'POS     ' / sign of probe position              
+HIERARCH ESO ADA ABSROT START = 200.99123 / [deg] Abs rot angle at exp start    
+HIERARCH ESO ADA GUID DEC = -43.12693 / [deg] -43:07:36.9 Guide star DEC J2000  
+HIERARCH ESO ADA GUID RA = 8.853929 / [deg] 00:35:24.9 Guide star RA J2000      
+HIERARCH ESO ADA GUID STATUS = 'ON      ' / Status of autoguider                
+HIERARCH ESO ADA POSANG = -29.96772 / [deg] Position angle at start             
+HIERARCH ESO DET ACQ1 CONT   = F / Acq.-process continuous mode                 
+HIERARCH ESO DET ACQ1 DISKMEM= F / Disk-memory enabled                          
+HIERARCH ESO DET ACQ1 PROC   = 'ngciracqH2RG4 -map 3 -ref 3' / Process name     
+HIERARCH ESO DET ACQ1 QDUMP  = F / Queue Dump Mode                              
+HIERARCH ESO DET ACQ1 QUEUE  = 0 / Frame queue size                             
+HIERARCH ESO DET ACQ1 SOFW MODE= 'NORMAL' / Software operational mode           
+HIERARCH ESO DET ACQ1 WIN NX = 6144 / Acq.-window NX                            
+HIERARCH ESO DET ACQ1 WIN NY = 2048 / Acq.-window NY                            
+HIERARCH ESO DET ACQ1 WIN STRX= 1 / Acq.-window start-x                         
+HIERARCH ESO DET ACQ1 WIN STRY= 1 / Acq.-window start-y                         
+HIERARCH ESO DET ADC1 CLAMP  = F / Clamp-and-Sample                             
+HIERARCH ESO DET ADC1 DELAY  = 0 / Conv.-strobe delay (ticks)                   
+HIERARCH ESO DET ADC1 FILTER = 0 / Filter (0 = 0.5us, 1 = 5us)                  
+HIERARCH ESO DET ADC1 OFFSET = 2.000 / [V] ADC offset value                     
+HIERARCH ESO DET ADC1 PPENA  = F / Pre-processor enabled                        
+HIERARCH ESO DET ADC1 PPFOWLER= F / Fowler mode                                 
+HIERARCH ESO DET ADC1 PPINVERT= F / Invert Fowler-Pairs                         
+HIERARCH ESO DET ADC1 PPNINT = 91 / Integration frame counter                   
+HIERARCH ESO DET ADC1 PPNSAMP= 1 / Sub-pixel samples                            
+HIERARCH ESO DET ADC1 PPNX   = 0 / Pre-processor x-dimension                    
+HIERARCH ESO DET ADC1 PPNY   = 0 / Pre-processor y-dimension                    
+HIERARCH ESO DET ADC2 CLAMP  = F / Clamp-and-Sample                             
+HIERARCH ESO DET ADC2 DELAY  = 0 / Conv.-strobe delay (ticks)                   
+HIERARCH ESO DET ADC2 FILTER = 0 / Filter (0 = 0.5us, 1 = 5us)                  
+HIERARCH ESO DET ADC2 OFFSET = 2.000 / [V] ADC offset value                     
+HIERARCH ESO DET ADC2 PPENA  = F / Pre-processor enabled                        
+HIERARCH ESO DET ADC2 PPFOWLER= F / Fowler mode                                 
+HIERARCH ESO DET ADC2 PPINVERT= F / Invert Fowler-Pairs                         
+HIERARCH ESO DET ADC2 PPNINT = 91 / Integration frame counter                   
+HIERARCH ESO DET ADC2 PPNSAMP= 1 / Sub-pixel samples                            
+HIERARCH ESO DET ADC2 PPNX   = 0 / Pre-processor x-dimension                    
+HIERARCH ESO DET ADC2 PPNY   = 0 / Pre-processor y-dimension                    
+HIERARCH ESO DET ADC3 CLAMP  = F / Clamp-and-Sample                             
+HIERARCH ESO DET ADC3 DELAY  = 0 / Conv.-strobe delay (ticks)                   
+HIERARCH ESO DET ADC3 FILTER = 0 / Filter (0 = 0.5us, 1 = 5us)                  
+HIERARCH ESO DET ADC3 OFFSET = 2.000 / [V] ADC offset value                     
+HIERARCH ESO DET ADC3 PPENA  = F / Pre-processor enabled                        
+HIERARCH ESO DET ADC3 PPFOWLER= F / Fowler mode                                 
+HIERARCH ESO DET ADC3 PPINVERT= F / Invert Fowler-Pairs                         
+HIERARCH ESO DET ADC3 PPNINT = 91 / Integration frame counter                   
+HIERARCH ESO DET ADC3 PPNSAMP= 1 / Sub-pixel samples                            
+HIERARCH ESO DET ADC3 PPNX   = 0 / Pre-processor x-dimension                    
+HIERARCH ESO DET ADC3 PPNY   = 0 / Pre-processor y-dimension                    
+HIERARCH ESO DET ADC4 CLAMP  = F / Clamp-and-Sample                             
+HIERARCH ESO DET ADC4 DELAY  = 0 / Conv.-strobe delay (ticks)                   
+HIERARCH ESO DET ADC4 FILTER = 0 / Filter (0 = 0.5us, 1 = 5us)                  
+HIERARCH ESO DET ADC4 OFFSET = 2.000 / [V] ADC offset value                     
+HIERARCH ESO DET ADC4 PPENA  = F / Pre-processor enabled                        
+HIERARCH ESO DET ADC4 PPFOWLER= F / Fowler mode                                 
+HIERARCH ESO DET ADC4 PPINVERT= F / Invert Fowler-Pairs                         
+HIERARCH ESO DET ADC4 PPNINT = 91 / Integration frame counter                   
+HIERARCH ESO DET ADC4 PPNSAMP= 1 / Sub-pixel samples                            
+HIERARCH ESO DET ADC4 PPNX   = 0 / Pre-processor x-dimension                    
+HIERARCH ESO DET ADC4 PPNY   = 0 / Pre-processor y-dimension                    
+HIERARCH ESO DET ADC5 CLAMP  = F / Clamp-and-Sample                             
+HIERARCH ESO DET ADC5 DELAY  = 0 / Conv.-strobe delay (ticks)                   
+HIERARCH ESO DET ADC5 FILTER = 0 / Filter (0 = 0.5us, 1 = 5us)                  
+HIERARCH ESO DET ADC5 OFFSET = 2.000 / [V] ADC offset value                     
+HIERARCH ESO DET ADC5 PPENA  = F / Pre-processor enabled                        
+HIERARCH ESO DET ADC5 PPFOWLER= F / Fowler mode                                 
+HIERARCH ESO DET ADC5 PPINVERT= F / Invert Fowler-Pairs                         
+HIERARCH ESO DET ADC5 PPNINT = 91 / Integration frame counter                   
+HIERARCH ESO DET ADC5 PPNSAMP= 1 / Sub-pixel samples                            
+HIERARCH ESO DET ADC5 PPNX   = 0 / Pre-processor x-dimension                    
+HIERARCH ESO DET ADC5 PPNY   = 0 / Pre-processor y-dimension                    
+HIERARCH ESO DET ADC6 CLAMP  = F / Clamp-and-Sample                             
+HIERARCH ESO DET ADC6 DELAY  = 0 / Conv.-strobe delay (ticks)                   
+HIERARCH ESO DET ADC6 FILTER = 0 / Filter (0 = 0.5us, 1 = 5us)                  
+HIERARCH ESO DET ADC6 OFFSET = 2.000 / [V] ADC offset value                     
+HIERARCH ESO DET ADC6 PPENA  = F / Pre-processor enabled                        
+HIERARCH ESO DET ADC6 PPFOWLER= F / Fowler mode                                 
+HIERARCH ESO DET ADC6 PPINVERT= F / Invert Fowler-Pairs                         
+HIERARCH ESO DET ADC6 PPNINT = 91 / Integration frame counter                   
+HIERARCH ESO DET ADC6 PPNSAMP= 1 / Sub-pixel samples                            
+HIERARCH ESO DET ADC6 PPNX   = 0 / Pre-processor x-dimension                    
+HIERARCH ESO DET ADC6 PPNY   = 0 / Pre-processor y-dimension                    
+HIERARCH ESO DET CHOP CYCSYNC= F / Sync to cycle                                
+HIERARCH ESO DET CHOP FREQ   = 0.00 / [Hz] Chopping frequency                   
+HIERARCH ESO DET CHOP ST     = F / Chopping enabled                             
+HIERARCH ESO DET CHOP TIM    = 450.0000000 / [s] TIM period                     
+HIERARCH ESO DET CHOP TRANSTIM= 0.025 / [s] Chopper transition time             
+HIERARCH ESO DET CLDC1 CLKHI1= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKHI10= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKHI11= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKHI12= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKHI13= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKHI14= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKHI15= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKHI16= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKHI17= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKHI18= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKHI2= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKHI3= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKHI4= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKHI5= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKHI6= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKHI7= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKHI8= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKHI9= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKHINM1= 'clk1Hi-FSYNCB' / Name of clock high           
+HIERARCH ESO DET CLDC1 CLKHINM10= 'clk10Hi-MODECTRL1' / Name of clock high      
+HIERARCH ESO DET CLDC1 CLKHINM11= 'clk11Hi-MODECTRL2' / Name of clock high      
+HIERARCH ESO DET CLDC1 CLKHINM12= 'clock12Hi-HORIWMEN' / Name of clock high     
+HIERARCH ESO DET CLDC1 CLKHINM13= 'clock13Hi-VERTWMEN' / Name of clock high     
+HIERARCH ESO DET CLDC1 CLKHINM14= 'clock14Hi-CSB' / Name of clock high          
+HIERARCH ESO DET CLDC1 CLKHINM15= 'clock15Hi-DATACLK' / Name of clock high      
+HIERARCH ESO DET CLDC1 CLKHINM16= 'clock16Hi_DataIn' / Name of clock high       
+HIERARCH ESO DET CLDC1 CLKHINM17= 'CLOCK_17_L1' / Name of clock high            
+HIERARCH ESO DET CLDC1 CLKHINM18= 'CLOCK_18_L1' / Name of clock high            
+HIERARCH ESO DET CLDC1 CLKHINM2= 'clk2Hi-VCLK' / Name of clock high             
+HIERARCH ESO DET CLDC1 CLKHINM3= 'clk3Hi-LSYNCB' / Name of clock high           
+HIERARCH ESO DET CLDC1 CLKHINM4= 'clk4Hi-HCLK' / Name of clock high             
+HIERARCH ESO DET CLDC1 CLKHINM5= 'clk5Hi-READEN' / Name of clock high           
+HIERARCH ESO DET CLDC1 CLKHINM6= 'clk6Hi-RESETEN' / Name of clock high          
+HIERARCH ESO DET CLDC1 CLKHINM7= 'clk7Hi-MAINRESETB' / Name of clock high       
+HIERARCH ESO DET CLDC1 CLKHINM8= 'clk8Hi-BUFDISABLE' / Name of clock high       
+HIERARCH ESO DET CLDC1 CLKHINM9= 'clk9Hi-FASTENPAD' / Name of clock high        
+HIERARCH ESO DET CLDC1 CLKHIT1= 3.412 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC1 CLKHIT10= 3.359 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC1 CLKHIT11= 3.380 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC1 CLKHIT12= 3.351 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC1 CLKHIT13= 3.357 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC1 CLKHIT14= 3.409 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC1 CLKHIT15= 0.116 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC1 CLKHIT16= 3.385 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC1 CLKHIT17= 0.089 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC1 CLKHIT18= 0.065 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC1 CLKHIT2= 3.368 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC1 CLKHIT3= 3.362 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC1 CLKHIT4= 3.366 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC1 CLKHIT5= 3.375 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC1 CLKHIT6= 3.387 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC1 CLKHIT7= 3.370 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC1 CLKHIT8= 3.367 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC1 CLKHIT9= 0.095 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC1 CLKLO1= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKLO10= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKLO11= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKLO12= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKLO13= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKLO14= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKLO15= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKLO16= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKLO17= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKLO18= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC1 CLKLO2= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKLO3= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKLO4= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKLO5= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKLO6= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKLO7= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKLO8= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKLO9= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC1 CLKLONM1= 'clk1Lo-FSYNCB' / Name of clock low            
+HIERARCH ESO DET CLDC1 CLKLONM10= 'clk10Lo-MODECTRL1' / Name of clock low       
+HIERARCH ESO DET CLDC1 CLKLONM11= 'clk11Lo-MODECTRL2' / Name of clock low       
+HIERARCH ESO DET CLDC1 CLKLONM12= 'clock12Lo-HORIWMEN' / Name of clock low      
+HIERARCH ESO DET CLDC1 CLKLONM13= 'clock13Lo-VERTWMEN' / Name of clock low      
+HIERARCH ESO DET CLDC1 CLKLONM14= 'clock14Lo-CSB' / Name of clock low           
+HIERARCH ESO DET CLDC1 CLKLONM15= 'clock15Lo-DATACLK' / Name of clock low       
+HIERARCH ESO DET CLDC1 CLKLONM16= 'clock16Lo_DataIn' / Name of clock low        
+HIERARCH ESO DET CLDC1 CLKLONM17= 'CLOCK_17_L0' / Name of clock low             
+HIERARCH ESO DET CLDC1 CLKLONM18= 'CLOCK_18_L0' / Name of clock low             
+HIERARCH ESO DET CLDC1 CLKLONM2= 'clk2Lo-VCLK' / Name of clock low              
+HIERARCH ESO DET CLDC1 CLKLONM3= 'clk3Lo-LSYNCB' / Name of clock low            
+HIERARCH ESO DET CLDC1 CLKLONM4= 'clk4Lo-HCLK' / Name of clock low              
+HIERARCH ESO DET CLDC1 CLKLONM5= 'clk5Lo-READEN' / Name of clock low            
+HIERARCH ESO DET CLDC1 CLKLONM6= 'clk6Lo-RESETEN' / Name of clock low           
+HIERARCH ESO DET CLDC1 CLKLONM7= 'clk7Lo-MAINRESETB' / Name of clock low        
+HIERARCH ESO DET CLDC1 CLKLONM8= 'clk8Lo-BUFDISABLE' / Name of clock low        
+HIERARCH ESO DET CLDC1 CLKLONM9= 'clk9Lo-FASTENPAD' / Name of clock low         
+HIERARCH ESO DET CLDC1 CLKLOT1= 0.099 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC1 CLKLOT10= 3.367 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC1 CLKLOT11= 3.405 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC1 CLKLOT12= 0.068 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC1 CLKLOT13= 0.118 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC1 CLKLOT14= 0.089 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC1 CLKLOT15= 0.107 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC1 CLKLOT16= 3.363 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC1 CLKLOT17= 0.071 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC1 CLKLOT18= 0.078 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC1 CLKLOT2= 0.094 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC1 CLKLOT3= 0.076 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC1 CLKLOT4= 0.116 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC1 CLKLOT5= 0.094 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC1 CLKLOT6= 0.124 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC1 CLKLOT7= 0.104 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC1 CLKLOT8= 3.395 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC1 CLKLOT9= 0.063 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC1 CLKOFF= 1.000 / [V] Clock voltage offset                 
+HIERARCH ESO DET CLDC1 DC1   = 3.300 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC10  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC11  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC12  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC13  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC14  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC15  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC16  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC17  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC18  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC19  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC2   = 3.300 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC20  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC3   = 3.300 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC4   = 1.500 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC5   = 0.500 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC6   = 2.400 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC7   = 3.259 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC8   = 3.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DC9   = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC1 DCNM1 = 'DC1-VDD' / Name of bias voltage                 
+HIERARCH ESO DET CLDC1 DCNM10= 'DC10' / Name of bias voltage                    
+HIERARCH ESO DET CLDC1 DCNM11= 'DC11' / Name of bias voltage                    
+HIERARCH ESO DET CLDC1 DCNM12= 'DC12' / Name of bias voltage                    
+HIERARCH ESO DET CLDC1 DCNM13= 'DC13' / Name of bias voltage                    
+HIERARCH ESO DET CLDC1 DCNM14= 'DC14' / Name of bias voltage                    
+HIERARCH ESO DET CLDC1 DCNM15= 'DC15' / Name of bias voltage                    
+HIERARCH ESO DET CLDC1 DCNM16= 'DC16_RelaySwitchLowActive' / Name of bias voltag
+HIERARCH ESO DET CLDC1 DCNM17= 'DC-17' / Name of bias voltage                   
+HIERARCH ESO DET CLDC1 DCNM18= 'DC-18' / Name of bias voltage                   
+HIERARCH ESO DET CLDC1 DCNM19= 'DC-19' / Name of bias voltage                   
+HIERARCH ESO DET CLDC1 DCNM2 = 'DC2-VDDA' / Name of bias voltage                
+HIERARCH ESO DET CLDC1 DCNM20= 'DC-20' / Name of bias voltage                   
+HIERARCH ESO DET CLDC1 DCNM3 = 'DC3-VBIASPOWER' / Name of bias voltage          
+HIERARCH ESO DET CLDC1 DCNM4 = 'DC4-DSUB' / Name of bias voltage                
+HIERARCH ESO DET CLDC1 DCNM5 = 'DC5-VRESET' / Name of bias voltage              
+HIERARCH ESO DET CLDC1 DCNM6 = 'DC6-BIASGATE' / Name of bias voltage            
+HIERARCH ESO DET CLDC1 DCNM7 = 'DC7-EXTREF' / Name of bias voltage              
+HIERARCH ESO DET CLDC1 DCNM8 = 'DC8-VLOAD' / Name of bias voltage               
+HIERARCH ESO DET CLDC1 DCNM9 = 'DC9' / Name of bias voltage                     
+HIERARCH ESO DET CLDC1 DCOFF = 1.000 / [V] Bias voltage offset                  
+HIERARCH ESO DET CLDC1 DCT1  = 3.324 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT10 = 0.139 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT11 = 0.156 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT12 = 0.135 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT13 = 0.135 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT14 = 0.139 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT15 = 0.141 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT16 = 0.127 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT17 = 0.050 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT18 = 0.043 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT19 = 0.039 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT2  = 3.346 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT20 = 0.072 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT3  = 3.325 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT4  = 1.519 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT5  = 0.593 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT6  = 2.383 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT7  = 3.310 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT8  = 3.049 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DCT9  = 0.150 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC1 DIODE = 0.000 / [V] Diode bias                           
+HIERARCH ESO DET CLDC1 PREAMP= 0.000 / [V] Preamplifier offset                  
+HIERARCH ESO DET CLDC1 STATUS= 'enabled' / Output status                        
+HIERARCH ESO DET CLDC2 CLKHI1= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKHI10= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKHI11= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKHI12= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKHI13= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKHI14= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKHI15= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKHI16= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKHI17= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKHI18= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKHI2= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKHI3= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKHI4= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKHI5= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKHI6= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKHI7= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKHI8= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKHI9= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKHINM1= 'clk1Hi-FSYNCB' / Name of clock high           
+HIERARCH ESO DET CLDC2 CLKHINM10= 'clk10Hi-MODECTRL1' / Name of clock high      
+HIERARCH ESO DET CLDC2 CLKHINM11= 'clk11Hi-MODECTRL2' / Name of clock high      
+HIERARCH ESO DET CLDC2 CLKHINM12= 'clock12Hi-HORIWMEN' / Name of clock high     
+HIERARCH ESO DET CLDC2 CLKHINM13= 'clock13Hi-VERTWMEN' / Name of clock high     
+HIERARCH ESO DET CLDC2 CLKHINM14= 'clock14Hi-CSB' / Name of clock high          
+HIERARCH ESO DET CLDC2 CLKHINM15= 'clock15Hi-DATACLK' / Name of clock high      
+HIERARCH ESO DET CLDC2 CLKHINM16= 'clock16Hi_DataIn' / Name of clock high       
+HIERARCH ESO DET CLDC2 CLKHINM17= 'CLOCK_17_L1' / Name of clock high            
+HIERARCH ESO DET CLDC2 CLKHINM18= 'CLOCK_18_L1' / Name of clock high            
+HIERARCH ESO DET CLDC2 CLKHINM2= 'clk2Hi-VCLK' / Name of clock high             
+HIERARCH ESO DET CLDC2 CLKHINM3= 'clk3Hi-LSYNCB' / Name of clock high           
+HIERARCH ESO DET CLDC2 CLKHINM4= 'clk4Hi-HCLK' / Name of clock high             
+HIERARCH ESO DET CLDC2 CLKHINM5= 'clk5Hi-READEN' / Name of clock high           
+HIERARCH ESO DET CLDC2 CLKHINM6= 'clk6Hi-RESETEN' / Name of clock high          
+HIERARCH ESO DET CLDC2 CLKHINM7= 'clk7Hi-MAINRESETB' / Name of clock high       
+HIERARCH ESO DET CLDC2 CLKHINM8= 'clk8Hi-BUFDISABLE' / Name of clock high       
+HIERARCH ESO DET CLDC2 CLKHINM9= 'clk9Hi-FASTENPAD' / Name of clock high        
+HIERARCH ESO DET CLDC2 CLKHIT1= 3.413 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC2 CLKHIT10= 3.335 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC2 CLKHIT11= 3.354 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC2 CLKHIT12= 3.383 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC2 CLKHIT13= 3.365 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC2 CLKHIT14= 3.414 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC2 CLKHIT15= 0.087 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC2 CLKHIT16= 3.373 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC2 CLKHIT17= 0.074 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC2 CLKHIT18= 0.095 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC2 CLKHIT2= 3.340 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC2 CLKHIT3= 3.417 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC2 CLKHIT4= 3.363 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC2 CLKHIT5= 3.364 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC2 CLKHIT6= 3.396 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC2 CLKHIT7= 3.401 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC2 CLKHIT8= 3.401 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC2 CLKHIT9= 0.123 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC2 CLKLO1= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKLO10= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKLO11= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKLO12= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKLO13= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKLO14= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKLO15= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKLO16= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKLO17= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKLO18= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC2 CLKLO2= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKLO3= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKLO4= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKLO5= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKLO6= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKLO7= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKLO8= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKLO9= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC2 CLKLONM1= 'clk1Lo-FSYNCB' / Name of clock low            
+HIERARCH ESO DET CLDC2 CLKLONM10= 'clk10Lo-MODECTRL1' / Name of clock low       
+HIERARCH ESO DET CLDC2 CLKLONM11= 'clk11Lo-MODECTRL2' / Name of clock low       
+HIERARCH ESO DET CLDC2 CLKLONM12= 'clock12Lo-HORIWMEN' / Name of clock low      
+HIERARCH ESO DET CLDC2 CLKLONM13= 'clock13Lo-VERTWMEN' / Name of clock low      
+HIERARCH ESO DET CLDC2 CLKLONM14= 'clock14Lo-CSB' / Name of clock low           
+HIERARCH ESO DET CLDC2 CLKLONM15= 'clock15Lo-DATACLK' / Name of clock low       
+HIERARCH ESO DET CLDC2 CLKLONM16= 'clock16Lo_DataIn' / Name of clock low        
+HIERARCH ESO DET CLDC2 CLKLONM17= 'CLOCK_17_L0' / Name of clock low             
+HIERARCH ESO DET CLDC2 CLKLONM18= 'CLOCK_18_L0' / Name of clock low             
+HIERARCH ESO DET CLDC2 CLKLONM2= 'clk2Lo-VCLK' / Name of clock low              
+HIERARCH ESO DET CLDC2 CLKLONM3= 'clk3Lo-LSYNCB' / Name of clock low            
+HIERARCH ESO DET CLDC2 CLKLONM4= 'clk4Lo-HCLK' / Name of clock low              
+HIERARCH ESO DET CLDC2 CLKLONM5= 'clk5Lo-READEN' / Name of clock low            
+HIERARCH ESO DET CLDC2 CLKLONM6= 'clk6Lo-RESETEN' / Name of clock low           
+HIERARCH ESO DET CLDC2 CLKLONM7= 'clk7Lo-MAINRESETB' / Name of clock low        
+HIERARCH ESO DET CLDC2 CLKLONM8= 'clk8Lo-BUFDISABLE' / Name of clock low        
+HIERARCH ESO DET CLDC2 CLKLONM9= 'clk9Lo-FASTENPAD' / Name of clock low         
+HIERARCH ESO DET CLDC2 CLKLOT1= 0.094 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC2 CLKLOT10= 3.370 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC2 CLKLOT11= 3.398 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC2 CLKLOT12= 0.106 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC2 CLKLOT13= 0.092 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC2 CLKLOT14= 0.073 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC2 CLKLOT15= 0.095 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC2 CLKLOT16= 3.355 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC2 CLKLOT17= 0.059 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC2 CLKLOT18= 0.080 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC2 CLKLOT2= 0.073 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC2 CLKLOT3= 0.122 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC2 CLKLOT4= 0.082 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC2 CLKLOT5= 0.102 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC2 CLKLOT6= 0.085 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC2 CLKLOT7= 0.113 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC2 CLKLOT8= 3.407 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC2 CLKLOT9= 0.052 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC2 CLKOFF= 1.000 / [V] Clock voltage offset                 
+HIERARCH ESO DET CLDC2 DC1   = 3.300 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC10  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC11  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC12  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC13  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC14  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC15  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC16  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC17  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC18  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC19  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC2   = 3.300 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC20  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC3   = 3.300 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC4   = 1.500 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC5   = 0.500 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC6   = 2.400 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC7   = 3.407 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC8   = 3.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DC9   = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC2 DCNM1 = 'DC1-VDD' / Name of bias voltage                 
+HIERARCH ESO DET CLDC2 DCNM10= 'DC10' / Name of bias voltage                    
+HIERARCH ESO DET CLDC2 DCNM11= 'DC11' / Name of bias voltage                    
+HIERARCH ESO DET CLDC2 DCNM12= 'DC12' / Name of bias voltage                    
+HIERARCH ESO DET CLDC2 DCNM13= 'DC13' / Name of bias voltage                    
+HIERARCH ESO DET CLDC2 DCNM14= 'DC14' / Name of bias voltage                    
+HIERARCH ESO DET CLDC2 DCNM15= 'DC15' / Name of bias voltage                    
+HIERARCH ESO DET CLDC2 DCNM16= 'DC16_RelaySwitchLowActive' / Name of bias voltag
+HIERARCH ESO DET CLDC2 DCNM17= 'DC-17' / Name of bias voltage                   
+HIERARCH ESO DET CLDC2 DCNM18= 'DC-18' / Name of bias voltage                   
+HIERARCH ESO DET CLDC2 DCNM19= 'DC-19' / Name of bias voltage                   
+HIERARCH ESO DET CLDC2 DCNM2 = 'DC2-VDDA' / Name of bias voltage                
+HIERARCH ESO DET CLDC2 DCNM20= 'DC-20' / Name of bias voltage                   
+HIERARCH ESO DET CLDC2 DCNM3 = 'DC3-VBIASPOWER' / Name of bias voltage          
+HIERARCH ESO DET CLDC2 DCNM4 = 'DC4-DSUB' / Name of bias voltage                
+HIERARCH ESO DET CLDC2 DCNM5 = 'DC5-VRESET' / Name of bias voltage              
+HIERARCH ESO DET CLDC2 DCNM6 = 'DC6-BIASGATE' / Name of bias voltage            
+HIERARCH ESO DET CLDC2 DCNM7 = 'DC7-EXTREF' / Name of bias voltage              
+HIERARCH ESO DET CLDC2 DCNM8 = 'DC8-VLOAD' / Name of bias voltage               
+HIERARCH ESO DET CLDC2 DCNM9 = 'DC9' / Name of bias voltage                     
+HIERARCH ESO DET CLDC2 DCOFF = 1.000 / [V] Bias voltage offset                  
+HIERARCH ESO DET CLDC2 DCT1  = 3.331 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT10 = 0.135 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT11 = 0.139 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT12 = 0.146 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT13 = 0.130 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT14 = 0.130 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT15 = 0.138 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT16 = 0.146 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT17 = 0.079 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT18 = 0.036 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT19 = 0.058 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT2  = 3.368 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT20 = 0.090 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT3  = 3.364 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT4  = 1.545 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT5  = 0.600 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT6  = 2.372 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT7  = 3.445 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT8  = 3.054 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DCT9  = 0.145 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC2 DIODE = 0.000 / [V] Diode bias                           
+HIERARCH ESO DET CLDC2 PREAMP= 0.000 / [V] Preamplifier offset                  
+HIERARCH ESO DET CLDC2 STATUS= 'enabled' / Output status                        
+HIERARCH ESO DET CLDC3 CLKHI1= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKHI10= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKHI11= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKHI12= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKHI13= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKHI14= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKHI15= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKHI16= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKHI17= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKHI18= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKHI2= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKHI3= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKHI4= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKHI5= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKHI6= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKHI7= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKHI8= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKHI9= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKHINM1= 'clk1Hi-FSYNCB' / Name of clock high           
+HIERARCH ESO DET CLDC3 CLKHINM10= 'clk10Hi-MODECTRL1' / Name of clock high      
+HIERARCH ESO DET CLDC3 CLKHINM11= 'clk11Hi-MODECTRL2' / Name of clock high      
+HIERARCH ESO DET CLDC3 CLKHINM12= 'clock12Hi-HORIWMEN' / Name of clock high     
+HIERARCH ESO DET CLDC3 CLKHINM13= 'clock13Hi-VERTWMEN' / Name of clock high     
+HIERARCH ESO DET CLDC3 CLKHINM14= 'clock14Hi-CSB' / Name of clock high          
+HIERARCH ESO DET CLDC3 CLKHINM15= 'clock15Hi-DATACLK' / Name of clock high      
+HIERARCH ESO DET CLDC3 CLKHINM16= 'clock16Hi_DataIn' / Name of clock high       
+HIERARCH ESO DET CLDC3 CLKHINM17= 'CLOCK_17_L1' / Name of clock high            
+HIERARCH ESO DET CLDC3 CLKHINM18= 'CLOCK_18_L1' / Name of clock high            
+HIERARCH ESO DET CLDC3 CLKHINM2= 'clk2Hi-VCLK' / Name of clock high             
+HIERARCH ESO DET CLDC3 CLKHINM3= 'clk3Hi-LSYNCB' / Name of clock high           
+HIERARCH ESO DET CLDC3 CLKHINM4= 'clk4Hi-HCLK' / Name of clock high             
+HIERARCH ESO DET CLDC3 CLKHINM5= 'clk5Hi-READEN' / Name of clock high           
+HIERARCH ESO DET CLDC3 CLKHINM6= 'clk6Hi-RESETEN' / Name of clock high          
+HIERARCH ESO DET CLDC3 CLKHINM7= 'clk7Hi-MAINRESETB' / Name of clock high       
+HIERARCH ESO DET CLDC3 CLKHINM8= 'clk8Hi-BUFDISABLE' / Name of clock high       
+HIERARCH ESO DET CLDC3 CLKHINM9= 'clk9Hi-FASTENPAD' / Name of clock high        
+HIERARCH ESO DET CLDC3 CLKHIT1= 3.401 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC3 CLKHIT10= 3.411 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC3 CLKHIT11= 3.392 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC3 CLKHIT12= 3.353 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC3 CLKHIT13= 3.388 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC3 CLKHIT14= 3.361 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC3 CLKHIT15= 0.041 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC3 CLKHIT16= 3.349 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC3 CLKHIT17= 0.087 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC3 CLKHIT18= 0.063 / [V] Telemetry value clock-hi           
+HIERARCH ESO DET CLDC3 CLKHIT2= 3.340 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC3 CLKHIT3= 3.369 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC3 CLKHIT4= 3.377 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC3 CLKHIT5= 3.362 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC3 CLKHIT6= 3.376 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC3 CLKHIT7= 3.398 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC3 CLKHIT8= 3.373 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC3 CLKHIT9= 0.104 / [V] Telemetry value clock-hi            
+HIERARCH ESO DET CLDC3 CLKLO1= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKLO10= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKLO11= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKLO12= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKLO13= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKLO14= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKLO15= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKLO16= 3.300 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKLO17= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKLO18= 0.000 / [V] Clock voltage setup value           
+HIERARCH ESO DET CLDC3 CLKLO2= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKLO3= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKLO4= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKLO5= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKLO6= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKLO7= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKLO8= 3.300 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKLO9= 0.000 / [V] Clock voltage setup value            
+HIERARCH ESO DET CLDC3 CLKLONM1= 'clk1Lo-FSYNCB' / Name of clock low            
+HIERARCH ESO DET CLDC3 CLKLONM10= 'clk10Lo-MODECTRL1' / Name of clock low       
+HIERARCH ESO DET CLDC3 CLKLONM11= 'clk11Lo-MODECTRL2' / Name of clock low       
+HIERARCH ESO DET CLDC3 CLKLONM12= 'clock12Lo-HORIWMEN' / Name of clock low      
+HIERARCH ESO DET CLDC3 CLKLONM13= 'clock13Lo-VERTWMEN' / Name of clock low      
+HIERARCH ESO DET CLDC3 CLKLONM14= 'clock14Lo-CSB' / Name of clock low           
+HIERARCH ESO DET CLDC3 CLKLONM15= 'clock15Lo-DATACLK' / Name of clock low       
+HIERARCH ESO DET CLDC3 CLKLONM16= 'clock16Lo_DataIn' / Name of clock low        
+HIERARCH ESO DET CLDC3 CLKLONM17= 'CLOCK_17_L0' / Name of clock low             
+HIERARCH ESO DET CLDC3 CLKLONM18= 'CLOCK_18_L0' / Name of clock low             
+HIERARCH ESO DET CLDC3 CLKLONM2= 'clk2Lo-VCLK' / Name of clock low              
+HIERARCH ESO DET CLDC3 CLKLONM3= 'clk3Lo-LSYNCB' / Name of clock low            
+HIERARCH ESO DET CLDC3 CLKLONM4= 'clk4Lo-HCLK' / Name of clock low              
+HIERARCH ESO DET CLDC3 CLKLONM5= 'clk5Lo-READEN' / Name of clock low            
+HIERARCH ESO DET CLDC3 CLKLONM6= 'clk6Lo-RESETEN' / Name of clock low           
+HIERARCH ESO DET CLDC3 CLKLONM7= 'clk7Lo-MAINRESETB' / Name of clock low        
+HIERARCH ESO DET CLDC3 CLKLONM8= 'clk8Lo-BUFDISABLE' / Name of clock low        
+HIERARCH ESO DET CLDC3 CLKLONM9= 'clk9Lo-FASTENPAD' / Name of clock low         
+HIERARCH ESO DET CLDC3 CLKLOT1= 0.089 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC3 CLKLOT10= 3.364 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC3 CLKLOT11= 2.959 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC3 CLKLOT12= 0.068 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC3 CLKLOT13= 0.103 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC3 CLKLOT14= 0.088 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC3 CLKLOT15= 0.094 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC3 CLKLOT16= 3.351 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC3 CLKLOT17= 0.088 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC3 CLKLOT18= 0.093 / [V] Telemetry value clock-lo           
+HIERARCH ESO DET CLDC3 CLKLOT2= 0.046 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC3 CLKLOT3= 0.087 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC3 CLKLOT4= 0.104 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC3 CLKLOT5= 0.058 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC3 CLKLOT6= 0.075 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC3 CLKLOT7= 0.094 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC3 CLKLOT8= 3.410 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC3 CLKLOT9= 0.084 / [V] Telemetry value clock-lo            
+HIERARCH ESO DET CLDC3 CLKOFF= 1.000 / [V] Clock voltage offset                 
+HIERARCH ESO DET CLDC3 DC1   = 3.300 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC10  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC11  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC12  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC13  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC14  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC15  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC16  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC17  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC18  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC19  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC2   = 3.300 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC20  = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC3   = 3.300 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC4   = 1.500 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC5   = 0.500 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC6   = 2.400 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC7   = 3.343 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC8   = 3.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DC9   = 0.000 / [V] Bias voltage setup value             
+HIERARCH ESO DET CLDC3 DCNM1 = 'DC1-VDD' / Name of bias voltage                 
+HIERARCH ESO DET CLDC3 DCNM10= 'DC10' / Name of bias voltage                    
+HIERARCH ESO DET CLDC3 DCNM11= 'DC11' / Name of bias voltage                    
+HIERARCH ESO DET CLDC3 DCNM12= 'DC12' / Name of bias voltage                    
+HIERARCH ESO DET CLDC3 DCNM13= 'DC13' / Name of bias voltage                    
+HIERARCH ESO DET CLDC3 DCNM14= 'DC14' / Name of bias voltage                    
+HIERARCH ESO DET CLDC3 DCNM15= 'DC15' / Name of bias voltage                    
+HIERARCH ESO DET CLDC3 DCNM16= 'DC16_RelaySwitchLowActive' / Name of bias voltag
+HIERARCH ESO DET CLDC3 DCNM17= 'DC-17' / Name of bias voltage                   
+HIERARCH ESO DET CLDC3 DCNM18= 'DC-18' / Name of bias voltage                   
+HIERARCH ESO DET CLDC3 DCNM19= 'DC-19' / Name of bias voltage                   
+HIERARCH ESO DET CLDC3 DCNM2 = 'DC2-VDDA' / Name of bias voltage                
+HIERARCH ESO DET CLDC3 DCNM20= 'DC-20' / Name of bias voltage                   
+HIERARCH ESO DET CLDC3 DCNM3 = 'DC3-VBIASPOWER' / Name of bias voltage          
+HIERARCH ESO DET CLDC3 DCNM4 = 'DC4-DSUB' / Name of bias voltage                
+HIERARCH ESO DET CLDC3 DCNM5 = 'DC5-VRESET' / Name of bias voltage              
+HIERARCH ESO DET CLDC3 DCNM6 = 'DC6-BIASGATE' / Name of bias voltage            
+HIERARCH ESO DET CLDC3 DCNM7 = 'DC7-EXTREF' / Name of bias voltage              
+HIERARCH ESO DET CLDC3 DCNM8 = 'DC8-VLOAD' / Name of bias voltage               
+HIERARCH ESO DET CLDC3 DCNM9 = 'DC9' / Name of bias voltage                     
+HIERARCH ESO DET CLDC3 DCOFF = 1.000 / [V] Bias voltage offset                  
+HIERARCH ESO DET CLDC3 DCT1  = 3.334 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT10 = 0.111 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT11 = 0.132 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT12 = 0.140 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT13 = 0.137 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT14 = 0.133 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT15 = 0.140 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT16 = 0.137 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT17 = 0.082 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT18 = 0.042 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT19 = 0.059 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT2  = 3.340 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT20 = 0.049 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT3  = 3.311 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT4  = 1.542 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT5  = 0.627 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT6  = 2.388 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT7  = 3.382 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT8  = 3.026 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DCT9  = 0.141 / [V] Telemetry value bias                 
+HIERARCH ESO DET CLDC3 DIODE = 0.000 / [V] Diode bias                           
+HIERARCH ESO DET CLDC3 PREAMP= 0.000 / [V] Preamplifier offset                  
+HIERARCH ESO DET CLDC3 STATUS= 'enabled' / Output status                        
+HIERARCH ESO DET DETCFG      = 'kmdcfg.dcf' / Detector configuration            
+HIERARCH ESO DET DEV1 BOARD1 BCKPL= '00001080EACF' / Serial no (backplane)      
+HIERARCH ESO DET DEV1 BOARD1 REV= '3.3.0' / Revision                            
+HIERARCH ESO DET DEV1 BOARD1 SERNO= '0000106EC211' / Serial no (board)          
+HIERARCH ESO DET DEV1 BOARD1 TRANS= '000011AA85B8' / Serial no (trans.-board)   
+HIERARCH ESO DET DEV1 BOARD1 TYPE= 'AQ32' / Type                                
+HIERARCH ESO DET DEV1 BOARD1 VERSION= 3 / Version                               
+HIERARCH ESO DET DEV1 BOARD2 BCKPL= '00001080EACF' / Serial no (backplane)      
+HIERARCH ESO DET DEV1 BOARD2 REV= '3.3.0' / Revision                            
+HIERARCH ESO DET DEV1 BOARD2 SERNO= '000010A470D3' / Serial no (board)          
+HIERARCH ESO DET DEV1 BOARD2 TRANS= '000011AA6879' / Serial no (trans.-board)   
+HIERARCH ESO DET DEV1 BOARD2 TYPE= 'AQ32' / Type                                
+HIERARCH ESO DET DEV1 BOARD2 VERSION= 3 / Version                               
+HIERARCH ESO DET DEV1 BOARD3 BCKPL= '00001080EACF' / Serial no (backplane)      
+HIERARCH ESO DET DEV1 BOARD3 REV= '3.3.0' / Revision                            
+HIERARCH ESO DET DEV1 BOARD3 SERNO= '000010A47E84' / Serial no (board)          
+HIERARCH ESO DET DEV1 BOARD3 TRANS= '00000DC33ECC' / Serial no (trans.-board)   
+HIERARCH ESO DET DEV1 BOARD3 TYPE= 'AQ32' / Type                                
+HIERARCH ESO DET DEV1 BOARD3 VERSION= 3 / Version                               
+HIERARCH ESO DET DEV1 BOARD4 BCKPL= '00001080EACF' / Serial no (backplane)      
+HIERARCH ESO DET DEV1 BOARD4 REV= '5.5.1' / Revision                            
+HIERARCH ESO DET DEV1 BOARD4 SERNO= '000011D6696A' / Serial no (board)          
+HIERARCH ESO DET DEV1 BOARD4 TRANS= '00001216AB44' / Serial no (trans.-board)   
+HIERARCH ESO DET DEV1 BOARD4 TYPE= 'FEB' / Type                                 
+HIERARCH ESO DET DEV1 BOARD4 VERSION= 5 / Version                               
+HIERARCH ESO DET DEV1 BOARD5 BCKPL= '00001080EACF' / Serial no (backplane)      
+HIERARCH ESO DET DEV1 BOARD5 REV= '5.5.1' / Revision                            
+HIERARCH ESO DET DEV1 BOARD5 SERNO= '00000EFB71C9' / Serial no (board)          
+HIERARCH ESO DET DEV1 BOARD5 TRANS= '00001216DF49' / Serial no (trans.-board)   
+HIERARCH ESO DET DEV1 BOARD5 TYPE= 'FEB' / Type                                 
+HIERARCH ESO DET DEV1 BOARD5 VERSION= 5 / Version                               
+HIERARCH ESO DET DEV1 BOARD6 BCKPL= '00001080EACF' / Serial no (backplane)      
+HIERARCH ESO DET DEV1 BOARD6 REV= '5.5.1' / Revision                            
+HIERARCH ESO DET DEV1 BOARD6 SERNO= '000011AA5EC9' / Serial no (board)          
+HIERARCH ESO DET DEV1 BOARD6 TRANS= '00001216D348' / Serial no (trans.-board)   
+HIERARCH ESO DET DEV1 BOARD6 TYPE= 'FEB' / Type                                 
+HIERARCH ESO DET DEV1 BOARD6 VERSION= 5 / Version                               
+HIERARCH ESO DET DEV1 REV    = '3.1.1' / Revision                               
+HIERARCH ESO DET DEV1 SERNO  = 'FFFFFFFFFFFF' / Serial no                       
+HIERARCH ESO DET DEV1 SOFW BASE= 'Revision 253528' / Base software version      
+HIERARCH ESO DET DEV1 SOFW MODE= 'NORMAL' / Software operational mode           
+HIERARCH ESO DET DID         = 'ESO-VLT-DIC.NGCDCS-254373' / Used dictionaries  
+HIERARCH ESO DET DITDELAY    = 0.0000000 / [s] Delay before integration         
+HIERARCH ESO DET EXP ID      = 121 / Unique exposure ID                         
+HIERARCH ESO DET EXP POSTPROC= T / Post-processor enabled                       
+HIERARCH ESO DET FRAM FORMAT = 'extension' / FITS file format                   
+HIERARCH ESO DET FRAM UTC    = '2014-07-11T06:42:28.4250' / File Creation Time  
+HIERARCH ESO DET ID          = 'KMOS' / Detector system Id                      
+HIERARCH ESO DET NAME        = 'KMOS-Hawaii2RG' / Name of detector system       
+HIERARCH ESO DET NDIT        = 1 / Number of Sub-Integrations                   
+HIERARCH ESO DET NDITSKIP    = 0 / DITs skipped at 1st.INT                      
+HIERARCH ESO DET NDSAMPLES   = 182 / Number of Non-Destructive Samples          
+HIERARCH ESO DET NDSKIP      = 1 / Samples skipped per DIT                      
+HIERARCH ESO DET READ CURID  = 4 / Used readout mode id                         
+HIERARCH ESO DET READ CURNAME= 'Nondest' / Used readout mode name               
+HIERARCH ESO DET SEQ BREAK   = F / Break enabled                                
+HIERARCH ESO DET SEQ1 CONT   = F / Continuous mode active                       
+HIERARCH ESO DET SEQ1 CVTEXT = T / External convert active                      
+HIERARCH ESO DET SEQ1 DIT    = 450.0000000 / [s] Integration time               
+HIERARCH ESO DET SEQ1 MINDIT = 448.1994400 / [s] Minimum DIT                    
+HIERARCH ESO DET SEQ1 PERIOD = 0.0000000 / [s] Trigger period                   
+HIERARCH ESO DET SEQ1 REALDIT= 450.0000000 / [s] Actual integration time        
+HIERARCH ESO DET SEQ1 RUNCTRL= T / Run-control active                           
+HIERARCH ESO DET SEQ1 SLX ENA= F / SELEX interface enabled                      
+HIERARCH ESO DET SEQ1 SYNCEXT= T / External SYNC-pulse                          
+HIERARCH ESO DET SEQ1 TIMEADD= 0 / Dwell-time add value                         
+HIERARCH ESO DET SEQ1 TIMEFAC= 60 / Dwell-time factor                           
+HIERARCH ESO DET SEQ1 TRIGGER= F / Trigger mode active                          
+HIERARCH ESO DET SEQ1 TRIGMODE= 0 / Trigger mode (0=direct,1=shutter)           
+HIERARCH ESO DET SEQ1 WIN NX = 6144 / Read-out window NX                        
+HIERARCH ESO DET SEQ1 WIN NY = 2048 / Read-out window NY                        
+HIERARCH ESO DET SEQ1 WIN STRX= 1 / Read-out window start-x                     
+HIERARCH ESO DET SEQ1 WIN STRY= 1 / Read-out window start-y                     
+HIERARCH ESO DET SEQ2 CONT   = F / Continuous mode active                       
+HIERARCH ESO DET SEQ2 CVTEXT = F / External convert active                      
+HIERARCH ESO DET SEQ2 DIT    = 450.0000000 / [s] Integration time               
+HIERARCH ESO DET SEQ2 MINDIT = 448.1994400 / [s] Minimum DIT                    
+HIERARCH ESO DET SEQ2 PERIOD = 0.0000000 / [s] Trigger period                   
+HIERARCH ESO DET SEQ2 REALDIT= 450.0000000 / [s] Actual integration time        
+HIERARCH ESO DET SEQ2 RUNCTRL= T / Run-control active                           
+HIERARCH ESO DET SEQ2 SLX ENA= F / SELEX interface enabled                      
+HIERARCH ESO DET SEQ2 SYNCEXT= T / External SYNC-pulse                          
+HIERARCH ESO DET SEQ2 TIMEADD= 0 / Dwell-time add value                         
+HIERARCH ESO DET SEQ2 TIMEFAC= 60 / Dwell-time factor                           
+HIERARCH ESO DET SEQ2 TRIGGER= F / Trigger mode active                          
+HIERARCH ESO DET SEQ2 TRIGMODE= 0 / Trigger mode (0=direct,1=shutter)           
+HIERARCH ESO DET SEQ2 WIN NX = 6144 / Read-out window NX                        
+HIERARCH ESO DET SEQ2 WIN NY = 2048 / Read-out window NY                        
+HIERARCH ESO DET SEQ2 WIN STRX= 1 / Read-out window start-x                     
+HIERARCH ESO DET SEQ2 WIN STRY= 1 / Read-out window start-y                     
+HIERARCH ESO DET SEQ3 CONT   = F / Continuous mode active                       
+HIERARCH ESO DET SEQ3 CVTEXT = F / External convert active                      
+HIERARCH ESO DET SEQ3 DIT    = 450.0000000 / [s] Integration time               
+HIERARCH ESO DET SEQ3 MINDIT = 448.1994400 / [s] Minimum DIT                    
+HIERARCH ESO DET SEQ3 PERIOD = 0.0000000 / [s] Trigger period                   
+HIERARCH ESO DET SEQ3 REALDIT= 450.0000000 / [s] Actual integration time        
+HIERARCH ESO DET SEQ3 RUNCTRL= T / Run-control active                           
+HIERARCH ESO DET SEQ3 SLX ENA= F / SELEX interface enabled                      
+HIERARCH ESO DET SEQ3 SYNCEXT= T / External SYNC-pulse                          
+HIERARCH ESO DET SEQ3 TIMEADD= 0 / Dwell-time add value                         
+HIERARCH ESO DET SEQ3 TIMEFAC= 60 / Dwell-time factor                           
+HIERARCH ESO DET SEQ3 TRIGGER= F / Trigger mode active                          
+HIERARCH ESO DET SEQ3 TRIGMODE= 0 / Trigger mode (0=direct,1=shutter)           
+HIERARCH ESO DET SEQ3 WIN NX = 6144 / Read-out window NX                        
+HIERARCH ESO DET SEQ3 WIN NY = 2048 / Read-out window NY                        
+HIERARCH ESO DET SEQ3 WIN STRX= 1 / Read-out window start-x                     
+HIERARCH ESO DET SEQ3 WIN STRY= 1 / Read-out window start-y                     
+HIERARCH ESO DET SOFW BASE   = 'Revision 253569' / Base software version        
+HIERARCH ESO DET SOFW MODE   = 'NORMAL' / Software operational mode             
+HIERARCH ESO DET SYSCFG      = 'kmdcfg.cfg' / System configuration              
+HIERARCH ESO DPR CATG = 'SCIENCE ' / Observation category                       
+HIERARCH ESO DPR TECH = 'IFU     ' / Observation technique                      
+HIERARCH ESO DPR TYPE = 'OBJECT,SKY' / Observation type                         
+HIERARCH ESO INS ANG1 ENC = -4039 / [Enc] Absolute position.                    
+HIERARCH ESO INS ANG1 LOOKUP = -0.055 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG1 LOOKUPA = -0.230 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG1 LOOKUPD = 0.109 / [deg] Lookup corr. Durham for arm.      
+HIERARCH ESO INS ANG1 LOOKUPP = 0.067 / [deg] Lookup corr. Paranal for arm.     
+HIERARCH ESO INS ANG1 POS = -2.1908 / [deg] Position.                           
+HIERARCH ESO INS ANG1 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS ANG10 ENC = 4400 / [Enc] Absolute position.                    
+HIERARCH ESO INS ANG10 LOOKUP = 0.063 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG10 LOOKUPA = 0.020 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG10 LOOKUPD = 0.076 / [deg] Lookup corr. Durham for arm.     
+HIERARCH ESO INS ANG10 LOOKUPP = -0.032 / [deg] Lookup corr. Paranal for arm.   
+HIERARCH ESO INS ANG10 POS = 2.3866 / [deg] Position.                           
+HIERARCH ESO INS ANG10 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS ANG11 ENC = -21755 / [Enc] Absolute position.                  
+HIERARCH ESO INS ANG11 POS = -11.7999 / [deg] Position.                         
+HIERARCH ESO INS ANG11 SWSIM = T / If T, function is software simulated.        
+HIERARCH ESO INS ANG12 ENC = 5631 / [Enc] Absolute position.                    
+HIERARCH ESO INS ANG12 LOOKUP = 0.179 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG12 LOOKUPA = -0.162 / [deg] Lookup corr. ATC for arm.       
+HIERARCH ESO INS ANG12 LOOKUPD = 0.301 / [deg] Lookup corr. Durham for arm.     
+HIERARCH ESO INS ANG12 LOOKUPP = 0.041 / [deg] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS ANG12 POS = 3.0543 / [deg] Position.                           
+HIERARCH ESO INS ANG12 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS ANG13 ENC = 3165 / [Enc] Absolute position.                    
+HIERARCH ESO INS ANG13 LOOKUP = 0.026 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG13 LOOKUPA = 0.000 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG13 LOOKUPD = 0.171 / [deg] Lookup corr. Durham for arm.     
+HIERARCH ESO INS ANG13 LOOKUPP = -0.145 / [deg] Lookup corr. Paranal for arm.   
+HIERARCH ESO INS ANG13 POS = 1.7167 / [deg] Position.                           
+HIERARCH ESO INS ANG13 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS ANG14 ENC = 3291 / [Enc] Absolute position.                    
+HIERARCH ESO INS ANG14 LOOKUP = 0.362 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG14 LOOKUPA = 0.017 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG14 LOOKUPD = 0.318 / [deg] Lookup corr. Durham for arm.     
+HIERARCH ESO INS ANG14 LOOKUPP = 0.027 / [deg] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS ANG14 POS = 1.7850 / [deg] Position.                           
+HIERARCH ESO INS ANG14 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS ANG15 ENC = 0 / [Enc] Absolute position.                       
+HIERARCH ESO INS ANG15 POS = 0.0000 / [deg] Position.                           
+HIERARCH ESO INS ANG15 SWSIM = T / If T, function is software simulated.        
+HIERARCH ESO INS ANG16 ENC = 1664 / [Enc] Absolute position.                    
+HIERARCH ESO INS ANG16 LOOKUP = 0.449 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG16 LOOKUPA = 0.180 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG16 LOOKUPD = 0.267 / [deg] Lookup corr. Durham for arm.     
+HIERARCH ESO INS ANG16 LOOKUPP = 0.002 / [deg] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS ANG16 POS = 0.9026 / [deg] Position.                           
+HIERARCH ESO INS ANG16 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS ANG17 ENC = -4640 / [Enc] Absolute position.                   
+HIERARCH ESO INS ANG17 LOOKUP = 0.272 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG17 LOOKUPA = 0.088 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG17 LOOKUPD = 0.139 / [deg] Lookup corr. Durham for arm.     
+HIERARCH ESO INS ANG17 LOOKUPP = 0.045 / [deg] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS ANG17 POS = -2.5167 / [deg] Position.                          
+HIERARCH ESO INS ANG17 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS ANG18 ENC = -3739 / [Enc] Absolute position.                   
+HIERARCH ESO INS ANG18 LOOKUP = 0.237 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG18 LOOKUPA = 0.254 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG18 LOOKUPD = -0.013 / [deg] Lookup corr. Durham for arm.    
+HIERARCH ESO INS ANG18 LOOKUPP = -0.004 / [deg] Lookup corr. Paranal for arm.   
+HIERARCH ESO INS ANG18 POS = -2.0280 / [deg] Position.                          
+HIERARCH ESO INS ANG18 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS ANG19 ENC = -18117 / [Enc] Absolute position.                  
+HIERARCH ESO INS ANG19 LOOKUP = -0.062 / [deg] Lookup correction for arm.       
+HIERARCH ESO INS ANG19 LOOKUPA = 0.003 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG19 LOOKUPD = -0.119 / [deg] Lookup corr. Durham for arm.    
+HIERARCH ESO INS ANG19 LOOKUPP = 0.054 / [deg] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS ANG19 POS = -9.8267 / [deg] Position.                          
+HIERARCH ESO INS ANG19 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS ANG2 ENC = -9956 / [Enc] Absolute position.                    
+HIERARCH ESO INS ANG2 LOOKUP = -0.256 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG2 LOOKUPA = 0.000 / [deg] Lookup corr. ATC for arm.         
+HIERARCH ESO INS ANG2 LOOKUPD = 0.010 / [deg] Lookup corr. Durham for arm.      
+HIERARCH ESO INS ANG2 LOOKUPP = -0.266 / [deg] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS ANG2 POS = -5.4001 / [deg] Position.                           
+HIERARCH ESO INS ANG2 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS ANG20 ENC = -1795 / [Enc] Absolute position.                   
+HIERARCH ESO INS ANG20 LOOKUP = 0.206 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG20 LOOKUPA = -0.237 / [deg] Lookup corr. ATC for arm.       
+HIERARCH ESO INS ANG20 LOOKUPD = 0.413 / [deg] Lookup corr. Durham for arm.     
+HIERARCH ESO INS ANG20 LOOKUPP = 0.030 / [deg] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS ANG20 POS = -0.9736 / [deg] Position.                          
+HIERARCH ESO INS ANG20 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS ANG21 ENC = -1325 / [Enc] Absolute position.                   
+HIERARCH ESO INS ANG21 LOOKUP = 0.208 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG21 LOOKUPA = -0.008 / [deg] Lookup corr. ATC for arm.       
+HIERARCH ESO INS ANG21 LOOKUPD = 0.168 / [deg] Lookup corr. Durham for arm.     
+HIERARCH ESO INS ANG21 LOOKUPP = 0.048 / [deg] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS ANG21 POS = -0.7187 / [deg] Position.                          
+HIERARCH ESO INS ANG21 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS ANG22 ENC = 42 / [Enc] Absolute position.                      
+HIERARCH ESO INS ANG22 LOOKUP = 0.229 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG22 LOOKUPA = -0.044 / [deg] Lookup corr. ATC for arm.       
+HIERARCH ESO INS ANG22 LOOKUPD = 0.236 / [deg] Lookup corr. Durham for arm.     
+HIERARCH ESO INS ANG22 LOOKUPP = 0.037 / [deg] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS ANG22 POS = 0.0228 / [deg] Position.                           
+HIERARCH ESO INS ANG22 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS ANG23 ENC = -13898 / [Enc] Absolute position.                  
+HIERARCH ESO INS ANG23 LOOKUP = -0.059 / [deg] Lookup correction for arm.       
+HIERARCH ESO INS ANG23 LOOKUPA = -0.078 / [deg] Lookup corr. ATC for arm.       
+HIERARCH ESO INS ANG23 LOOKUPD = 0.001 / [deg] Lookup corr. Durham for arm.     
+HIERARCH ESO INS ANG23 LOOKUPP = 0.018 / [deg] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS ANG23 POS = -7.5383 / [deg] Position.                          
+HIERARCH ESO INS ANG23 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS ANG24 ENC = 1131 / [Enc] Absolute position.                    
+HIERARCH ESO INS ANG24 LOOKUP = 0.305 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG24 LOOKUPA = 0.459 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG24 LOOKUPD = -0.153 / [deg] Lookup corr. Durham for arm.    
+HIERARCH ESO INS ANG24 LOOKUPP = -0.002 / [deg] Lookup corr. Paranal for arm.   
+HIERARCH ESO INS ANG24 POS = 0.6135 / [deg] Position.                           
+HIERARCH ESO INS ANG24 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS ANG3 ENC = 9754 / [Enc] Absolute position.                     
+HIERARCH ESO INS ANG3 LOOKUP = -0.186 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG3 LOOKUPA = -0.240 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG3 LOOKUPD = 0.083 / [deg] Lookup corr. Durham for arm.      
+HIERARCH ESO INS ANG3 LOOKUPP = -0.028 / [deg] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS ANG3 POS = 5.2906 / [deg] Position.                            
+HIERARCH ESO INS ANG3 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS ANG4 ENC = -20833 / [Enc] Absolute position.                   
+HIERARCH ESO INS ANG4 POS = -11.2998 / [deg] Position.                          
+HIERARCH ESO INS ANG4 SWSIM = T / If T, function is software simulated.         
+HIERARCH ESO INS ANG5 ENC = 2202 / [Enc] Absolute position.                     
+HIERARCH ESO INS ANG5 LOOKUP = -0.487 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG5 LOOKUPA = -0.134 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG5 LOOKUPD = -0.216 / [deg] Lookup corr. Durham for arm.     
+HIERARCH ESO INS ANG5 LOOKUPP = -0.137 / [deg] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS ANG5 POS = 1.1944 / [deg] Position.                            
+HIERARCH ESO INS ANG5 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS ANG6 ENC = 8005 / [Enc] Absolute position.                     
+HIERARCH ESO INS ANG6 LOOKUP = 0.246 / [deg] Lookup correction for arm.         
+HIERARCH ESO INS ANG6 LOOKUPA = 0.153 / [deg] Lookup corr. ATC for arm.         
+HIERARCH ESO INS ANG6 LOOKUPD = 0.025 / [deg] Lookup corr. Durham for arm.      
+HIERARCH ESO INS ANG6 LOOKUPP = 0.068 / [deg] Lookup corr. Paranal for arm.     
+HIERARCH ESO INS ANG6 POS = 4.3419 / [deg] Position.                            
+HIERARCH ESO INS ANG6 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS ANG7 ENC = 55 / [Enc] Absolute position.                       
+HIERARCH ESO INS ANG7 LOOKUP = 0.112 / [deg] Lookup correction for arm.         
+HIERARCH ESO INS ANG7 LOOKUPA = -0.103 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG7 LOOKUPD = 0.215 / [deg] Lookup corr. Durham for arm.      
+HIERARCH ESO INS ANG7 LOOKUPP = 0.000 / [deg] Lookup corr. Paranal for arm.     
+HIERARCH ESO INS ANG7 POS = 0.0298 / [deg] Position.                            
+HIERARCH ESO INS ANG7 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS ANG8 ENC = 6881 / [Enc] Absolute position.                     
+HIERARCH ESO INS ANG8 LOOKUP = 0.167 / [deg] Lookup correction for arm.         
+HIERARCH ESO INS ANG8 LOOKUPA = -0.112 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG8 LOOKUPD = 0.264 / [deg] Lookup corr. Durham for arm.      
+HIERARCH ESO INS ANG8 LOOKUPP = 0.015 / [deg] Lookup corr. Paranal for arm.     
+HIERARCH ESO INS ANG8 POS = 3.7323 / [deg] Position.                            
+HIERARCH ESO INS ANG8 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS ANG9 ENC = 2481 / [Enc] Absolute position.                     
+HIERARCH ESO INS ANG9 LOOKUP = -0.381 / [deg] Lookup correction for arm.        
+HIERARCH ESO INS ANG9 LOOKUPA = -0.133 / [deg] Lookup corr. ATC for arm.        
+HIERARCH ESO INS ANG9 LOOKUPD = -0.213 / [deg] Lookup corr. Durham for arm.     
+HIERARCH ESO INS ANG9 LOOKUPP = -0.035 / [deg] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS ANG9 POS = 1.3457 / [deg] Position.                            
+HIERARCH ESO INS ANG9 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS ARM1 ID NO = 313 / ID of manufactured arm.                     
+HIERARCH ESO INS ARM1 LOCK = F / failure status of arm i                        
+HIERARCH ESO INS ARM10 ID NO = 208 / ID of manufactured arm.                    
+HIERARCH ESO INS ARM10 LOCK = F / failure status of arm i                       
+HIERARCH ESO INS ARM11 LOCK = T / failure status of arm i                       
+HIERARCH ESO INS ARM12 ID NO = 206 / ID of manufactured arm.                    
+HIERARCH ESO INS ARM12 LOCK = F / failure status of arm i                       
+HIERARCH ESO INS ARM13 ID NO = 312 / ID of manufactured arm.                    
+HIERARCH ESO INS ARM13 LOCK = F / failure status of arm i                       
+HIERARCH ESO INS ARM14 ID NO = 207 / ID of manufactured arm.                    
+HIERARCH ESO INS ARM14 LOCK = F / failure status of arm i                       
+HIERARCH ESO INS ARM15 LOCK = T / failure status of arm i                       
+HIERARCH ESO INS ARM16 ID NO = 212 / ID of manufactured arm.                    
+HIERARCH ESO INS ARM16 LOCK = F / failure status of arm i                       
+HIERARCH ESO INS ARM17 ID NO = 309 / ID of manufactured arm.                    
+HIERARCH ESO INS ARM17 LOCK = F / failure status of arm i                       
+HIERARCH ESO INS ARM18 ID NO = 209 / ID of manufactured arm.                    
+HIERARCH ESO INS ARM18 LOCK = F / failure status of arm i                       
+HIERARCH ESO INS ARM19 ID NO = 304 / ID of manufactured arm.                    
+HIERARCH ESO INS ARM19 LOCK = F / failure status of arm i                       
+HIERARCH ESO INS ARM2 ID NO = 203 / ID of manufactured arm.                     
+HIERARCH ESO INS ARM2 LOCK = F / failure status of arm i                        
+HIERARCH ESO INS ARM20 ID NO = 210 / ID of manufactured arm.                    
+HIERARCH ESO INS ARM20 LOCK = F / failure status of arm i                       
+HIERARCH ESO INS ARM21 ID NO = 311 / ID of manufactured arm.                    
+HIERARCH ESO INS ARM21 LOCK = F / failure status of arm i                       
+HIERARCH ESO INS ARM22 ID NO = 211 / ID of manufactured arm.                    
+HIERARCH ESO INS ARM22 LOCK = F / failure status of arm i                       
+HIERARCH ESO INS ARM23 ID NO = 314 / ID of manufactured arm.                    
+HIERARCH ESO INS ARM23 LOCK = F / failure status of arm i                       
+HIERARCH ESO INS ARM24 ID NO = 214 / ID of manufactured arm.                    
+HIERARCH ESO INS ARM24 LOCK = F / failure status of arm i                       
+HIERARCH ESO INS ARM3 ID NO = 302 / ID of manufactured arm.                     
+HIERARCH ESO INS ARM3 LOCK = F / failure status of arm i                        
+HIERARCH ESO INS ARM4 LOCK = T / failure status of arm i                        
+HIERARCH ESO INS ARM5 ID NO = 303 / ID of manufactured arm.                     
+HIERARCH ESO INS ARM5 LOCK = F / failure status of arm i                        
+HIERARCH ESO INS ARM6 ID NO = 213 / ID of manufactured arm.                     
+HIERARCH ESO INS ARM6 LOCK = F / failure status of arm i                        
+HIERARCH ESO INS ARM7 ID NO = 310 / ID of manufactured arm.                     
+HIERARCH ESO INS ARM7 LOCK = F / failure status of arm i                        
+HIERARCH ESO INS ARM8 ID NO = 204 / ID of manufactured arm.                     
+HIERARCH ESO INS ARM8 LOCK = F / failure status of arm i                        
+HIERARCH ESO INS ARM9 ID NO = 305 / ID of manufactured arm.                     
+HIERARCH ESO INS ARM9 LOCK = F / failure status of arm i                        
+HIERARCH ESO INS DATE = '2000-06-16' / Instrument release date (yyyy-mm-dd).    
+HIERARCH ESO INS DID1 = 'KMOS_ICS-253714' / Data dictionary for INS.            
+HIERARCH ESO INS DID2 = 'PRIMARY-FITS-1.2' / Data dictionary for INS.           
+HIERARCH ESO INS FILT1 ID = 'YJ      ' / Filter unique id.                      
+HIERARCH ESO INS FILT1 LOCK = F / If T, device is locked.                       
+HIERARCH ESO INS FILT1 NAME = 'YJ      ' / Filter name.                         
+HIERARCH ESO INS FILT1 NO =  3 / Filter wheel position index.                   
+HIERARCH ESO INS FILT1 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS FILT1 WLEN = 1170.0 / [nm] Filter central wavelength.          
+HIERARCH ESO INS FILT2 ID = 'YJ      ' / Filter unique id.                      
+HIERARCH ESO INS FILT2 LOCK = F / If T, device is locked.                       
+HIERARCH ESO INS FILT2 NAME = 'YJ      ' / Filter name.                         
+HIERARCH ESO INS FILT2 NO =  3 / Filter wheel position index.                   
+HIERARCH ESO INS FILT2 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS FILT2 WLEN = 1170.0 / [nm] Filter central wavelength.          
+HIERARCH ESO INS FILT3 ID = 'YJ      ' / Filter unique id.                      
+HIERARCH ESO INS FILT3 LOCK = F / If T, device is locked.                       
+HIERARCH ESO INS FILT3 NAME = 'YJ      ' / Filter name.                         
+HIERARCH ESO INS FILT3 NO =  3 / Filter wheel position index.                   
+HIERARCH ESO INS FILT3 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS FILT3 WLEN = 1170.0 / [nm] Filter central wavelength.          
+HIERARCH ESO INS FLOW1 ID = 'CFL1    ' / Flow sensor ID                         
+HIERARCH ESO INS FLOW1 NAME = 'CCC 1 coolant flow' / Flow sensor name           
+HIERARCH ESO INS FLOW1 VAL = 6.120e+00 / [l/min] CC1 coolant flow               
+HIERARCH ESO INS FLOW2 ID = 'CFL2    ' / Flow sensor ID                         
+HIERARCH ESO INS FLOW2 NAME = 'CCC 2 coolant flow' / Flow sensor name           
+HIERARCH ESO INS FLOW2 VAL = 5.820e+00 / [l/min] CC2 coolant flow               
+HIERARCH ESO INS FLOW3 ID = 'CFL3    ' / Flow sensor ID                         
+HIERARCH ESO INS FLOW3 NAME = 'CCC 3 coolant flow' / Flow sensor name           
+HIERARCH ESO INS FLOW3 VAL = 5.980e+00 / [l/min] CC3 coolant flow               
+HIERARCH ESO INS FOCAL SCALE = 1.70560 / Instrument plate scale [arcsec/mm]     
+HIERARCH ESO INS FOCU1 ENC = 800 / [Enc] Absolute position.                     
+HIERARCH ESO INS FOCU1 LOCK = T / If T, device is locked.                       
+HIERARCH ESO INS FOCU1 POS = 1.600 / [mm] Position.                             
+HIERARCH ESO INS FOCU1 SWSIM = T / If T, function is software simulated.        
+HIERARCH ESO INS FOCU2 ENC = 850 / [Enc] Absolute position.                     
+HIERARCH ESO INS FOCU2 LOCK = T / If T, device is locked.                       
+HIERARCH ESO INS FOCU2 POS = 1.700 / [mm] Position.                             
+HIERARCH ESO INS FOCU2 SWSIM = T / If T, function is software simulated.        
+HIERARCH ESO INS FOCU3 ENC = 500 / [Enc] Absolute position.                     
+HIERARCH ESO INS FOCU3 LOCK = T / If T, device is locked.                       
+HIERARCH ESO INS FOCU3 POS = 1.000 / [mm] Position.                             
+HIERARCH ESO INS FOCU3 SWSIM = T / If T, function is software simulated.        
+HIERARCH ESO INS GRAT1 ENC = 92550 / [Enc] Grating absolute position.           
+HIERARCH ESO INS GRAT1 ID = 'YJ      ' / Grating unique ID.                     
+HIERARCH ESO INS GRAT1 LOCK = F / If T, device is locked.                       
+HIERARCH ESO INS GRAT1 NAME = 'YJ      ' / Grating common name.                 
+HIERARCH ESO INS GRAT1 NO =  2 / Grating wheel position index.                  
+HIERARCH ESO INS GRAT1 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS GRAT1 TYPE = 'GRATING ' / Element.                             
+HIERARCH ESO INS GRAT1 WLEN = 1170.0 / [nm] Grating central wavelength.         
+HIERARCH ESO INS GRAT2 ENC = 92400 / [Enc] Grating absolute position.           
+HIERARCH ESO INS GRAT2 ID = 'YJ      ' / Grating unique ID.                     
+HIERARCH ESO INS GRAT2 LOCK = F / If T, device is locked.                       
+HIERARCH ESO INS GRAT2 NAME = 'YJ      ' / Grating common name.                 
+HIERARCH ESO INS GRAT2 NO =  2 / Grating wheel position index.                  
+HIERARCH ESO INS GRAT2 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS GRAT2 TYPE = 'GRATING ' / Element.                             
+HIERARCH ESO INS GRAT2 WLEN = 1170.0 / [nm] Grating central wavelength.         
+HIERARCH ESO INS GRAT3 ENC = 92210 / [Enc] Grating absolute position.           
+HIERARCH ESO INS GRAT3 ID = 'YJ      ' / Grating unique ID.                     
+HIERARCH ESO INS GRAT3 LOCK = F / If T, device is locked.                       
+HIERARCH ESO INS GRAT3 NAME = 'YJ      ' / Grating common name.                 
+HIERARCH ESO INS GRAT3 NO =  2 / Grating wheel position index.                  
+HIERARCH ESO INS GRAT3 OFFSRSW = -150 / [Enc] OFFSET between zero positions.    
+HIERARCH ESO INS GRAT3 REFSW = 'SPARE   ' / Reference switch being used.        
+HIERARCH ESO INS GRAT3 TYPE = 'GRATING ' / Element.                             
+HIERARCH ESO INS GRAT3 WLEN = 1170.0 / [nm] Grating central wavelength.         
+HIERARCH ESO INS ID = 'KMOS/176642' / Instrument ID.                            
+HIERARCH ESO INS LIN1 ENC = 86218 / [Enc] Absolute position.                    
+HIERARCH ESO INS LIN1 LOOKUP = 0.357 / [mm] Lookup correction for arm.          
+HIERARCH ESO INS LIN1 LOOKUPA = 0.335 / [mm] Lookup corr. ATC for arm.          
+HIERARCH ESO INS LIN1 LOOKUPD = -0.106 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN1 LOOKUPP = 0.129 / [mm] Lookup corr. Paranal for arm.      
+HIERARCH ESO INS LIN1 POS = 172.1946 / [mm] Position.                           
+HIERARCH ESO INS LIN1 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS LIN10 ENC = 123774 / [Enc] Absolute position.                  
+HIERARCH ESO INS LIN10 LOOKUP = 0.415 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN10 LOOKUPA = 0.902 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN10 LOOKUPD = 0.459 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN10 LOOKUPP = -0.946 / [mm] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS LIN10 POS = 247.2014 / [mm] Position.                          
+HIERARCH ESO INS LIN10 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS LIN11 ENC = 67845 / [Enc] Absolute position.                   
+HIERARCH ESO INS LIN11 POS = 135.5000 / [mm] Position.                          
+HIERARCH ESO INS LIN11 SWSIM = T / If T, function is software simulated.        
+HIERARCH ESO INS LIN12 ENC = 129072 / [Enc] Absolute position.                  
+HIERARCH ESO INS LIN12 LOOKUP = 0.479 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN12 LOOKUPA = 0.124 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN12 LOOKUPD = 0.533 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN12 LOOKUPP = -0.177 / [mm] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS LIN12 POS = 257.7826 / [mm] Position.                          
+HIERARCH ESO INS LIN12 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS LIN13 ENC = 124133 / [Enc] Absolute position.                  
+HIERARCH ESO INS LIN13 LOOKUP = 0.091 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN13 LOOKUPA = 0.000 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN13 LOOKUPD = -0.123 / [mm] Lookup corr. Durham for arm.     
+HIERARCH ESO INS LIN13 LOOKUPP = 0.214 / [mm] Lookup corr. Paranal for arm.     
+HIERARCH ESO INS LIN13 POS = 247.9184 / [mm] Position.                          
+HIERARCH ESO INS LIN13 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS LIN14 ENC = 134839 / [Enc] Absolute position.                  
+HIERARCH ESO INS LIN14 LOOKUP = -0.311 / [mm] Lookup correction for arm.        
+HIERARCH ESO INS LIN14 LOOKUPA = 0.552 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN14 LOOKUPD = -0.672 / [mm] Lookup corr. Durham for arm.     
+HIERARCH ESO INS LIN14 LOOKUPP = -0.191 / [mm] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS LIN14 POS = 269.3004 / [mm] Position.                          
+HIERARCH ESO INS LIN14 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS LIN15 ENC = 68095 / [Enc] Absolute position.                   
+HIERARCH ESO INS LIN15 POS = 135.9993 / [mm] Position.                          
+HIERARCH ESO INS LIN15 SWSIM = T / If T, function is software simulated.        
+HIERARCH ESO INS LIN16 ENC = 130102 / [Enc] Absolute position.                  
+HIERARCH ESO INS LIN16 LOOKUP = 0.757 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN16 LOOKUPA = 0.706 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN16 LOOKUPD = 0.081 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN16 LOOKUPP = -0.031 / [mm] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS LIN16 POS = 259.8397 / [mm] Position.                          
+HIERARCH ESO INS LIN16 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS LIN17 ENC = 134733 / [Enc] Absolute position.                  
+HIERARCH ESO INS LIN17 LOOKUP = 0.652 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN17 LOOKUPA = 0.835 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN17 LOOKUPD = -0.093 / [mm] Lookup corr. Durham for arm.     
+HIERARCH ESO INS LIN17 LOOKUPP = -0.090 / [mm] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS LIN17 POS = 269.0887 / [mm] Position.                          
+HIERARCH ESO INS LIN17 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS LIN18 ENC = 116996 / [Enc] Absolute position.                  
+HIERARCH ESO INS LIN18 LOOKUP = 0.178 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN18 LOOKUPA = 0.994 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN18 LOOKUPD = -0.550 / [mm] Lookup corr. Durham for arm.     
+HIERARCH ESO INS LIN18 LOOKUPP = -0.265 / [mm] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS LIN18 POS = 233.6644 / [mm] Position.                          
+HIERARCH ESO INS LIN18 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS LIN19 ENC = 98249 / [Enc] Absolute position.                   
+HIERARCH ESO INS LIN19 LOOKUP = 1.299 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN19 LOOKUPA = 0.947 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN19 LOOKUPD = 0.420 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN19 LOOKUPP = -0.068 / [mm] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS LIN19 POS = 196.2229 / [mm] Position.                          
+HIERARCH ESO INS LIN19 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS LIN2 ENC = 99052 / [Enc] Absolute position.                    
+HIERARCH ESO INS LIN2 LOOKUP = 0.709 / [mm] Lookup correction for arm.          
+HIERARCH ESO INS LIN2 LOOKUPA = 0.000 / [mm] Lookup corr. ATC for arm.          
+HIERARCH ESO INS LIN2 LOOKUPD = -0.012 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN2 LOOKUPP = 0.721 / [mm] Lookup corr. Paranal for arm.      
+HIERARCH ESO INS LIN2 POS = 197.8266 / [mm] Position.                           
+HIERARCH ESO INS LIN2 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS LIN20 ENC = 134672 / [Enc] Absolute position.                  
+HIERARCH ESO INS LIN20 LOOKUP = 0.899 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN20 LOOKUPA = 1.139 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN20 LOOKUPD = 0.014 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN20 LOOKUPP = -0.254 / [mm] Lookup corr. Paranal for arm.    
+HIERARCH ESO INS LIN20 POS = 268.9669 / [mm] Position.                          
+HIERARCH ESO INS LIN20 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS LIN21 ENC = 98590 / [Enc] Absolute position.                   
+HIERARCH ESO INS LIN21 LOOKUP = 0.234 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN21 LOOKUPA = 0.393 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN21 LOOKUPD = -0.429 / [mm] Lookup corr. Durham for arm.     
+HIERARCH ESO INS LIN21 LOOKUPP = 0.269 / [mm] Lookup corr. Paranal for arm.     
+HIERARCH ESO INS LIN21 POS = 196.9039 / [mm] Position.                          
+HIERARCH ESO INS LIN21 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS LIN22 ENC = 114244 / [Enc] Absolute position.                  
+HIERARCH ESO INS LIN22 LOOKUP = 1.081 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN22 LOOKUPA = 0.332 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN22 LOOKUPD = 0.411 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN22 LOOKUPP = 0.338 / [mm] Lookup corr. Paranal for arm.     
+HIERARCH ESO INS LIN22 POS = 228.1681 / [mm] Position.                          
+HIERARCH ESO INS LIN22 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS LIN23 ENC = 94646 / [Enc] Absolute position.                   
+HIERARCH ESO INS LIN23 LOOKUP = 0.624 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN23 LOOKUPA = 0.557 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN23 LOOKUPD = -0.074 / [mm] Lookup corr. Durham for arm.     
+HIERARCH ESO INS LIN23 LOOKUPP = 0.141 / [mm] Lookup corr. Paranal for arm.     
+HIERARCH ESO INS LIN23 POS = 189.0270 / [mm] Position.                          
+HIERARCH ESO INS LIN23 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS LIN24 ENC = 107753 / [Enc] Absolute position.                  
+HIERARCH ESO INS LIN24 LOOKUP = 0.852 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN24 LOOKUPA = 0.478 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN24 LOOKUPD = 0.165 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN24 LOOKUPP = 0.210 / [mm] Lookup corr. Paranal for arm.     
+HIERARCH ESO INS LIN24 POS = 215.2043 / [mm] Position.                          
+HIERARCH ESO INS LIN24 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS LIN3 ENC = 105565 / [Enc] Absolute position.                   
+HIERARCH ESO INS LIN3 LOOKUP = 0.494 / [mm] Lookup correction for arm.          
+HIERARCH ESO INS LIN3 LOOKUPA = -0.171 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN3 LOOKUPD = 0.215 / [mm] Lookup corr. Durham for arm.       
+HIERARCH ESO INS LIN3 LOOKUPP = 0.450 / [mm] Lookup corr. Paranal for arm.      
+HIERARCH ESO INS LIN3 POS = 210.8344 / [mm] Position.                           
+HIERARCH ESO INS LIN3 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS LIN4 ENC = 68446 / [Enc] Absolute position.                    
+HIERARCH ESO INS LIN4 POS = 136.7003 / [mm] Position.                           
+HIERARCH ESO INS LIN4 SWSIM = T / If T, function is software simulated.         
+HIERARCH ESO INS LIN5 ENC = 92139 / [Enc] Absolute position.                    
+HIERARCH ESO INS LIN5 LOOKUP = -0.061 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN5 LOOKUPA = 0.093 / [mm] Lookup corr. ATC for arm.          
+HIERARCH ESO INS LIN5 LOOKUPD = -0.348 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN5 LOOKUPP = 0.193 / [mm] Lookup corr. Paranal for arm.      
+HIERARCH ESO INS LIN5 POS = 184.0200 / [mm] Position.                           
+HIERARCH ESO INS LIN5 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS LIN6 ENC = 110768 / [Enc] Absolute position.                   
+HIERARCH ESO INS LIN6 LOOKUP = 0.285 / [mm] Lookup correction for arm.          
+HIERARCH ESO INS LIN6 LOOKUPA = 0.531 / [mm] Lookup corr. ATC for arm.          
+HIERARCH ESO INS LIN6 LOOKUPD = -0.205 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN6 LOOKUPP = -0.040 / [mm] Lookup corr. Paranal for arm.     
+HIERARCH ESO INS LIN6 POS = 221.2258 / [mm] Position.                           
+HIERARCH ESO INS LIN6 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS LIN7 ENC = 127854 / [Enc] Absolute position.                   
+HIERARCH ESO INS LIN7 LOOKUP = -0.966 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN7 LOOKUPA = -0.862 / [mm] Lookup corr. ATC for arm.         
+HIERARCH ESO INS LIN7 LOOKUPD = -0.021 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN7 LOOKUPP = -0.083 / [mm] Lookup corr. Paranal for arm.     
+HIERARCH ESO INS LIN7 POS = 255.3500 / [mm] Position.                           
+HIERARCH ESO INS LIN7 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS LIN8 ENC = 129831 / [Enc] Absolute position.                   
+HIERARCH ESO INS LIN8 LOOKUP = 0.219 / [mm] Lookup correction for arm.          
+HIERARCH ESO INS LIN8 LOOKUPA = 0.227 / [mm] Lookup corr. ATC for arm.          
+HIERARCH ESO INS LIN8 LOOKUPD = -0.021 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN8 LOOKUPP = 0.013 / [mm] Lookup corr. Paranal for arm.      
+HIERARCH ESO INS LIN8 POS = 259.2985 / [mm] Position.                           
+HIERARCH ESO INS LIN8 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS LIN9 ENC = 119471 / [Enc] Absolute position.                   
+HIERARCH ESO INS LIN9 LOOKUP = -0.559 / [mm] Lookup correction for arm.         
+HIERARCH ESO INS LIN9 LOOKUPA = 0.116 / [mm] Lookup corr. ATC for arm.          
+HIERARCH ESO INS LIN9 LOOKUPD = -0.557 / [mm] Lookup corr. Durham for arm.      
+HIERARCH ESO INS LIN9 LOOKUPP = -0.118 / [mm] Lookup corr. Paranal for arm.     
+HIERARCH ESO INS LIN9 POS = 238.6075 / [mm] Position.                           
+HIERARCH ESO INS LIN9 REFSW = 'PRIMARY ' / Reference switch being used.         
+HIERARCH ESO INS MODE = 'KMOSMODE' / Instrument mode used.                      
+HIERARCH ESO INS OPTI2 ID = 'Block   ' / OPTIi unique ID.                       
+HIERARCH ESO INS OPTI2 LOCK = F / If T, device is locked.                       
+HIERARCH ESO INS OPTI2 NAME = 'Block   ' / OPTIi name.                          
+HIERARCH ESO INS OPTI2 NO =  1 / OPTIi slot number.                             
+HIERARCH ESO INS OPTI2 REFSW = 'PRIMARY ' / Reference switch being used.        
+HIERARCH ESO INS OPTI2 TYPE = 'OPTI2   ' / OPTIi element.                       
+HIERARCH ESO INS PRES1 ID = 'PCRY1   ' / Pressure sensor ID                     
+HIERARCH ESO INS PRES1 NAME = 'Cryostat pressure' / Pressure sensor name        
+HIERARCH ESO INS PRES1 VAL = 4.090e+00 / [V] Cryostat pressure                  
+HIERARCH ESO INS PRES2 ID = 'PCRY2   ' / Pressure sensor ID                     
+HIERARCH ESO INS PRES2 NAME = 'Cryostat pressure' / Pressure sensor name        
+HIERARCH ESO INS PRES2 VAL = 3.060e-02 / [microbar] Cryostat pressure           
+HIERARCH ESO INS SENS101 RAW = -2605 / [LSB] Raw LVDT value for  arm 1          
+HIERARCH ESO INS SENS101 VAL = -2 / [deg] value LVDT on drive ang 1             
+HIERARCH ESO INS SENS102 RAW = -5766 / [LSB] Raw LVDT value for  ang 2          
+HIERARCH ESO INS SENS102 VAL = -5 / [deg] value LVDT on drive ang 2             
+HIERARCH ESO INS SENS103 RAW = 5018 / [LSB] Raw LVDT value for  ang 3           
+HIERARCH ESO INS SENS103 VAL = 5 / [deg] value LVDT on drive ang 3              
+HIERARCH ESO INS SENS104 RAW = -10996 / [LSB] Raw LVDT value for  ang 4         
+HIERARCH ESO INS SENS104 VAL = -11 / [deg] value LVDT on drive ang 4            
+HIERARCH ESO INS SENS105 RAW = 840 / [LSB] Raw LVDT value for  ang 5            
+HIERARCH ESO INS SENS105 VAL = 2 / [deg] value LVDT on drive ang 5              
+HIERARCH ESO INS SENS106 RAW = 4520 / [LSB] Raw LVDT value for  ang 6           
+HIERARCH ESO INS SENS106 VAL = 4 / [deg] value LVDT on drive ang 6              
+HIERARCH ESO INS SENS107 RAW = -93 / [LSB] Raw LVDT value for  ang 7            
+HIERARCH ESO INS SENS107 VAL = -0 / [deg] value LVDT on drive ang 7             
+HIERARCH ESO INS SENS108 RAW = 3957 / [LSB] Raw LVDT value for  ang 8           
+HIERARCH ESO INS SENS108 VAL = 3 / [deg] value LVDT on drive ang 8              
+HIERARCH ESO INS SENS109 RAW = 1925 / [LSB] Raw LVDT value for  ang 9           
+HIERARCH ESO INS SENS109 VAL = 2 / [deg] value LVDT on drive ang 9              
+HIERARCH ESO INS SENS110 RAW = 2282 / [LSB] Raw LVDT value for  ang10           
+HIERARCH ESO INS SENS110 VAL = 2 / [deg] value LVDT on drive ang10              
+HIERARCH ESO INS SENS111 RAW = -11399 / [LSB] Raw LVDT value for  ang11         
+HIERARCH ESO INS SENS111 VAL = -12 / [deg] value LVDT on drive ang11            
+HIERARCH ESO INS SENS112 RAW = 3426 / [LSB] Raw LVDT value for  ang12           
+HIERARCH ESO INS SENS112 VAL = 3 / [deg] value LVDT on drive ang12              
+HIERARCH ESO INS SENS113 RAW = 1075 / [LSB] Raw LVDT value for  ang13           
+HIERARCH ESO INS SENS113 VAL = 2 / [deg] value LVDT on drive ang13              
+HIERARCH ESO INS SENS114 RAW = 2148 / [LSB] Raw LVDT value for  ang14           
+HIERARCH ESO INS SENS114 VAL = 1 / [deg] value LVDT on drive ang14              
+HIERARCH ESO INS SENS115 RAW = 0 / [LSB] Raw LVDT value for  ang15              
+HIERARCH ESO INS SENS115 VAL = 0 / [deg] value LVDT on drive ang15              
+HIERARCH ESO INS SENS116 RAW = 322 / [LSB] Raw LVDT value for  ang16            
+HIERARCH ESO INS SENS116 VAL = 0 / [deg] value LVDT on drive ang16              
+HIERARCH ESO INS SENS117 RAW = -2636 / [LSB] Raw LVDT value for  ang17          
+HIERARCH ESO INS SENS117 VAL = -3 / [deg] value LVDT on drive ang17             
+HIERARCH ESO INS SENS118 RAW = -2034 / [LSB] Raw LVDT value for  ang18          
+HIERARCH ESO INS SENS118 VAL = -2 / [deg] value LVDT on drive ang18             
+HIERARCH ESO INS SENS119 RAW = -10299 / [LSB] Raw LVDT value for  ang19         
+HIERARCH ESO INS SENS119 VAL = -10 / [deg] value LVDT on drive ang19            
+HIERARCH ESO INS SENS120 RAW = -1093 / [LSB] Raw LVDT value for  ang20          
+HIERARCH ESO INS SENS120 VAL = -1 / [deg] value LVDT on drive ang20             
+HIERARCH ESO INS SENS121 RAW = -1123 / [LSB] Raw LVDT value for  ang21          
+HIERARCH ESO INS SENS121 VAL = -1 / [deg] value LVDT on drive ang21             
+HIERARCH ESO INS SENS122 RAW = 148 / [LSB] Raw LVDT value for  ang22            
+HIERARCH ESO INS SENS122 VAL = 0 / [deg] value LVDT on drive ang22              
+HIERARCH ESO INS SENS123 RAW = -7578 / [LSB] Raw LVDT value for  ang23          
+HIERARCH ESO INS SENS123 VAL = -7 / [deg] value LVDT on drive ang23             
+HIERARCH ESO INS SENS124 RAW = 153 / [LSB] Raw LVDT value for  ang24            
+HIERARCH ESO INS SENS124 VAL = 1 / [deg] value LVDT on drive ang24              
+HIERARCH ESO INS SENS201 RAW = 11544 / [LSB] Raw LVDT value for lin 1           
+HIERARCH ESO INS SENS201 VAL = 172 / [mm] value LVDT on drive lin 1             
+HIERARCH ESO INS SENS202 RAW = 3597 / [LSB] Raw LVDT value for lin 2            
+HIERARCH ESO INS SENS202 VAL = 197 / [mm] value LVDT on drive lin 2             
+HIERARCH ESO INS SENS203 RAW = 3883 / [LSB] Raw LVDT value for lin 3            
+HIERARCH ESO INS SENS203 VAL = 210 / [mm] value LVDT on drive lin 3             
+HIERARCH ESO INS SENS204 RAW = 15293 / [LSB] Raw LVDT value for lin 4           
+HIERARCH ESO INS SENS204 VAL = 137 / [mm] value LVDT on drive lin 4             
+HIERARCH ESO INS SENS205 RAW = 9009 / [LSB] Raw LVDT value for lin 5            
+HIERARCH ESO INS SENS205 VAL = 184 / [mm] value LVDT on drive lin 5             
+HIERARCH ESO INS SENS206 RAW = -1720 / [LSB] Raw LVDT value for lin 6           
+HIERARCH ESO INS SENS206 VAL = 221 / [mm] value LVDT on drive lin 6             
+HIERARCH ESO INS SENS207 RAW = -5057 / [LSB] Raw LVDT value for lin 7           
+HIERARCH ESO INS SENS207 VAL = 256 / [mm] value LVDT on drive lin 7             
+HIERARCH ESO INS SENS208 RAW = -10121 / [LSB] Raw LVDT value for lin 8          
+HIERARCH ESO INS SENS208 VAL = 259 / [mm] value LVDT on drive lin 8             
+HIERARCH ESO INS SENS209 RAW = -1893 / [LSB] Raw LVDT value for lin 9           
+HIERARCH ESO INS SENS209 VAL = 239 / [mm] value LVDT on drive lin 9             
+HIERARCH ESO INS SENS210 RAW = -6621 / [LSB] Raw LVDT value for lin10           
+HIERARCH ESO INS SENS210 VAL = 247 / [mm] value LVDT on drive lin10             
+HIERARCH ESO INS SENS211 RAW = 16342 / [LSB] Raw LVDT value for lin11           
+HIERARCH ESO INS SENS211 VAL = 136 / [mm] value LVDT on drive lin11             
+HIERARCH ESO INS SENS212 RAW = -8899 / [LSB] Raw LVDT value for lin12           
+HIERARCH ESO INS SENS212 VAL = 257 / [mm] value LVDT on drive lin12             
+HIERARCH ESO INS SENS213 RAW = -3857 / [LSB] Raw LVDT value for lin13           
+HIERARCH ESO INS SENS213 VAL = 249 / [mm] value LVDT on drive lin13             
+HIERARCH ESO INS SENS214 RAW = -11079 / [LSB] Raw LVDT value for lin14          
+HIERARCH ESO INS SENS214 VAL = 269 / [mm] value LVDT on drive lin14             
+HIERARCH ESO INS SENS215 RAW = 17744 / [LSB] Raw LVDT value for lin15           
+HIERARCH ESO INS SENS215 VAL = 136 / [mm] value LVDT on drive lin15             
+HIERARCH ESO INS SENS216 RAW = -9782 / [LSB] Raw LVDT value for lin16           
+HIERARCH ESO INS SENS216 VAL = 259 / [mm] value LVDT on drive lin16             
+HIERARCH ESO INS SENS217 RAW = -8767 / [LSB] Raw LVDT value for lin17           
+HIERARCH ESO INS SENS217 VAL = 269 / [mm] value LVDT on drive lin17             
+HIERARCH ESO INS SENS218 RAW = -4455 / [LSB] Raw LVDT value for lin18           
+HIERARCH ESO INS SENS218 VAL = 234 / [mm] value LVDT on drive lin18             
+HIERARCH ESO INS SENS219 RAW = 6931 / [LSB] Raw LVDT value for lin19            
+HIERARCH ESO INS SENS219 VAL = 195 / [mm] value LVDT on drive lin19             
+HIERARCH ESO INS SENS220 RAW = -11156 / [LSB] Raw LVDT value for lin20          
+HIERARCH ESO INS SENS220 VAL = 268 / [mm] value LVDT on drive lin20             
+HIERARCH ESO INS SENS221 RAW = 5951 / [LSB] Raw LVDT value for lin21            
+HIERARCH ESO INS SENS221 VAL = 196 / [mm] value LVDT on drive lin21             
+HIERARCH ESO INS SENS222 RAW = -3383 / [LSB] Raw LVDT value for lin22           
+HIERARCH ESO INS SENS222 VAL = 228 / [mm] value LVDT on drive lin22             
+HIERARCH ESO INS SENS223 RAW = 7958 / [LSB] Raw LVDT value for lin23            
+HIERARCH ESO INS SENS223 VAL = 188 / [mm] value LVDT on drive lin23             
+HIERARCH ESO INS SENS224 RAW = -361 / [LSB] Raw LVDT value for lin24            
+HIERARCH ESO INS SENS224 VAL = 215 / [mm] value LVDT on drive lin24             
+HIERARCH ESO INS SENS71 ID = 'CABOT   ' / Sensor type                           
+HIERARCH ESO INS SENS71 NAME = 'Cabinet 1/2/3/4/5 Over-Temp' / Sensor name      
+HIERARCH ESO INS SENS71 VAL = 0.000 / Sensor numeric value                      
+HIERARCH ESO INS SENS72 ID = 'CCCF    ' / Sensor type                           
+HIERARCH ESO INS SENS72 NAME = 'CCC 1/2/3 not in operation' / Sensor name       
+HIERARCH ESO INS SENS72 VAL = 0.000 / Sensor numeric value                      
+HIERARCH ESO INS SENS73 ID = 'F400V   ' / Sensor type                           
+HIERARCH ESO INS SENS73 NAME = '3-Phase supply' / Sensor name                   
+HIERARCH ESO INS SENS73 VAL = 1.000 / Sensor numeric value                      
+HIERARCH ESO INS SENSOR10 ID = 'yoko    ' / Sensor device unique id             
+HIERARCH ESO INS SENSOR10 NAME = 'YOKOGAWA DX230 DAQ' / Sensor device common nam
+HIERARCH ESO INS SOFW REVISION = '255796  ' / SVN revision of KMOS instrument so
+HIERARCH ESO INS SWSIM = 'NORMAL  ' / Software simulation.                      
+HIERARCH ESO INS TEMP1 ID = 'TPICA   ' / Temperature sensor ID                  
+HIERARCH ESO INS TEMP1 NAME = 'OverTemp. pick-off A/cryostat' / Temperature sens
+HIERARCH ESO INS TEMP1 VAL = 130.000 / [K] Pick-off A                           
+HIERARCH ESO INS TEMP10 ID = 'TPANA   ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP10 NAME = 'Temp. panel heaters A' / Temperature sensor name
+HIERARCH ESO INS TEMP10 VAL = 129.000 / [K] Panel heaters A                     
+HIERARCH ESO INS TEMP11 ID = 'TPANB   ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP11 NAME = 'Temp. panel heaters B' / Temperature sensor name
+HIERARCH ESO INS TEMP11 VAL = 129.000 / [K] Panel heaters B                     
+HIERARCH ESO INS TEMP12 ID = 'TPANC   ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP12 NAME = 'Temp. panel heaters C' / Temperature sensor name
+HIERARCH ESO INS TEMP12 VAL = 129.000 / [K] Panel heaters C                     
+HIERARCH ESO INS TEMP13 ID = 'TLNC    ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP13 NAME = 'Temp. LN2 can' / Temperature sensor name        
+HIERARCH ESO INS TEMP13 VAL = 126.000 / [K] Temp. LN2 can                       
+HIERARCH ESO INS TEMP15 ID = 'TSORP   ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP15 NAME = 'Temp. sorption pump' / Temperature sensor name  
+HIERARCH ESO INS TEMP15 VAL = -113.000 / [K] Sorption pump                      
+HIERARCH ESO INS TEMP16 ID = 'TENTW   ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP16 NAME = 'Temp. cryostat entrance window' / Temperature se
+HIERARCH ESO INS TEMP16 VAL = 6.660 / [K] Entrance window                       
+HIERARCH ESO INS TEMP17 ID = 'TDEWP   ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP17 NAME = 'Temp. dew point' / Temperature sensor name      
+HIERARCH ESO INS TEMP17 VAL = -30.800 / [K] Temp. dew point                     
+HIERARCH ESO INS TEMP18 ID = 'TDETA   ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP18 NAME = 'Temp. detector A' / Temperature sensor name     
+HIERARCH ESO INS TEMP18 VAL = 39.900 / [K] Detector A                           
+HIERARCH ESO INS TEMP19 ID = 'TDETB   ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP19 NAME = 'Temp. detector B' / Temperature sensor name     
+HIERARCH ESO INS TEMP19 VAL = 39.900 / [K] Detector B                           
+HIERARCH ESO INS TEMP2 ID = 'TPICB   ' / Temperature sensor ID                  
+HIERARCH ESO INS TEMP2 NAME = 'OverTemp. pick-off B/cryostat' / Temperature sens
+HIERARCH ESO INS TEMP2 VAL = 129.000 / [K] Pick-off B                           
+HIERARCH ESO INS TEMP20 ID = 'TDETC   ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP20 NAME = 'Temp. detector C' / Temperature sensor name     
+HIERARCH ESO INS TEMP20 VAL = 39.800 / [K] Detector C                           
+HIERARCH ESO INS TEMP21 ID = 'TCOLA   ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP21 NAME = 'Temp. cold head 2nd stage A' / Temperature senso
+HIERARCH ESO INS TEMP21 VAL = 18.600 / [K] Temp. cold head / A                  
+HIERARCH ESO INS TEMP22 ID = 'TCOLB   ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP22 NAME = 'Temp. cold head 2nd stage B' / Temperature senso
+HIERARCH ESO INS TEMP22 VAL = 18.900 / [K] Temp. cold head / B                  
+HIERARCH ESO INS TEMP23 ID = 'TCOLC   ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP23 NAME = 'Temp. cold head 2nd stage C' / Temperature senso
+HIERARCH ESO INS TEMP23 VAL = 20.400 / [K] Temp. cold head / C                  
+HIERARCH ESO INS TEMP3 ID = 'TPICC   ' / Temperature sensor ID                  
+HIERARCH ESO INS TEMP3 NAME = 'OverTemp. pick-off C/cryostat' / Temperature sens
+HIERARCH ESO INS TEMP3 VAL = 129.000 / [K] Pick-off C                           
+HIERARCH ESO INS TEMP34 ID = 'DTWDP   ' / Temperature sensor ID                 
+HIERARCH ESO INS TEMP34 NAME = 'D_temp. window - dew point' / Temperature sensor
+HIERARCH ESO INS TEMP34 VAL = 37.400 / [K] dT window - dew point                
+HIERARCH ESO INS TEMP4 ID = 'TFILA   ' / Temperature sensor ID                  
+HIERARCH ESO INS TEMP4 NAME = 'Temp. filter wheel A' / Temperature sensor name  
+HIERARCH ESO INS TEMP4 VAL = 129.000 / [K] Filter wheel A                       
+HIERARCH ESO INS TEMP5 ID = 'TFILB   ' / Temperature sensor ID                  
+HIERARCH ESO INS TEMP5 NAME = 'Temp. filter wheel B' / Temperature sensor name  
+HIERARCH ESO INS TEMP5 VAL = 129.000 / [K] Filter wheel B                       
+HIERARCH ESO INS TEMP6 ID = 'TFILC   ' / Temperature sensor ID                  
+HIERARCH ESO INS TEMP6 NAME = 'Temp. filter wheel C' / Temperature sensor name  
+HIERARCH ESO INS TEMP6 VAL = 129.000 / [K] Filter wheel C                       
+HIERARCH ESO INS TEMP7 ID = 'TSPEA   ' / Temperature sensor ID                  
+HIERARCH ESO INS TEMP7 NAME = 'Temp. spectrograph A' / Temperature sensor name  
+HIERARCH ESO INS TEMP7 VAL = 130.000 / [K] Spectrograph A                       
+HIERARCH ESO INS TEMP8 ID = 'TSPEB   ' / Temperature sensor ID                  
+HIERARCH ESO INS TEMP8 NAME = 'Temp. spectrograph C' / Temperature sensor name  
+HIERARCH ESO INS TEMP8 VAL = 129.000 / [K] Spectrograph B                       
+HIERARCH ESO INS TEMP9 ID = 'TSPEC   ' / Temperature sensor ID                  
+HIERARCH ESO INS TEMP9 NAME = 'Temp. spectrograph C' / Temperature sensor name  
+HIERARCH ESO INS TEMP9 VAL = 129.000 / [K] Spectrograph C                       
+HIERARCH ESO OBS AIRM =    1.6 / Req. max. airmass                              
+HIERARCH ESO OBS AMBI FWHM = 0.8 / Req. max. seeing                             
+HIERARCH ESO OBS AMBI TRANS = '2CLR    ' / Req. sky transparency                
+HIERARCH ESO OBS ATM = 'NATM    ' / Req. Atmospheric Turbulence Model           
+HIERARCH ESO OBS CONTAINER ID = -999 / Scheduling container ID                  
+HIERARCH ESO OBS CONTAINER TYPE = 'U       ' / Scheduling container type        
+HIERARCH ESO OBS DID = 'ESO-VLT-DIC.OBS-1.12' / OBS Dictionary                  
+HIERARCH ESO OBS EXECTIME = 2701 / Expected execution time                      
+HIERARCH ESO OBS GRP = '0       ' / linked blocks                               
+HIERARCH ESO OBS ID =  1062727 / Observation block ID                           
+HIERARCH ESO OBS MOON DIST = 30 / Req. min. angular dist. from moon [deg]       
+HIERARCH ESO OBS MOON FLI = 1.0 / Req. max. fractional lunar illum.             
+HIERARCH ESO OBS NAME = 'CL0034-YJ-OB-1' / OB name                              
+HIERARCH ESO OBS NTPL =      2 / Number of templates within OB                  
+HIERARCH ESO OBS OBSERVER = 'UNKNOWN ' / Observer Name                          
+HIERARCH ESO OBS PI-COI ID = 75205 / ESO internal PI-COI ID                     
+HIERARCH ESO OBS PI-COI NAME = 'UNKNOWN ' / PI-COI name                         
+HIERARCH ESO OBS PROG ID = '093.A-0625(A)' / ESO program identification         
+HIERARCH ESO OBS START = '2014-07-11T06:23:47' / OB start time                  
+HIERARCH ESO OBS STREHLRATIO = 0.0 / Req. strehl ratio                          
+HIERARCH ESO OBS TARG NAME = 'CL0034_karma.cat' / OB target name                
+HIERARCH ESO OBS TPLNO =     2 / Template number within OB                      
+HIERARCH ESO OBS TWILIGHT =  0 / Req. twilight                                  
+HIERARCH ESO OBS WATERVAPOUR = 20.0 / Req. water vapour                         
+HIERARCH ESO OCS ARM1 ALPHA = 3439.122 / [HHMMSS.TTT] Target alpha hosted by arm
+HIERARCH ESO OCS ARM1 COMMENT = '        ' / Comment for target hosted by arm i 
+HIERARCH ESO OCS ARM1 DELTA = -430518.600 / [DDMMSS.TTT] Target delta hosted by 
+HIERARCH ESO OCS ARM1 HIT = '        ' / Arm i is hit by listed bright object(s)
+HIERARCH ESO OCS ARM1 NAME = '4       ' / Target name hosted by arm i           
+HIERARCH ESO OCS ARM1 ORIGARM = 3 / Original arm number before rotator optimizat
+HIERARCH ESO OCS ARM1 PRIOR = 1 / Target priority hosted by arm i               
+HIERARCH ESO OCS ARM1 R = 171.838 / [mm] R-pos of arm i                         
+HIERARCH ESO OCS ARM1 THETA = -2.136 / [deg] THETA-pos of arm i                 
+HIERARCH ESO OCS ARM1 TYPE = 'O       ' / Target type hosted by arm i           
+HIERARCH ESO OCS ARM1 VIGNET = F / If T - arm i is vignetted                    
+HIERARCH ESO OCS ARM1 Y = 31.694 / [mm] y-pos of arm i                          
+HIERARCH ESO OCS ARM1 Z = 93.251 / [mm] z-pos of arm i                          
+HIERARCH ESO OCS ARM10 ALPHA = 3438.659 / [HHMMSS.TTT] Target alpha hosted by ar
+HIERARCH ESO OCS ARM10 COMMENT = '        ' / Comment for target hosted by arm i
+HIERARCH ESO OCS ARM10 DELTA = -430824.720 / [DDMMSS.TTT] Target delta hosted by
+HIERARCH ESO OCS ARM10 HIT = '        ' / Arm i is hit by listed bright object(s
+HIERARCH ESO OCS ARM10 NAME = '21      ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM10 ORIGARM = 12 / Original arm number before rotator optimiz
+HIERARCH ESO OCS ARM10 PRIOR = 2 / Target priority hosted by arm i              
+HIERARCH ESO OCS ARM10 R = 246.787 / [mm] R-pos of arm i                        
+HIERARCH ESO OCS ARM10 THETA = 2.323 / [deg] THETA-pos of arm i                 
+HIERARCH ESO OCS ARM10 TYPE = 'O       ' / Target type hosted by arm i          
+HIERARCH ESO OCS ARM10 VIGNET = F / If T - arm i is vignetted                   
+HIERARCH ESO OCS ARM10 Y = -25.462 / [mm] y-pos of arm i                        
+HIERARCH ESO OCS ARM10 Z = 0.281 / [mm] z-pos of arm i                          
+HIERARCH ESO OCS ARM11 NAME = 'ARM13_SCI' / Target name hosted by arm i         
+HIERARCH ESO OCS ARM11 NOTUSED = 'Locked  ' / Reason why arm was not used       
+HIERARCH ESO OCS ARM11 ORIGARM = 13 / Original arm number before rotator optimiz
+HIERARCH ESO OCS ARM12 ALPHA = 3439.859 / [HHMMSS.TTT] Target alpha hosted by ar
+HIERARCH ESO OCS ARM12 COMMENT = '        ' / Comment for target hosted by arm i
+HIERARCH ESO OCS ARM12 DELTA = -430822.560 / [DDMMSS.TTT] Target delta hosted by
+HIERARCH ESO OCS ARM12 HIT = '        ' / Arm i is hit by listed bright object(s
+HIERARCH ESO OCS ARM12 NAME = '20      ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM12 ORIGARM = 14 / Original arm number before rotator optimiz
+HIERARCH ESO OCS ARM12 PRIOR = 2 / Target priority hosted by arm i              
+HIERARCH ESO OCS ARM12 R = 257.304 / [mm] R-pos of arm i                        
+HIERARCH ESO OCS ARM12 THETA = 2.875 / [deg] THETA-pos of arm i                 
+HIERARCH ESO OCS ARM12 TYPE = 'O       ' / Target type hosted by arm i          
+HIERARCH ESO OCS ARM12 VIGNET = F / If T - arm i is vignetted                   
+HIERARCH ESO OCS ARM12 Y = -18.163 / [mm] y-pos of arm i                        
+HIERARCH ESO OCS ARM12 Z = -2.474 / [mm] z-pos of arm i                         
+HIERARCH ESO OCS ARM13 ALPHA = 3441.443 / [HHMMSS.TTT] Target alpha hosted by ar
+HIERARCH ESO OCS ARM13 COMMENT = '        ' / Comment for target hosted by arm i
+HIERARCH ESO OCS ARM13 DELTA = -430842.720 / [DDMMSS.TTT] Target delta hosted by
+HIERARCH ESO OCS ARM13 HIT = '        ' / Arm i is hit by listed bright object(s
+HIERARCH ESO OCS ARM13 NAME = '12      ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM13 ORIGARM = 15 / Original arm number before rotator optimiz
+HIERARCH ESO OCS ARM13 PRIOR = 1 / Target priority hosted by arm i              
+HIERARCH ESO OCS ARM13 R = 247.826 / [mm] R-pos of arm i                        
+HIERARCH ESO OCS ARM13 THETA = 1.690 / [deg] THETA-pos of arm i                 
+HIERARCH ESO OCS ARM13 TYPE = 'O       ' / Target type hosted by arm i          
+HIERARCH ESO OCS ARM13 VIGNET = F / If T - arm i is vignetted                   
+HIERARCH ESO OCS ARM13 Y = -15.279 / [mm] y-pos of arm i                        
+HIERARCH ESO OCS ARM13 Z = -17.789 / [mm] z-pos of arm i                        
+HIERARCH ESO OCS ARM14 ALPHA = 3441.182 / [HHMMSS.TTT] Target alpha hosted by ar
+HIERARCH ESO OCS ARM14 COMMENT = '        ' / Comment for target hosted by arm i
+HIERARCH ESO OCS ARM14 DELTA = -430808.520 / [DDMMSS.TTT] Target delta hosted by
+HIERARCH ESO OCS ARM14 HIT = '        ' / Arm i is hit by listed bright object(s
+HIERARCH ESO OCS ARM14 NAME = '7       ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM14 ORIGARM = 16 / Original arm number before rotator optimiz
+HIERARCH ESO OCS ARM14 PRIOR = 1 / Target priority hosted by arm i              
+HIERARCH ESO OCS ARM14 R = 269.611 / [mm] R-pos of arm i                        
+HIERARCH ESO OCS ARM14 THETA = 1.423 / [deg] THETA-pos of arm i                 
+HIERARCH ESO OCS ARM14 TYPE = 'O       ' / Target type hosted by arm i          
+HIERARCH ESO OCS ARM14 VIGNET = F / If T - arm i is vignetted                   
+HIERARCH ESO OCS ARM14 Y = -6.701 / [mm] y-pos of arm i                         
+HIERARCH ESO OCS ARM14 Z = 0.406 / [mm] z-pos of arm i                          
+HIERARCH ESO OCS ARM15 NAME = '30      ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM15 NOTUSED = 'Locked  ' / Reason why arm was not used       
+HIERARCH ESO OCS ARM15 ORIGARM = 17 / Original arm number before rotator optimiz
+HIERARCH ESO OCS ARM16 ALPHA = 3443.274 / [HHMMSS.TTT] Target alpha hosted by ar
+HIERARCH ESO OCS ARM16 COMMENT = '        ' / Comment for target hosted by arm i
+HIERARCH ESO OCS ARM16 DELTA = -430817.520 / [DDMMSS.TTT] Target delta hosted by
+HIERARCH ESO OCS ARM16 HIT = '        ' / Arm i is hit by listed bright object(s
+HIERARCH ESO OCS ARM16 NAME = '31      ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM16 ORIGARM = 18 / Original arm number before rotator optimiz
+HIERARCH ESO OCS ARM16 PRIOR = 3 / Target priority hosted by arm i              
+HIERARCH ESO OCS ARM16 R = 259.084 / [mm] R-pos of arm i                        
+HIERARCH ESO OCS ARM16 THETA = 0.454 / [deg] THETA-pos of arm i                 
+HIERARCH ESO OCS ARM16 TYPE = 'O       ' / Target type hosted by arm i          
+HIERARCH ESO OCS ARM16 VIGNET = F / If T - arm i is vignetted                   
+HIERARCH ESO OCS ARM16 Y = 2.282 / [mm] y-pos of arm i                          
+HIERARCH ESO OCS ARM16 Z = -10.879 / [mm] z-pos of arm i                        
+HIERARCH ESO OCS ARM17 ALPHA = 3443.166 / [HHMMSS.TTT] Target alpha hosted by ar
+HIERARCH ESO OCS ARM17 COMMENT = '        ' / Comment for target hosted by arm i
+HIERARCH ESO OCS ARM17 DELTA = -430744.040 / [DDMMSS.TTT] Target delta hosted by
+HIERARCH ESO OCS ARM17 HIT = '        ' / Arm i is hit by listed bright object(s
+HIERARCH ESO OCS ARM17 NAME = '16      ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM17 ORIGARM = 19 / Original arm number before rotator optimiz
+HIERARCH ESO OCS ARM17 PRIOR = 1 / Target priority hosted by arm i              
+HIERARCH ESO OCS ARM17 R = 268.437 / [mm] R-pos of arm i                        
+HIERARCH ESO OCS ARM17 THETA = -2.788 / [deg] THETA-pos of arm i                
+HIERARCH ESO OCS ARM17 TYPE = 'O       ' / Target type hosted by arm i          
+HIERARCH ESO OCS ARM17 VIGNET = F / If T - arm i is vignetted                   
+HIERARCH ESO OCS ARM17 Y = 11.505 / [mm] y-pos of arm i                         
+HIERARCH ESO OCS ARM17 Z = 6.457 / [mm] z-pos of arm i                          
+HIERARCH ESO OCS ARM18 ALPHA = 3447.976 / [HHMMSS.TTT] Target alpha hosted by ar
+HIERARCH ESO OCS ARM18 COMMENT = '        ' / Comment for target hosted by arm i
+HIERARCH ESO OCS ARM18 DELTA = -430755.920 / [DDMMSS.TTT] Target delta hosted by
+HIERARCH ESO OCS ARM18 HIT = '        ' / Arm i is hit by listed bright object(s
+HIERARCH ESO OCS ARM18 NAME = '23      ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM18 ORIGARM = 20 / Original arm number before rotator optimiz
+HIERARCH ESO OCS ARM18 PRIOR = 2 / Target priority hosted by arm i              
+HIERARCH ESO OCS ARM18 R = 233.487 / [mm] R-pos of arm i                        
+HIERARCH ESO OCS ARM18 THETA = -2.265 / [deg] THETA-pos of arm i                
+HIERARCH ESO OCS ARM18 TYPE = 'O       ' / Target type hosted by arm i          
+HIERARCH ESO OCS ARM18 VIGNET = F / If T - arm i is vignetted                   
+HIERARCH ESO OCS ARM18 Y = 34.731 / [mm] y-pos of arm i                         
+HIERARCH ESO OCS ARM18 Z = -15.016 / [mm] z-pos of arm i                        
+HIERARCH ESO OCS ARM19 ALPHA = 3453.477 / [HHMMSS.TTT] Target alpha hosted by ar
+HIERARCH ESO OCS ARM19 COMMENT = '        ' / Comment for target hosted by arm i
+HIERARCH ESO OCS ARM19 DELTA = -430650.040 / [DDMMSS.TTT] Target delta hosted by
+HIERARCH ESO OCS ARM19 HIT = '        ' / Arm i is hit by listed bright object(s
+HIERARCH ESO OCS ARM19 NAME = '24      ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM19 ORIGARM = 21 / Original arm number before rotator optimiz
+HIERARCH ESO OCS ARM19 PRIOR = 2 / Target priority hosted by arm i              
+HIERARCH ESO OCS ARM19 R = 194.924 / [mm] R-pos of arm i                        
+HIERARCH ESO OCS ARM19 THETA = -9.765 / [deg] THETA-pos of arm i                
+HIERARCH ESO OCS ARM19 TYPE = 'O       ' / Target type hosted by arm i          
+HIERARCH ESO OCS ARM19 VIGNET = F / If T - arm i is vignetted                   
+HIERARCH ESO OCS ARM19 Y = 84.621 / [mm] y-pos of arm i                         
+HIERARCH ESO OCS ARM19 Z = 0.731 / [mm] z-pos of arm i                          
+HIERARCH ESO OCS ARM2 ALPHA = 3435.176 / [HHMMSS.TTT] Target alpha hosted by arm
+HIERARCH ESO OCS ARM2 COMMENT = 'corresponds to ARM4_SKY' / Comment for target h
+HIERARCH ESO OCS ARM2 DELTA = -430618.834 / [DDMMSS.TTT] Target delta hosted by 
+HIERARCH ESO OCS ARM2 HIT = '        ' / Arm i is hit by listed bright object(s)
+HIERARCH ESO OCS ARM2 NAME = 'ARM4_SCI' / Target name hosted by arm i           
+HIERARCH ESO OCS ARM2 ORIGARM = 4 / Original arm number before rotator optimizat
+HIERARCH ESO OCS ARM2 PRIOR = 0 / Target priority hosted by arm i               
+HIERARCH ESO OCS ARM2 R = 197.118 / [mm] R-pos of arm i                         
+HIERARCH ESO OCS ARM2 THETA = -5.144 / [deg] THETA-pos of arm i                 
+HIERARCH ESO OCS ARM2 TYPE = 'S       ' / Target type hosted by arm i           
+HIERARCH ESO OCS ARM2 VIGNET = F / If T - arm i is vignetted                    
+HIERARCH ESO OCS ARM2 Y = -7.904 / [mm] y-pos of arm i                          
+HIERARCH ESO OCS ARM2 Z = 75.352 / [mm] z-pos of arm i                          
+HIERARCH ESO OCS ARM20 ALPHA = 3442.074 / [HHMMSS.TTT] Target alpha hosted by ar
+HIERARCH ESO OCS ARM20 COMMENT = '        ' / Comment for target hosted by arm i
+HIERARCH ESO OCS ARM20 DELTA = -430753.400 / [DDMMSS.TTT] Target delta hosted by
+HIERARCH ESO OCS ARM20 HIT = '        ' / Arm i is hit by listed bright object(s
+HIERARCH ESO OCS ARM20 NAME = '11      ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM20 ORIGARM = 22 / Original arm number before rotator optimiz
+HIERARCH ESO OCS ARM20 PRIOR = 1 / Target priority hosted by arm i              
+HIERARCH ESO OCS ARM20 R = 268.067 / [mm] R-pos of arm i                        
+HIERARCH ESO OCS ARM20 THETA = -1.180 / [deg] THETA-pos of arm i                
+HIERARCH ESO OCS ARM20 TYPE = 'O       ' / Target type hosted by arm i          
+HIERARCH ESO OCS ARM20 VIGNET = F / If T - arm i is vignetted                   
+HIERARCH ESO OCS ARM20 Y = 2.694 / [mm] y-pos of arm i                          
+HIERARCH ESO OCS ARM20 Z = 5.213 / [mm] z-pos of arm i                          
+HIERARCH ESO OCS ARM21 ALPHA = 3450.880 / [HHMMSS.TTT] Target alpha hosted by ar
+HIERARCH ESO OCS ARM21 COMMENT = '        ' / Comment for target hosted by arm i
+HIERARCH ESO OCS ARM21 DELTA = -430642.840 / [DDMMSS.TTT] Target delta hosted by
+HIERARCH ESO OCS ARM21 HIT = '        ' / Arm i is hit by listed bright object(s
+HIERARCH ESO OCS ARM21 NAME = '25      ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM21 ORIGARM = 23 / Original arm number before rotator optimiz
+HIERARCH ESO OCS ARM21 PRIOR = 2 / Target priority hosted by arm i              
+HIERARCH ESO OCS ARM21 R = 196.671 / [mm] R-pos of arm i                        
+HIERARCH ESO OCS ARM21 THETA = -0.927 / [deg] THETA-pos of arm i                
+HIERARCH ESO OCS ARM21 TYPE = 'O       ' / Target type hosted by arm i          
+HIERARCH ESO OCS ARM21 VIGNET = F / If T - arm i is vignetted                   
+HIERARCH ESO OCS ARM21 Y = 72.311 / [mm] y-pos of arm i                         
+HIERARCH ESO OCS ARM21 Z = 12.731 / [mm] z-pos of arm i                         
+HIERARCH ESO OCS ARM22 ALPHA = 3446.085 / [HHMMSS.TTT] Target alpha hosted by ar
+HIERARCH ESO OCS ARM22 COMMENT = '        ' / Comment for target hosted by arm i
+HIERARCH ESO OCS ARM22 DELTA = -430704.440 / [DDMMSS.TTT] Target delta hosted by
+HIERARCH ESO OCS ARM22 HIT = '        ' / Arm i is hit by listed bright object(s
+HIERARCH ESO OCS ARM22 NAME = '6       ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM22 ORIGARM = 24 / Original arm number before rotator optimiz
+HIERARCH ESO OCS ARM22 PRIOR = 1 / Target priority hosted by arm i              
+HIERARCH ESO OCS ARM22 R = 227.087 / [mm] R-pos of arm i                        
+HIERARCH ESO OCS ARM22 THETA = -0.206 / [deg] THETA-pos of arm i                
+HIERARCH ESO OCS ARM22 TYPE = 'O       ' / Target type hosted by arm i          
+HIERARCH ESO OCS ARM22 VIGNET = F / If T - arm i is vignetted                   
+HIERARCH ESO OCS ARM22 Y = 39.335 / [mm] y-pos of arm i                         
+HIERARCH ESO OCS ARM22 Z = 17.179 / [mm] z-pos of arm i                         
+HIERARCH ESO OCS ARM23 ALPHA = 3443.541 / [HHMMSS.TTT] Target alpha hosted by ar
+HIERARCH ESO OCS ARM23 COMMENT = '        ' / Comment for target hosted by arm i
+HIERARCH ESO OCS ARM23 DELTA = -430536.240 / [DDMMSS.TTT] Target delta hosted by
+HIERARCH ESO OCS ARM23 HIT = '        ' / Arm i is hit by listed bright object(s
+HIERARCH ESO OCS ARM23 NAME = '2       ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM23 ORIGARM = 1 / Original arm number before rotator optimiza
+HIERARCH ESO OCS ARM23 PRIOR = 1 / Target priority hosted by arm i              
+HIERARCH ESO OCS ARM23 R = 188.402 / [mm] R-pos of arm i                        
+HIERARCH ESO OCS ARM23 THETA = -7.479 / [deg] THETA-pos of arm i                
+HIERARCH ESO OCS ARM23 TYPE = 'O       ' / Target type hosted by arm i          
+HIERARCH ESO OCS ARM23 VIGNET = F / If T - arm i is vignetted                   
+HIERARCH ESO OCS ARM23 Y = 51.079 / [mm] y-pos of arm i                         
+HIERARCH ESO OCS ARM23 Z = 70.106 / [mm] z-pos of arm i                         
+HIERARCH ESO OCS ARM24 ALPHA = 3443.423 / [HHMMSS.TTT] Target alpha hosted by ar
+HIERARCH ESO OCS ARM24 COMMENT = '        ' / Comment for target hosted by arm i
+HIERARCH ESO OCS ARM24 DELTA = -430629.520 / [DDMMSS.TTT] Target delta hosted by
+HIERARCH ESO OCS ARM24 HIT = '        ' / Arm i is hit by listed bright object(s
+HIERARCH ESO OCS ARM24 NAME = '10      ' / Target name hosted by arm i          
+HIERARCH ESO OCS ARM24 ORIGARM = 2 / Original arm number before rotator optimiza
+HIERARCH ESO OCS ARM24 PRIOR = 1 / Target priority hosted by arm i              
+HIERARCH ESO OCS ARM24 R = 214.353 / [mm] R-pos of arm i                        
+HIERARCH ESO OCS ARM24 THETA = 0.309 / [deg] THETA-pos of arm i                 
+HIERARCH ESO OCS ARM24 TYPE = 'O       ' / Target type hosted by arm i          
+HIERARCH ESO OCS ARM24 VIGNET = F / If T - arm i is vignetted                   
+HIERARCH ESO OCS ARM24 Y = 34.794 / [mm] y-pos of arm i                         
+HIERARCH ESO OCS ARM24 Z = 43.447 / [mm] z-pos of arm i                         
+HIERARCH ESO OCS ARM3 ALPHA = 3438.844 / [HHMMSS.TTT] Target alpha hosted by arm
+HIERARCH ESO OCS ARM3 COMMENT = '        ' / Comment for target hosted by arm i 
+HIERARCH ESO OCS ARM3 DELTA = -430620.520 / [DDMMSS.TTT] Target delta hosted by 
+HIERARCH ESO OCS ARM3 HIT = '        ' / Arm i is hit by listed bright object(s)
+HIERARCH ESO OCS ARM3 NAME = '8       ' / Target name hosted by arm i           
+HIERARCH ESO OCS ARM3 ORIGARM = 5 / Original arm number before rotator optimizat
+HIERARCH ESO OCS ARM3 PRIOR = 1 / Target priority hosted by arm i               
+HIERARCH ESO OCS ARM3 R = 210.341 / [mm] R-pos of arm i                         
+HIERARCH ESO OCS ARM3 THETA = 5.476 / [deg] THETA-pos of arm i                  
+HIERARCH ESO OCS ARM3 TYPE = 'O       ' / Target type hosted by arm i           
+HIERARCH ESO OCS ARM3 VIGNET = F / If T - arm i is vignetted                    
+HIERARCH ESO OCS ARM3 Y = 11.988 / [mm] y-pos of arm i                          
+HIERARCH ESO OCS ARM3 Z = 62.720 / [mm] z-pos of arm i                          
+HIERARCH ESO OCS ARM4 NAME = '3       ' / Target name hosted by arm i           
+HIERARCH ESO OCS ARM4 NOTUSED = 'Locked  ' / Reason why arm was not used        
+HIERARCH ESO OCS ARM4 ORIGARM = 6 / Original arm number before rotator optimizat
+HIERARCH ESO OCS ARM5 ALPHA = 3430.055 / [HHMMSS.TTT] Target alpha hosted by arm
+HIERARCH ESO OCS ARM5 COMMENT = 'corresponds to ARM7_SKY' / Comment for target h
+HIERARCH ESO OCS ARM5 DELTA = -430658.768 / [DDMMSS.TTT] Target delta hosted by 
+HIERARCH ESO OCS ARM5 HIT = '        ' / Arm i is hit by listed bright object(s)
+HIERARCH ESO OCS ARM5 NAME = 'ARM7_SCI' / Target name hosted by arm i           
+HIERARCH ESO OCS ARM5 ORIGARM = 7 / Original arm number before rotator optimizat
+HIERARCH ESO OCS ARM5 PRIOR = 0 / Target priority hosted by arm i               
+HIERARCH ESO OCS ARM5 R = 184.082 / [mm] R-pos of arm i                         
+HIERARCH ESO OCS ARM5 THETA = 1.681 / [deg] THETA-pos of arm i                  
+HIERARCH ESO OCS ARM5 TYPE = 'S       ' / Target type hosted by arm i           
+HIERARCH ESO OCS ARM5 VIGNET = F / If T - arm i is vignetted                    
+HIERARCH ESO OCS ARM5 Y = -48.069 / [mm] y-pos of arm i                         
+HIERARCH ESO OCS ARM5 Z = 71.513 / [mm] z-pos of arm i                          
+HIERARCH ESO OCS ARM6 ALPHA = 3434.769 / [HHMMSS.TTT] Target alpha hosted by arm
+HIERARCH ESO OCS ARM6 COMMENT = '        ' / Comment for target hosted by arm i 
+HIERARCH ESO OCS ARM6 DELTA = -430725.680 / [DDMMSS.TTT] Target delta hosted by 
+HIERARCH ESO OCS ARM6 HIT = '        ' / Arm i is hit by listed bright object(s)
+HIERARCH ESO OCS ARM6 NAME = '14      ' / Target name hosted by arm i           
+HIERARCH ESO OCS ARM6 ORIGARM = 8 / Original arm number before rotator optimizat
+HIERARCH ESO OCS ARM6 PRIOR = 1 / Target priority hosted by arm i               
+HIERARCH ESO OCS ARM6 R = 220.940 / [mm] R-pos of arm i                         
+HIERARCH ESO OCS ARM6 THETA = 4.096 / [deg] THETA-pos of arm i                  
+HIERARCH ESO OCS ARM6 TYPE = 'O       ' / Target type hosted by arm i           
+HIERARCH ESO OCS ARM6 VIGNET = F / If T - arm i is vignetted                    
+HIERARCH ESO OCS ARM6 Y = -29.763 / [mm] y-pos of arm i                         
+HIERARCH ESO OCS ARM6 Z = 42.729 / [mm] z-pos of arm i                          
+HIERARCH ESO OCS ARM7 ALPHA = 3440.010 / [HHMMSS.TTT] Target alpha hosted by arm
+HIERARCH ESO OCS ARM7 COMMENT = '        ' / Comment for target hosted by arm i 
+HIERARCH ESO OCS ARM7 DELTA = -430807.080 / [DDMMSS.TTT] Target delta hosted by 
+HIERARCH ESO OCS ARM7 HIT = '        ' / Arm i is hit by listed bright object(s)
+HIERARCH ESO OCS ARM7 NAME = '26      ' / Target name hosted by arm i           
+HIERARCH ESO OCS ARM7 ORIGARM = 9 / Original arm number before rotator optimizat
+HIERARCH ESO OCS ARM7 PRIOR = 2 / Target priority hosted by arm i               
+HIERARCH ESO OCS ARM7 R = 256.316 / [mm] R-pos of arm i                         
+HIERARCH ESO OCS ARM7 THETA = -0.082 / [deg] THETA-pos of arm i                 
+HIERARCH ESO OCS ARM7 TYPE = 'O       ' / Target type hosted by arm i           
+HIERARCH ESO OCS ARM7 VIGNET = F / If T - arm i is vignetted                    
+HIERARCH ESO OCS ARM7 Y = -12.783 / [mm] y-pos of arm i                         
+HIERARCH ESO OCS ARM7 Z = 4.896 / [mm] z-pos of arm i                           
+HIERARCH ESO OCS ARM8 ALPHA = 3439.511 / [HHMMSS.TTT] Target alpha hosted by arm
+HIERARCH ESO OCS ARM8 COMMENT = '        ' / Comment for target hosted by arm i 
+HIERARCH ESO OCS ARM8 DELTA = -430745.480 / [DDMMSS.TTT] Target delta hosted by 
+HIERARCH ESO OCS ARM8 HIT = '        ' / Arm i is hit by listed bright object(s)
+HIERARCH ESO OCS ARM8 NAME = '5       ' / Target name hosted by arm i           
+HIERARCH ESO OCS ARM8 ORIGARM = 10 / Original arm number before rotator optimiza
+HIERARCH ESO OCS ARM8 PRIOR = 1 / Target priority hosted by arm i               
+HIERARCH ESO OCS ARM8 R = 259.080 / [mm] R-pos of arm i                         
+HIERARCH ESO OCS ARM8 THETA = 3.565 / [deg] THETA-pos of arm i                  
+HIERARCH ESO OCS ARM8 TYPE = 'O       ' / Target type hosted by arm i           
+HIERARCH ESO OCS ARM8 VIGNET = F / If T - arm i is vignetted                    
+HIERARCH ESO OCS ARM8 Y = -9.221 / [mm] y-pos of arm i                          
+HIERARCH ESO OCS ARM8 Z = 17.461 / [mm] z-pos of arm i                          
+HIERARCH ESO OCS ARM9 ALPHA = 3437.608 / [HHMMSS.TTT] Target alpha hosted by arm
+HIERARCH ESO OCS ARM9 COMMENT = '        ' / Comment for target hosted by arm i 
+HIERARCH ESO OCS ARM9 DELTA = -430825.800 / [DDMMSS.TTT] Target delta hosted by 
+HIERARCH ESO OCS ARM9 HIT = '        ' / Arm i is hit by listed bright object(s)
+HIERARCH ESO OCS ARM9 NAME = '22      ' / Target name hosted by arm i           
+HIERARCH ESO OCS ARM9 ORIGARM = 11 / Original arm number before rotator optimiza
+HIERARCH ESO OCS ARM9 PRIOR = 2 / Target priority hosted by arm i               
+HIERARCH ESO OCS ARM9 R = 239.167 / [mm] R-pos of arm i                         
+HIERARCH ESO OCS ARM9 THETA = 1.727 / [deg] THETA-pos of arm i                  
+HIERARCH ESO OCS ARM9 TYPE = 'O       ' / Target type hosted by arm i           
+HIERARCH ESO OCS ARM9 VIGNET = F / If T - arm i is vignetted                    
+HIERARCH ESO OCS ARM9 Y = -31.617 / [mm] y-pos of arm i                         
+HIERARCH ESO OCS ARM9 Z = 3.106 / [mm] z-pos of arm i                           
+HIERARCH ESO OCS BRGH1 ALPHA = 3438.933 / [HHMMSS.TTT] Bright object alpha      
+HIERARCH ESO OCS BRGH1 COMMENT = 'extracted from 2MASS catalog' / Bright object 
+HIERARCH ESO OCS BRGH1 DELTA = -431002.737 / [DDMMSS.TTT] Bright object delta   
+HIERARCH ESO OCS BRGH1 MAG = 11.860 / [mag] Bright obj. mag. in KARMA catalogue 
+HIERARCH ESO OCS BRGH1 NAME = '00343893-4310027' / Name of the bright star      
+HIERARCH ESO OCS BRGH2 ALPHA = 3439.899 / [HHMMSS.TTT] Bright object alpha      
+HIERARCH ESO OCS BRGH2 COMMENT = 'extracted from 2MASS catalog' / Bright object 
+HIERARCH ESO OCS BRGH2 DELTA = -430541.330 / [DDMMSS.TTT] Bright object delta   
+HIERARCH ESO OCS BRGH2 MAG = 10.090 / [mag] Bright obj. mag. in KARMA catalogue 
+HIERARCH ESO OCS BRGH2 NAME = '00343989-4305413' / Name of the bright star      
+HIERARCH ESO OCS DET1 IMGNAME = 'KMOS_SPEC_OBS' / Data File Name.               
+HIERARCH ESO OCS OSS REVISION = '249909  ' / OSS SVN revision                   
+HIERARCH ESO OCS OSS VER = '2.4.2   ' / OSS version number                      
+HIERARCH ESO OCS ROT NAANGLE = 200.981 / [deg] Rotator relative to nasmyth platf
+HIERARCH ESO OCS ROT OFFANGLE = 330.000 / [+/-DDD.TTT] Rotator offset angle     
+HIERARCH ESO OCS ROT OFFSET = 330.000 / [deg] Angle used during rotator optimiza
+HIERARCH ESO OCS SETUP TYPE = 'SCI_NOHWSETUP' / Type of exposure within template
+HIERARCH ESO OCS TARG ALPHA = 3442.118 / [HHMMSS.TTT] Telesc. alpha coordinate  
+HIERARCH ESO OCS TARG DELTA = -430803.400 / [DDMMSS.TTT] Telesc. delta coordinat
+HIERARCH ESO OCS TARG DITHA = 0.000 / [arcsec] Telescope dither in ALPHA        
+HIERARCH ESO OCS TARG DITHD = 0.000 / [arcsec] Telescope dither in DELTA        
+HIERARCH ESO OCS TARG DITHER SIZE = 1.000 / [arsec] Telescope dither size       
+HIERARCH ESO OCS TARG TIME PRRE = 56849.28858 / Mod. Jul. date used for prec/ref
+HIERARCH ESO OCS TEMPL ID = 'KMOS_spec_obs_freedither' / ID of the actual runnin
+HIERARCH ESO PAF ID = 'KARMA_CLUS0034.ins' / ID for PAF                         
+HIERARCH ESO TEL AIRM END = 1.396 / Airmass at end                              
+HIERARCH ESO TEL AIRM START = 1.430 / Airmass at start                          
+HIERARCH ESO TEL ALT =  44.317 / [deg] Alt angle at start                       
+HIERARCH ESO TEL AMBI FWHM END = 1.10 / [arcsec] Observatory Seeing queried from
+HIERARCH ESO TEL AMBI FWHM START = 1.12 / [arcsec] Observatory Seeing queried fr
+HIERARCH ESO TEL AMBI PRES END = 740.90 / [hPa] Observatory ambient air pressure
+HIERARCH ESO TEL AMBI PRES START = 740.95 / [hPa] Observatory ambient air pressu
+HIERARCH ESO TEL AMBI RHUM = 5.5 / [%] Observatory ambient relative humidity que
+HIERARCH ESO TEL AMBI TAU0 = 0.0015 / [s] Average coherence time                
+HIERARCH ESO TEL AMBI TEMP = 11.53 / [deg C] Observatory ambient temperature que
+HIERARCH ESO TEL AMBI WINDDIR = 23.0 / [deg] Observatory ambient wind direction 
+HIERARCH ESO TEL AMBI WINDSP = 16.60 / [m/s] Observatory ambient wind speed quer
+HIERARCH ESO TEL AZ =  307.006 / [deg] Az angle at start S=0,W=90               
+HIERARCH ESO TEL CHOP ST =   F / True when chopping is active                   
+HIERARCH ESO TEL DATE = '2000-01-01T00:00:00' / TCS installation date           
+HIERARCH ESO TEL DID = 'ESO-VLT-DIC.TCS' / Data dictionary for TEL              
+HIERARCH ESO TEL DOME STATUS = 'FULLY-OPEN' / Dome status                       
+HIERARCH ESO TEL FOCU ID = 'NB      ' / Telescope focus station ID              
+HIERARCH ESO TEL FOCU LEN = 120.000 / [m] Focal length                          
+HIERARCH ESO TEL FOCU SCALE = 1.718 / [arcsec/mm] Focal scale                   
+HIERARCH ESO TEL FOCU VALUE = -36.792 / [mm] M2 setting                         
+HIERARCH ESO TEL GEOELEV = 2648.0 / [m] Elevation above sea level               
+HIERARCH ESO TEL GEOLAT = -24.6276 / [deg] Tel geo latitute (+=North)           
+HIERARCH ESO TEL GEOLON = -70.4051 / [deg] Tel geo longitude (+=East)           
+HIERARCH ESO TEL IA FWHM = 1.09 / [arcsec] Delivered seeing corrected by airmass
+HIERARCH ESO TEL IA FWHMLIN = 1.07 / Delivered seeing on IA detector (linear fit
+HIERARCH ESO TEL IA FWHMLINOBS = 1.31 / Delivered seeing on IA detector (linear 
+HIERARCH ESO TEL ID = 'v 254420' / TCS version number                           
+HIERARCH ESO TEL MOON DEC = -18.60548 / [deg] -18:36:19.7 DEC (J2000)           
+HIERARCH ESO TEL MOON RA = 271.350531 / [deg] 18:05:24.1 RA (J2000)             
+HIERARCH ESO TEL OPER = 'I, Condor' / Telescope Operator                        
+HIERARCH ESO TEL PARANG END = -81.915 / [deg] Parallactic angle at end          
+HIERARCH ESO TEL PARANG START = -83.393 / [deg] Parallactic angle at start      
+HIERARCH ESO TEL TARG ALPHA = 3442.117 / Alpha coordinate for the target        
+HIERARCH ESO TEL TARG COORDTYPE = 'M       ' / Coordinate type (M=mean A=apparen
+HIERARCH ESO TEL TARG DELTA = -430803.400 / Delta coordinate for the target     
+HIERARCH ESO TEL TARG EPOCH = 2000.000 / [yr] Epoch 1950 or 2000                
+HIERARCH ESO TEL TARG EPOCHSYSTEM = 'J       ' / Epoch system (J=Julian / B=Bess
+HIERARCH ESO TEL TARG EQUINOX = 2000.000 / [yr] Equinox                         
+HIERARCH ESO TEL TARG PARALLAX = 0.000 / [arcsec] Parallax                      
+HIERARCH ESO TEL TARG PMA = 0.000000 / [arcsec/yr] Proper Motion Alpha          
+HIERARCH ESO TEL TARG PMD = 0.000000 / [arcsec/yr] Proper motion Delta          
+HIERARCH ESO TEL TARG RADVEL = 0.000 / [km/s] Radial velocity                   
+HIERARCH ESO TEL TH M1 TEMP = 10.46 / [deg C] M1 superficial temperature        
+HIERARCH ESO TEL TRAK STATUS = 'NORMAL  ' / Tracking status                     
+HIERARCH ESO TPL DID = 'ESO-VLT-DIC.TPL-1.9' / Data dictionary for TPL          
+HIERARCH ESO TPL EXPNO =     1 / Exposure number within template                
+HIERARCH ESO TPL ID = 'KMOS_spec_obs_freedither' / Template signature ID        
+HIERARCH ESO TPL MODE OBS = 'NOD_TO_SKY' / Specifies detailed observing mode    
+HIERARCH ESO TPL NAME = 'Science observation' / Template name                   
+HIERARCH ESO TPL NEXP =      5 / Number of exposures within template            
+HIERARCH ESO TPL PRESEQ = 'KMOS_spec_obs_stare.seq' / Sequencer script          
+HIERARCH ESO TPL START = '2014-07-11T06:34:49' / TPL start time                 
+HIERARCH ESO TPL VERSION = '$Revision: 243353 $' / Version of the template      
+ARCFILE = 'KMOS.2014-07-11T06:34:52.380.fits' / Archive File Name               
+CHECKSUM= 'liWoofTnlfTnlfTn'   / HDU checksum updated 2014-07-11T06:42:31       
+DATASUM = '         0'         / data unit checksum updated 2014-07-11T06:42:31 
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+END                                                                             
+
