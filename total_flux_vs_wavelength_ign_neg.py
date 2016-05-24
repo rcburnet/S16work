@@ -10,12 +10,12 @@ import scipy as sp
 import matplotlib.pyplot as plt
 from astropy.io import fits
 
-hdulist1 = fits.open('/home/rcburnet/work/project_data/reflex_end_products/2016-05-16T09:20:10/KMOS.2014-07-11T06:34:52.380_tpl/CL0034-YJ-OB-1_COMBINE_SCI_RECONSTRUCTED_4.fits')	#reduced data cube
-hdulist2 = fits.open('/home/rcburnet/work/project_data/reflex_tmp_products/kmos/kmos_sci_red_1/2016-05-16T15:04:48.737/sci_interim_sky_KMOS.2014-07-11T06:34:52.380.fits')		#sky data cube
+hdulist1 = fits.open('/home/rburnet/reflex/project_data/reflex_end_products/2016-05-16T09:20:10/KMOS.2014-07-11T06:34:52.380_tpl/CL0034-YJ-OB-1_COMBINE_SCI_RECONSTRUCTED_4.fits')	#reduced data cube
+hdulist2 = fits.open('/home/rburnet/reflex/project_data/reflex_tmp_products/kmos/kmos_sci_red_1/2016-05-16T15:04:48.737/sci_interim_sky_KMOS.2014-07-11T06:34:52.380.fits')		#sky data cube
 
-#hdulist1 = fits.open('/home/rcburnet/work/project_data/reflex_tmp_products/kmos/kmos_sci_red_1/2016-05-16T15:04:48.737/sci_interim_sky_KMOS.2014-07-11T06:34:52.380.fits')
+#hdulist1 = fits.open('/home/rburnet/reflex/project_data/reflex_tmp_products/kmos/kmos_sci_red_1/2016-05-16T15:04:48.737/sci_interim_sky_KMOS.2014-07-11T06:34:52.380.fits')
 
-#hdulist1 = fits.open('/home/rcburnet/work/demo/reflex_end_products/2016-05-09T14:50:14/KMOS.2013-06-30T23:48:06.049_tpl/SCI-GUM43_COMBINE_SCI_RECONSTRUCTED_001.fits')
+#hdulist1 = fits.open('/home/rburnet/reflex/demo/reflex_end_products/2016-05-09T14:50:14/KMOS.2013-06-30T23:48:06.049_tpl/SCI-GUM43_COMBINE_SCI_RECONSTRUCTED_001.fits')
 
 x = []
 total_flux = []

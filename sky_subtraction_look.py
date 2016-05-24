@@ -17,7 +17,7 @@ hdulist=[]	#list to hold all interim sky fits files
 
 hdufits_of_obj_4 = []
 
-for root,dirnames,filenames in os.walk('/home/rcburnet/work/project_data/old_reflex_files/reflex_tmp_products/kmos/kmos_sci_red_1/2016-05-16T15:04:48.737/'):
+for root,dirnames,filenames in os.walk('/home/rburnet/reflex/project_data/old_reflex_files/reflex_tmp_products/kmos/kmos_sci_red_1/2016-05-16T15:04:48.737/'):
         for filename in fnmatch.filter(filenames, 'sci_interim_sky_*'):
                 hdulist.append(os.path.join(root, filename))
 	for filename in fnmatch.filter(filenames, 'sci_interim_object_*'):
