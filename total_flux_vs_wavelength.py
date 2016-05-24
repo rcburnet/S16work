@@ -15,7 +15,7 @@ from astropy.io import fits
 
 hdulist=[]
 
-for root,dirnames,filenames in os.walk('/home/rcburnet/work/project_data/reflex_end_products/'):
+for root,dirnames,filenames in os.walk('/home/rburnet/reflex/project_data/reflex_end_products/'):
 	for filename in fnmatch.filter(filenames, 'CL003[0-9]-YJ-OB-[1|2]_COMBINE_SCI_RECONSTRUCTED_[0-9]*.fits'):
 		hdulist.append(os.path.join(root, filename))
 
