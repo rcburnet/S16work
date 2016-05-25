@@ -21,7 +21,7 @@ for root,dirnames,filenames in os.walk('/home/rburnet/reflex/project_data/reflex
 
 for j in range(len(hdulist)):
 
-	if not os.path.isfile('./figures/'+hdulist[j][53:]+'.pdf'):
+	if not os.path.isfile('./figures/laptop/'+hdulist[j][53:]+'.pdf'):
 
 		hdulist1 = fits.open(hdulist[j])
 
@@ -35,8 +35,8 @@ for j in range(len(hdulist)):
 			x.append(i+1)
         		x[i] = 1+i*0.0001752906692721
 
-		if not os.path.exists('./figures/'+hdulist[j][53:-48]):
-        	        os.makedirs('./figures/'+hdulist[j][53:-48])
+		if not os.path.exists('./figures/laptop/'+hdulist[j][53:-48]):
+        	        os.makedirs('./figures/laptop/'+hdulist[j][53:-48])
 		
 		line1, = plt.plot(x,total_flux)
 		if '0034-YJ' in hdulist[j]:
@@ -62,7 +62,7 @@ for j in range(len(hdulist)):
 		plt.setp(line3, linewidth=0.1, color='r')
 		plt.setp(line4, linewidth=0.1, color='r')
 		plt.setp(line5, linewidth=0.1)
-		print './figures/'+hdulist[j][53:]+'.pdf'
-		plt.savefig('./figures/'+hdulist[j][53:]+'.pdf')
+		print './figures/laptop/'+hdulist[j][53:]+'.pdf'
+		plt.savefig('./figures/laptop/'+hdulist[j][53:]+'.pdf')
 		plt.close()
 		hdulist1.close()
