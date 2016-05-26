@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 #####
-# script that will plot total flux vs wavelength while ignoring NaN for particularly bright targets (targets we expect to see high H-alpha emission)
+# script that will plot total flux vs wavelength while ignoring NaN for particularly bright targets (targets we expect to see high H-alpha emission) and for specific region (eg. 10<x<14, 4<y<8)
 #####
 
 import numpy as np
