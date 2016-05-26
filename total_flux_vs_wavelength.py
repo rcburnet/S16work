@@ -1,4 +1,4 @@
-!/usr/bin/python
+#!/usr/bin/python
 
 #####
 # script that will plot total flux vs wavelength while ignoring NaN
@@ -15,13 +15,13 @@ from astropy.io import fits
 
 hdulist=[]
 
-for root,dirnames,filenames in os.walk('/home/rcburnet/work/project_data/reflex_end_products/'):
+for root,dirnames,filenames in os.walk('/home/rburnet/reflex/project_data/reflex_end_products/'):
     for filename in fnmatch.filter(filenames, 'CL003[0-9]-YJ-OB-[1|2]_COMBINE_SCI_RECONSTRUCTED_[0-9]*.fits'):
         hdulist.append(os.path.join(root, filename))
 
 for j in range(len(hdulist)):
 
-    if not os.path.isfile('./figures/'+hdulist[j][53:]+'.pdf'):
+    if not os.path.isfile('./figures/laptop/'+hdulist[j][53:]+'.pdf'):
 
         hdulist1 = fits.open(hdulist[j])
 
@@ -35,8 +35,8 @@ for j in range(len(hdulist)):
             x.append(i+1)
                 x[i] = 1+i*0.0001752906692721
 
-        if not os.path.exists('./figures/'+hdulist[j][53:-48]):
-                    os.makedirs('./figures/'+hdulist[j][53:-48])
+        if not os.path.exists('./figures/laptop/'+hdulist[j][53:-48]):
+                    os.makedirs('./figures/laptop/'+hdulist[j][53:-48])
         
         line1, = plt.plot(x,total_flux)
         if '0034-YJ' in hdulist[j]:
@@ -45,8 +45,8 @@ for j in range(len(hdulist)):
             line4, = plt.plot((1.22127,1.22127),(min(total_flux),max(total_flux)))
         else:
             line2, = plt.plot((1.22659,1.22659),(min(total_flux),max(total_flux)))
-                line3, = plt.plot((1.23059,1.23059),(min(total_flux),max(total_flux)))
-                    line4, = plt.plot((1.22259,1.22259),(min(total_flux),max(total_flux)))
+            line3, = plt.plot((1.23059,1.23059),(min(total_flux),max(total_flux)))
+            line4, = plt.plot((1.22259,1.22259),(min(total_flux),max(total_flux)))
         line5, = plt.plot((1.0,1.35882),(0.0,0.0))
         line2.set_dashes([4,2,2,2])
         line3.set_dashes([2,2])
@@ -62,7 +62,7 @@ for j in range(len(hdulist)):
         plt.setp(line3, linewidth=0.1, color='r')
         plt.setp(line4, linewidth=0.1, color='r')
         plt.setp(line5, linewidth=0.1)
-        print './figures/'+hdulist[j][53:]+'.pdf'
-        plt.savefig('./figures/'+hdulist[j][53:]+'.pdf')
+        print './figures/laptop/'+hdulist[j][53:]+'.pdf'
+        plt.savefig('./figures/laptop/'+hdulist[j][53:]+'.pdf')
         plt.close()
         hdulist1.close()
