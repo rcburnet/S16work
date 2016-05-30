@@ -329,8 +329,8 @@ for i in range(len(sky_subtracted_sum_data)):
     for j in range(len(sky_subtracted_sum_data[i])):
         if sky_subtracted_sum_data[i][j] != sky_subtracted_sum_data[i][j]:
             sky_subtracted_sum_data[i][j] = 0.0
-    if not os.path.exists('./figures/laptop/target_sky_fraction_of_object/sky_subtracted_spectrum/'):
-        os.makedirs('./figures/laptop/target_sky_fraction_of_object/sky_subtracted_spectrum/')
+    if not os.path.exists('../figures/laptop/target_sky_fraction_of_object/sky_subtracted_spectrum/'):
+        os.makedirs('../figures/laptop/target_sky_fraction_of_object/sky_subtracted_spectrum/')
     line1, = plt.plot(x,sky_subtracted_sum_data[i])
     line5, = plt.plot((1.0,1.35882),(0.0,0.0))
     plt.title('Total Flux vs Wavelength  from \n '+hdulist_sci[i], fontsize=10)
@@ -342,7 +342,7 @@ for i in range(len(sky_subtracted_sum_data)):
     fig.set_size_inches(18.5, 5.5)
     plt.setp(line1, linewidth=0.1, color='b')
     plt.setp(line5, linewidth=0.1)
-    print './figures/laptop/target_sky_fraction_of_object/sky_subtracted_spectrum/'+hdulist_sci[i][-48:]+'.pdf'
-    plt.savefig('./figures/laptop/target_sky_fraction_of_object/sky_subtracted_spectrum/'+hdulist_sci[i][-48:]+'.pdf')
+    print '../figures/laptop/target_sky_fraction_of_object/sky_subtracted_spectrum/'+hdulist_sci[i][-48:]+'.pdf'
+    plt.savefig('../figures/laptop/target_sky_fraction_of_object/sky_subtracted_spectrum/'+hdulist_sci[i][-48:]+'.pdf')
     plt.close()
 
