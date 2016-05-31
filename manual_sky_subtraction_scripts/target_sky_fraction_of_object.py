@@ -178,7 +178,7 @@ for i in range(len(hdulist_sky)):
         if 'ARM24_' in hdulist_sky[i]:
             hdulist_sky[i] = (2213, hdulist_sky[i])
 
-#now I need to sort hdulist_sci with the same indexes. This method is a little cleaner.
+#now I need to sort hdulist_sci with the same indexes. This is thankfully a little cleaner.
 for i in range(len(hdulist_sci)):
     if 'CL0034-YJ-OB-1' in hdulist_sci[i]:
         if '_' in hdulist_sci[i][-7:-5]:
@@ -277,7 +277,6 @@ for i in range(len(f)):
     f2.append(f2_i[~np.isnan(f2_i)])
     f3.append(np.mean(f2[i]))
 
-
 print 'f from all files = ',f3
 print 'average f for all files = ',np.mean(f3)
 
@@ -307,7 +306,6 @@ for i in range(len(f)):
     plt.close()
 
 #Now, let's do sky subtraction of target cube manually by carrying out T_lambda - S_lambda*f for every spaxel in the T_lambda (target) cube and then plot the spectrum.
-sky_subtracted_data = [] #the sky subtracted data, should be the same shape as hdufits_sci data
 sky_subtracted_sum_data = [] #sum of sky subtracted data for each wavelength slice, used to plot spectrum
 
 for i in range(len(hdulist_sci)):
@@ -319,10 +317,10 @@ for i in range(len(hdulist_sci)):
         spaxel_array = np.array(hdufits_sci[1].data[j])
         spaxel_array = spaxel_array - avg_flux_sky*f[i][j]
         sky_subtracted_sum_data[i].append(np.sum(spaxel_array[~np.isnan(spaxel_array)]))
-        sky_subtracted_data.append(spaxel_array)
+        hdufits_sci[1].data[j] = spaxel_array
+    hdufits_sci.writeto('/home/rburnet/reflex/project_data/test_cubes/'+hdulist_sci[i][-48:])   #write sky subtracted cubes
     hdufits_sci.close()
     hdufits_sky.close()
-
 
 for i in range(len(sky_subtracted_sum_data)):
     #loop to turn all NaN values in sky_subtracted_sum_data array to 0.0
@@ -345,4 +343,3 @@ for i in range(len(sky_subtracted_sum_data)):
     print '../figures/laptop/target_sky_fraction_of_object/sky_subtracted_spectrum/'+hdulist_sci[i][-48:]+'.pdf'
     plt.savefig('../figures/laptop/target_sky_fraction_of_object/sky_subtracted_spectrum/'+hdulist_sci[i][-48:]+'.pdf')
     plt.close()
-
