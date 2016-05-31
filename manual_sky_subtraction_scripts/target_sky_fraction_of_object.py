@@ -318,7 +318,7 @@ for i in range(len(hdulist_sci)):
         spaxel_array = spaxel_array - avg_flux_sky*f[i][j]
         sky_subtracted_sum_data[i].append(np.sum(spaxel_array[~np.isnan(spaxel_array)]))
         hdufits_sci[1].data[j] = spaxel_array
-    hdufits_sci.writeto('/home/rburnet/reflex/project_data/test_cubes/'+hdulist_sci[i][-48:])   #write sky subtracted cubes
+    #hdufits_sci.writeto('/home/rburnet/reflex/project_data/test_cubes/'+hdulist_sci[i][-48:])   #write sky subtracted cubes
     hdufits_sci.close()
     hdufits_sky.close()
 
