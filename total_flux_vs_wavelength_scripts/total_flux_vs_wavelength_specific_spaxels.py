@@ -15,15 +15,15 @@ from astropy.io import fits
 
 hdulist=[]
 
-hdulist = ['/home/rburnet/reflex/project_data/reflex_end_products/2016-05-24T13:39:06/KMOS.2014-07-11T08:24:20.562_tpl/CL0036-YJ-OB-1_COMBINE_SCI_RECONSTRUCTED_4.fits']
+hdulist = ['/home/rburnet/reflex/project_data/reflex_end_products/sky_tweak_FALSE_no_subtract_TRUE/KMOS.2014-07-11T06:34:52.380_tpl/CL0034-YJ-OB-1_COMBINE_SCI_RECONSTRUCTED_11.fits']
 
 spaxel_array_select = []
 
 for i in range(14):
-    if i < 5 or i > 12:
+    if i < 5 or i > 8:
         spaxel_array_select.append([False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False])
     else:
-        spaxel_array_select.append([False, False, False, False, False, False, False, False, False, True, True, True, True, True, False, True])
+        spaxel_array_select.append([False, False, False, False, False, False, False, False, True, True, True, True, True, False, False, False])
 
 spaxel_array_select = np.array(spaxel_array_select)
 
