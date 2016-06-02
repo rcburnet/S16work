@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 ####
-# script to calculate f = <T_lambda(target)>/<S_lambda(sky)> , the fraction of average flux of the target frame target exposures to the average flux of the associated sky frame sky exposures to see if they agree on an IFU by IFU basis so that the cubes are the same shape ONLY FOR OB1. Then, it carries out sky subtraction of target cubes manually using T_lambda - S_lambda*f for each spaxel in the target cube and plots the mean spectrum of that and the scaled mean sky spectrum in the range of +/- 0.05 microns from Halpha and saves them to ../figures/laptop/target_sky_subtraction_of_object/sky_subtracted_spectrum_of_bright_object_0.05microns/.
+# script to calculate f = <T_lambda(target)>/<S_lambda(sky)> , the fraction of average flux of the target frame target exposures to the average flux of the associated sky frame sky exposures to see if they agree on an IFU by IFU basis so that the cubes are the same shape ONLY FOR OB1. Then, it carries out sky subtraction of target cubes manually using T_lambda - S_lambda*f for each spaxel in the target cube and plots the mean spectrum of that and the scaled mean sky spectrum in the range of +/- 0.05 microns from Halpha and saves them to ../figures/laptop/target_sky_subtraction_of_object/sky_subtracted_spectrum_of_IFUs/specific_targets/.
 ####
 
 import numpy as np
