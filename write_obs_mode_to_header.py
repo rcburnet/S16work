@@ -27,5 +27,3 @@ for i in range(len(hdulist)):
     except: print hdulist[i]+' has no relevant header for NOD TO SKY'
     hdufits.writeto(hdulist[i][0:52]+'STARE/'+hdulist[i][73:])
     hdufits.close()
-        
-
