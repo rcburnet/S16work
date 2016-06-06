@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 ####
-# script to present collapsed cubes of object, image of object from HST images, and calculate/expected magnitudes into a visual format for diagnostic, to see if the objects in the raw data agree with the HST images.
+# script to present collapsed cubes of object, image of object from HST images, and calculate/expected magnitudes into a visual format for diagnostic, to see if the objects in the raw data agree with the HST images. To produce final diagnostic report, go to /report/ and run diagnostic_report_OB(1|2).tex
 ####
 
 import numpy as np
