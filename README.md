@@ -16,6 +16,8 @@ These are the scripts designed for use on my laptop.
 
 ./total\_flux\_vs\_wavelength\_scripts/ contains the python scripts that will plot the spectrum of the data cubes. Read the comments at the beginning of each script to see exactly what each script does.
 
+./diagnostic\_of\_objects/ contains the python script that will create the plots used by diagnostic\_report\_OB(1|2).tex to generate diagnostic reports of the pipeline data comparing the calculated Z magnitude values to the expected values and place the plots of the HST image of the target, the pipeline's output of the target before sky substraction, and the pipeline's output of the target after sky subtraction.
+
 
 ./figures/ contain all the figues that are saved by each of the above scripts.
 

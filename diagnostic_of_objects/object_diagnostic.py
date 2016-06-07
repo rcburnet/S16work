@@ -18,12 +18,17 @@ import pylab
 from PIL import Image
 
 hdulist_final = []
+hdulist_final_no_subtract = []
 hdulist_cubes = []
 image_list = []
 
 for root,dirnames,filenames in os.walk('/home/rburnet/reflex/project_data/reflex_end_products/2016-05-24T13:39:06/'):
     for filename in fnmatch.filter(filenames, 'CL003[0-9]-IZ-OB-[1|2]_COMBINE_SCI_RECONSTRUCTED_COLL_*.fits'):
         hdulist_final.append(os.path.join(root, filename))
+
+for root,dirnames,filenames in os.walk('/home/rburnet/reflex/project_data/reflex_end_products/sky_tweak_FALSE_no_subtract_TRUE/'):
+    for filename in fnmatch.filter(filenames, 'CL003[0-9]-IZ-OB-[1|2]_COMBINE_SCI_RECONSTRUCTED_COLL_[0-9]*.fits'):
+        hdulist_final_no_subtract.append(os.path.join(root, filename))
 
 for root,dirnames,filenames in os.walk('/home/rburnet/reflex/project_data/reflex_end_products/2016-05-24T13:39:06/'):
     for filename in fnmatch.filter(filenames, 'CL003[0-9]-IZ-OB-[1|2]_COMBINE_SCI_RECONSTRUCTED_[0-9]*.fits'):
@@ -34,8 +39,11 @@ for root,dirnames,filenames in os.walk('/home/rburnet/S16work/diagnostic_of_obje
         image_list.append(os.path.join(root, filename))
 
 hdulist_final = sorted(hdulist_final)
+hdulist_final_no_subtract = sorted(hdulist_final_no_subtract)
 hdulist_cubes = sorted(hdulist_cubes)
 image_list = sorted(image_list)
+
+print len(hdulist_final_no_subtract[5]), len(hdulist_final[5])
 
 x = np.linspace(0.78, 1.09, 2048)
 
@@ -142,3 +150,23 @@ for i in range(len(hdulist_final)):
                 im = Image.open('figures/'+hdulist_final[i][-53:]+'.png')
                 im.crop([40,105,800,410]).save('figures/'+hdulist_final[i][-53:]+'.png', 'PNG')
                 im.close()
+
+for i in range(len(hdulist_final_no_subtract)):
+    hdufits_final = fits.open(hdulist_final_no_subtract[i])
+    img_data = hdufits_final[1].data
+    hdufits_final.close()
+
+    img_data = np.array(img_data, dtype=float)
+    img_data = np.nan_to_num(img_data)
+    min_val = np.min(img_data)
+    fig = plt.figure()
+
+    plt.axis('off')
+   # a = fig.add_subplot(121)
+    #a.axis('off')
+    new_img = img_scale.linear(img_data, scale_min=min_val)
+    imgplot = plt.imshow(new_img, interpolation='nearest', origin='lower', cmap='gray')
+    
+    plt.savefig('figures/no_sky_subtraction/'+hdulist_final_no_subtract[i][-53:]+'.png', bbox_inches = 'tight')
+    plt.clf()
+    plt.close()
