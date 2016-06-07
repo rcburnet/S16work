@@ -17,6 +17,7 @@ import img_scale
 import pylab
 from PIL import Image
 
+### Read data cubes
 hdulist_final = []
 hdulist_final_no_subtract = []
 hdulist_cubes = []
@@ -43,9 +44,46 @@ hdulist_final_no_subtract = sorted(hdulist_final_no_subtract)
 hdulist_cubes = sorted(hdulist_cubes)
 image_list = sorted(image_list)
 
-print len(hdulist_final_no_subtract[5]), len(hdulist_final[5])
+### Read txt table files for target/arm info
+file_CL0034 = open('../txt_tables/KMOS_GCLASS_CLUS0034.txt','r')
+file_CL0036_YJ = open('../txt_tables/KMOS_GCLASS_CLUS0036_YJ.txt','r')
+file_CL0036_IZ = open('../txt_tables/KMOS_GCLASS_CLUS0036_IZ.txt','r')
+
+CL0034_info = file_CL0034.readlines()
+CL0036_YJ_info = file_CL0036_YJ.readlines()
+CL0036_IZ_info = file_CL0036_IZ.readlines()
+
+file_CL0034.close()
+file_CL0036_YJ.close()
+file_CL0036_IZ.close()
+
+for i in range(len(CL0034_info)):
+    CL0034_info[i] = CL0034_info[i].split(' ')
+    for j in range(len(CL0034_info[i])):
+        if j < 3:
+            CL0034_info[i][j] = int(CL0034_info[i][j])
+        else:
+            CL0034_info[i][j] = float(CL0034_info[i][j])
+
+for i in range(len(CL0036_YJ_info)):
+    CL0036_YJ_info[i] = CL0036_YJ_info[i].split(' ')
+    for j in range(len(CL0036_YJ_info[i])):
+        if j < 3:
+            CL0036_YJ_info[i][j] = int(CL0036_YJ_info[i][j])
+        else:
+            CL0036_YJ_info[i][j] = float(CL0036_YJ_info[i][j])
+
+for i in range(len(CL0036_IZ_info)):
+    CL0036_IZ_info[i] = CL0036_IZ_info[i].split(' ')
+    for j in range(len(CL0036_IZ_info[i])):
+        if j < 3:
+            CL0036_IZ_info[i][j] = int(CL0036_IZ_info[i][j])
+        else:
+            CL0036_IZ_info[i][j] = float(CL0036_IZ_info[i][j])
 
 x = np.linspace(0.78, 1.09, 2048)
+
+### Now plot stuff
 
 for i in range(len(hdulist_final)):
     hdufits_final = fits.open(hdulist_final[i])
@@ -85,60 +123,24 @@ for i in range(len(hdulist_final)):
                     plt.text(18,13,'m$_{calculated}$ = '+'%.2f' % round(mag,2))
                 else:
                     plt.text(18,13,'m$_{calculated}$ = Not computed, flux negative')
-                if 'CL0034-Target_5.' in image_list[j]:
-                    mag_exp = 20.46
-                if 'CL0034-Target_6.' in image_list[j]:
-                    mag_exp = 22.37
-                if 'CL0034-Target_7.' in image_list[j]:
-                    mag_exp = 21.06
-                if 'CL0034-Target_11' in image_list[j]:
-                    mag_exp = 19.43
-                if 'CL0034-Target_12' in image_list[j]:
-                    mag_exp = 20.55
-                if 'CL0034-Target_14' in image_list[j]:
-                    mag_exp = 22.49
-                if 'CL0034-Target_16' in image_list[j]:
-                    mag_exp = 22.50
-                if 'CL0034-Target_20' in image_list[j]:
-                    mag_exp = 21.73
-                if 'CL0034-Target_21' in image_list[j]:
-                    mag_exp = 22.91
-                if 'CL0034-Target_22' in image_list[j]:
-                    mag_exp = 22.27
-                if 'CL0034-Target_23' in image_list[j]:
-                    mag_exp = 22.08
-                if 'CL0034-Target_26' in image_list[j]:
-                    mag_exp = 22.40
-                if 'CL0034-Target_30' in image_list[j]:
-                    mag_exp = 20.03
-                if 'CL0034-Target_31' in image_list[j]:
-                    mag_exp = 20.84
-                if 'CL0036-Target_3.' in image_list[j]:
-                    mag_exp = 20.78
-                if 'CL0036-Target_4.' in image_list[j]:
-                    mag_exp = 20.24
-                if 'CL0036-Target_5.' in image_list[j]:
-                    mag_exp = 20.80
-                if 'CL0036-Target_6.' in image_list[j]:
-                    mag_exp = 21.89
-                if 'CL0036-Target_7.' in image_list[j]:
-                    mag_exp = 21.53
-                if 'CL0036-Target_8.' in image_list[j]:
-                    mag_exp = 21.15
-                if 'CL0036-Target_10' in image_list[j]:
-                    mag_exp = 22.06
-                if 'CL0036-Target_17' in image_list[j]:
-                    mag_exp = 21.67
-                if 'CL0036-Target_19' in image_list[j]:
-                    mag_exp = 21.68
-                if 'CL0036-Target_26' in image_list[j]:
-                    mag_exp = 19.27
-                if 'CL0036-Target_28' in image_list[j]:
-                    mag_exp = 20.35
-                if 'CL0036-Target_30' in image_list[j]:
-                    mag_exp = 21.30
-                if 'CL0036-Target_34' in image_list[j]:
-                    mag_exp = 20.36
+                if 'CL0034' in image_list[j]:
+                    if '_' in image_list[j][-6:-4]:
+                        target_name = int(image_list[j][-5:-4])
+                    else:
+                        target_name = int(image_list[j][-6:-4])
+                    #print image_list[j][-7:-5]
+                    for k in range(len(CL0034_info)):
+                        if target_name == CL0034_info[k][0]:
+                            mag_exp = CL0034_info[k][7]
+
+                if 'CL0036' in image_list[j]:
+                    if '_' in image_list[j][-6:-4]:
+                        target_name = int(image_list[j][-5:-4])
+                    else:
+                        target_name = int(image_list[j][-6:-4])
+                    for k in range(len(CL0036_YJ_info)):    #doesn't matter if you use YJ or IZ since target names are the same between them. Only the arms names are different.
+                        if target_name == CL0036_YJ_info[k][0]:
+                            mag_exp = CL0036_YJ_info[k][7]
                 #else:
                 #    mag_exp = 0.00
                 plt.text(18,10,'m$_{expected}$ = '+'%.2f' % round(mag_exp,2))

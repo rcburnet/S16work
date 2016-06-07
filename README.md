@@ -25,7 +25,7 @@ These are the scripts designed for use on my laptop.
 ./headers/ contain the headers of some files for easy viewing of arm names, which arms are locked, and other observation information.
 
 
-./txt tables for IFU arms/ contains the txt tables provided by Dr. Balogh which designate how bright the target in each arms is, their redshift, and other user data.
+./txt\_tables/ contains the txt tables provided by Dr. Balogh which designate how bright the target in each arms is, their redshift, and other user data. It also contains a script on how to extract info from the txt tables if needed.
 
 
 Fwd_ Re_ kmos data.zip is the compressed .zip file from which the txt tables came from.
