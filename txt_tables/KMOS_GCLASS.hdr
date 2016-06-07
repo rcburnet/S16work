@@ -1,0 +1,23 @@
+1 Target Name
+2 KMOS arm
+3 KMOS origarm 
+4 RA
+5 DEC
+6 Redshift
+7 Redshift quality
+8 Z magnitude
+9 Irac channel 1 magnitude
+10 z - irac ch 1 colour
+11 z - irac ch 1 colour error
+12 Radius (Mpc ; I think)  
+13 MIPS flux 
+14 D4000 
+15 M/L 
+16 log_10(Mstellar) 
+17 EW(OII)
+18 SFR(OII)
+19 SFR(OII)_uncorrected
+20 EW(Hdel) 
+
+smcgee@star.sr.bham.ac.uk
+May 2016
