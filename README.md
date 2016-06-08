@@ -6,9 +6,9 @@ These are the scripts designed for use on my laptop.
 
 ./manual\_sky\_subtraction\_scripts/ contains python scripts that:
 
-	1) Calculate the fraction of T_lambda/S_lambda for sky arms and target arms 
+ 1) Calculate the fraction of T\_lambda/S\_lambda for sky arms and target arms 
 
-	2) Plot the spectrum of manual sky subtraction carried out in the scripts
+ 2) Plot the spectrum of manual sky subtraction carried out in the scripts
 
 
 ./sky\_subtraction\_look\_scripts/ contains the python scripts that look into sky and object cubes and plot their residual fluxes on the same plot to compare the two
