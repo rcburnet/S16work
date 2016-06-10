@@ -98,25 +98,25 @@ for i in range(len(hdulist_final)):
                 img_data = np.array(img_data, dtype=float)
                 img_data = np.nan_to_num(img_data)
                 min_val = np.min(img_data)
+                max_val = np.max(img_data)
 
-                index = (792, 793) #index of 900nm slice
-                array1 = np.nan_to_num(cube_data[792])
-                array2 = np.nan_to_num(cube_data[793])
-                array1 = np.sum(array1)
-                array2 = np.sum(array2)
-                flux = np.mean([array1, array2])
-                mag = -2.5*np.log10(3.34e4*(9000.0**2)*flux)+8.90
+                flux = np.sum(img_data)
+                if 'YJ' in hdulist_final[i]:
+                    F0 = 3.129e-9
+                if 'IZ' in hdulist_final[i]:
+                    F0 = 7.63e-9
+                mag = -2.5*np.log10(flux/(0.1*F0))
 
                 fig = plt.figure()
                 plt.axis('off')
                 a = fig.add_subplot(121)
                 a.axis('off')
-                new_img = img_scale.linear(img_data, scale_min=min_val)
+                new_img = img_scale.linear(img_data, scale_min=min_val, scale_max=max_val)
                 imgplot = plt.imshow(new_img, interpolation='nearest', origin='lower', cmap='gray')
                 if flux > 0:
-                    plt.text(18,13,'m$_{calculated}$ = '+'%.2f' % round(mag,2))
+                    plt.text(18,13,'m$_{IZ,calculated}$ = '+'%.2f' % round(mag,2))
                 else:
-                    plt.text(18,13,'m$_{calculated}$ = Not computed, flux negative')
+                    plt.text(18,13,'m$_{IZ,calculated}$ = Not computed, flux negative')
                 if 'CL0034' in image_list[j]:
                     if '_' in image_list[j][-6:-4]:
                         target_name = int(image_list[j][-5:-4])
@@ -137,7 +137,7 @@ for i in range(len(hdulist_final)):
                             mag_exp = CL0036_YJ_info[k][7]
                 #else:
                 #    mag_exp = 0.00
-                plt.text(18,10,'m$_{expected}$ = '+'%.2f' % round(mag_exp,2))
+                plt.text(18,10,'m$_{Z,expected}$ = '+'%.2f' % round(mag_exp,2))
 
                 plt.savefig('figures/'+hdulist_final[i][-35:]+'.png', bbox_inches = 'tight')
                 plt.clf()
