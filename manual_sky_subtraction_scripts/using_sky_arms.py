@@ -1,5 +1,9 @@
 #!/usr/bin/python
 
+####
+# Script that will use sky arms from science frame and it's corresponding sky arm from sky frame to properly scale flux and then carry out sky subtraction
+####
+
 import numpy as np
 import scipy as sp
 import glob
@@ -361,3 +365,4 @@ for i in range(len(fitsfiles)):
             #hdulist_file.append(fitsfiles[i][k])
             #hdulist_file.writeto('/home/rburnet/reflex/project_data/sky_sub/'+hdulist[i][-66:-5]+'_arm'+str(k)+'.fits')
         fitsfiles[i].writeto('/home/rburnet/reflex/project_data/sky_sub/'+hdulist[i][-66:])
+
