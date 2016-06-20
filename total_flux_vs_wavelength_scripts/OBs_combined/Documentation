@@ -1,1 +1,4 @@
-look into /home/rburnet/reflex/project_data/OBs_combined/cubes_from_raw_data/sky_subtracted/ combined cubes and plot their spectrum
+look into /home/rburnet/reflex/project_data/OBs_combined/ combined cubes and plot their spectrum for
+1) Pipeline output sky subtracted combined cubes (in /sky_subtracted/, see total_flux_vs_wavelength_calibrated.py)
+2) Raw sky subtracted output combined cubes where I simply subtract target arms from sky arms of the reconstruct raw data frames without scaling them (in /cubes_from_raw_data/sky_subtracted/, see total_flux_vs_wavelength_uncalibrated.py)
+3) Manual sky subtracted output combined cubes where I subtracted the target arms from sky arms of the reconstructed raw data frames, scaling the sky arms from the science and sky frames first before subtractions (in /cubes_from_raw_data/manual_sky_subtraction_cubes/, see total_flux_vs_wavelength_manual_sky_subtraction_uncalibrated.py)
