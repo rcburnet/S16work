@@ -1,0 +1,9 @@
+object_diagnostic.py and object_diagnostic_of_combined_OBs.py output the calculated magnitudes of the target data cubes outputted by the pipeline and produce png images of the collapsed cubes. object_diagnostic_of_combined_OBs.py does it for the combined OB cubes.
+
+img_scale.py is a python script I found on the web that I use to create png images from fits files
+
+/figures/ contains the figures as output from object_diagnostic.py and object_diagnostic_of_combined_OBs.py
+
+/report/ contains the diagnostic report to be sent to Balogh
+
+/local_sky_subtraction/ contains the scripts and figures of my attempt at using the local sky around an elliptical aperture for each target and subtracting the flux of that sky from the each spaxel to ensure the aperture flux is positive and not negative (like it is right now for CL0034-IZ target 11). Started June 22. See Balogh's email on June 15 for information.
