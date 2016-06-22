@@ -3,7 +3,7 @@
 ####
 
 class target:
-    def __init__(self, cluster, OB,  name, arm, origarm, RA, DEC, redshift, redshiftquality, Zmag, Irac_chan_1_mag, z-irac_colour, z-irac_colour_error, Radius, MIPS_flux, D4000, M_L, log_10_Mstellar, EW_OII, SFR_OII, SFR_OII_uncorrected, EW_HDL):
+    def __init__(self, cluster, OB,  name, arm, origarm, RA, DEC, redshift, redshiftquality, Zmag, Irac_chan_1_mag, z_irac_colour, z_irac_colour_error, Radius, MIPS_flux, D4000, M_L, log_10_Mstellar, EW_OII, SFR_OII, SFR_OII_uncorrected, EW_HDL):
         self.cluster = cluster
         self.OB = OB
         self.name = name
@@ -15,8 +15,8 @@ class target:
         self.rsq = redshiftquality
         self.Zmag = Zmag
         self.Irac = Irac_chan_1_mag
-        self.Z_I = z-irac_colour
-        self.Z_I_err = z-irac_colour_error
+        self.Z_I = z_irac_colour
+        self.Z_I_err = z_irac_colour_error
         self.R = Radius
         self.MIPS = MIPS_flux
         self.D4000 = D4000
