@@ -4,7 +4,7 @@
 # This module will define the spaxels to be used for the aperture of every target from the combined OBs
 ###
 
-from modules import *
+import numpy as np
 
 ## Spaxel definitions
 CL0034_IZ_Target_10 = np.array([[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False], [False, False, False, False, False, False, False, False, False, True, True, True, False, False, False, False], [False, False, False, False, False, False, True, True, True, True, True, True, True, False, False, False], [False, False, False, True, True, True, True, True, True, True, True, True, True, True, False, False], [False, False, False, True, True, True, True, True, True, True, True, True, True, True, False, False], [False, False, False, True, True, True, True, True, True, True, True, True, True, True, False, False], [False, False, False, True, True, True, True, True, True, True, True, True, True, True, False, False], [False, False, False, True, True, True, True, True, True, True, True, True, True, False, False, False], [False, False, False, False, True, True, True, True, True, True, True, True, True, False, False, False], [False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]])
