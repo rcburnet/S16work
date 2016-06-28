@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.6.6)  27 JUN 2016 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.6.6)  28 JUN 2016 14:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -420,16 +420,16 @@ LaTeX Font Info:    ... okay on input line 12.
 * paper: legalpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: landscape 
-* h-part:(L,W,R)=(36.135pt, 939.51001pt, 36.135pt)
-* v-part:(T,H,B)=(36.135pt, 542.02501pt, 36.135pt)
-* \paperwidth=1011.78pt
-* \paperheight=614.295pt
-* \textwidth=939.51001pt
-* \textheight=542.02501pt
-* \oddsidemargin=-36.135pt
-* \evensidemargin=-36.135pt
-* \topmargin=-73.135pt
+* modes: 
+* h-part:(L,W,R)=(14.45377pt, 585.38747pt, 14.45377pt)
+* v-part:(T,H,B)=(14.45377pt, 982.87247pt, 14.45377pt)
+* \paperwidth=614.295pt
+* \paperheight=1011.78pt
+* \textwidth=585.38747pt
+* \textheight=982.87247pt
+* \oddsidemargin=-57.81622pt
+* \evensidemargin=-57.81622pt
+* \topmargin=-94.81622pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -540,516 +540,1242 @@ ort/figures/CL0036-IZ-Target_26.png Graphic file (type png)
 rt/figures/CL0036-IZ-Target_26.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
 subtraction/new_report/figures/CL0036-IZ-Target_26.png used on input line 22.
-(pdftex.def)             Requested size: 131.04152pt x 151.06664pt.
+(pdftex.def)             Requested size: 149.75684pt x 172.64194pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_26_Hbeta.pdf, id=4, 1291.9157pt
+ x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_26_Hbeta.pdf Graphic file 
+(type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_26_Hbeta.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_26_Hbet
+a.pdf used on input line 29.
+(pdftex.def)             Requested size: 581.3567pt x 174.02512pt.
+
+Overfull \hbox (400.68172pt too wide) in paragraph at lines 29--30
+ []|[]| 
+ []
+
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_26_OIII.pdf, id=5, 1296.52667pt
+ x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_26_OIII.pdf Graphic file (
+type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_26_OIII.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_26_OIII
+.pdf used on input line 30.
+(pdftex.def)             Requested size: 583.43161pt x 174.02512pt.
+
+Overfull \hbox (402.75662pt too wide) in paragraph at lines 30--31
+ []|[]| 
+ []
+
+[1
+
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} </home/rburn
+et/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-Target_26.png
+> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report
+/figures/CL0036-IZ-Target_26.png> <../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCT
+ED_26_Hbeta.pdf> <../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_26_OIII.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_2
+6_OIII.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
-arget_4.png, id=4, 449.68pt x 449.68pt>
+arget_4.png, id=153, 449.68pt x 449.68pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
 036-Target_4.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
 36-Target_4.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
-T_images/CL0036/CL0036-Target_4.png used on input line 38.
+T_images/CL0036/CL0036-Target_4.png used on input line 42.
 (pdftex.def)             Requested size: 157.39035pt x 157.39035pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-IZ-Target_4.png, id=5, 375.4025pt x 427.5975pt>
+igures/CL0036-IZ-Target_4.png, id=154, 375.4025pt x 427.5975pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-IZ-Target_4.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-IZ-Target_4.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-IZ-Target_4.png used on input line 40.
-(pdftex.def)             Requested size: 131.39284pt x 149.66136pt.
+subtraction/new_report/figures/CL0036-IZ-Target_4.png used on input line 44.
+(pdftex.def)             Requested size: 150.15834pt x 171.03596pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-YJ-Target_4.png, id=6, 429.605pt x 376.40625pt>
+igures/CL0036-YJ-Target_4.png, id=155, 429.605pt x 376.40625pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-YJ-Target_4.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-YJ-Target_4.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-YJ-Target_4.png used on input line 42.
-(pdftex.def)             Requested size: 150.364pt x 131.74416pt.
- [1
+subtraction/new_report/figures/CL0036-YJ-Target_4.png used on input line 46.
+(pdftex.def)             Requested size: 171.83894pt x 150.55983pt.
 
-{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} </home/rburn
-et/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-Target_26.png
-> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report
-/figures/CL0036-IZ-Target_26.png> </home/rburnet/S16work/diagnostic_of_objects/
-figures/HST_images/CL0036/CL0036-Target_4.png> </home/rburnet/S16work/diagnosti
-c_of_objects/local_sky_subtraction/new_report/figures/CL0036-IZ-Target_4.png> <
-/home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/fi
-gures/CL0036-YJ-Target_4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_4_Hbeta.pdf, id=156, 1291.9157p
+t x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_4_Hbeta.pdf Graphic file (
+type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_4_Hbeta.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_4_Hbeta
+.pdf used on input line 55.
+(pdftex.def)             Requested size: 581.3567pt x 174.02512pt.
+
+Overfull \hbox (400.68172pt too wide) in paragraph at lines 55--56
+ []|[]| 
+ []
+
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_4_OIII.pdf, id=157, 1296.52667p
+t x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_4_OIII.pdf Graphic file (t
+ype pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_4_OIII.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_4_OIII.
+pdf used on input line 56.
+(pdftex.def)             Requested size: 583.43161pt x 174.02512pt.
+
+Overfull \hbox (402.75662pt too wide) in paragraph at lines 56--57
+ []|[]| 
+ []
+
+
+<../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_4_Halpha.pdf, id=158, 1304.4155
+3pt x 386.72606pt>
+File: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_4_Halpha.pdf Graphic file 
+(type pdf)
+
+<use ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_4_Halpha.pdf>
+Package pdftex.def Info: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_4_Halph
+a.pdf used on input line 57.
+(pdftex.def)             Requested size: 586.98157pt x 174.02512pt.
+
+Overfull \hbox (406.30658pt too wide) in paragraph at lines 57--58
+ []|[]| 
+ []
+
+
+Overfull \hbox (170.8587pt too wide) in paragraph at lines 40--59
+ [] 
+ []
+
+[2 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL003
+6-Target_4.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtract
+ion/new_report/figures/CL0036-IZ-Target_4.png> </home/rburnet/S16work/diagnosti
+c_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_4.png> <
+../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_4_Hbeta.pdf> <../figures/CL0036_
+IZ/COMBINE_SCI_RECONSTRUCTED_4_OIII.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_4
+_OIII.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_4_Halpha.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_4
+_Halpha.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
-arget_28.png, id=19, 449.68pt x 449.68pt>
+arget_28.png, id=376, 449.68pt x 449.68pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
 036-Target_28.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
 36-Target_28.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
-T_images/CL0036/CL0036-Target_28.png used on input line 61.
+T_images/CL0036/CL0036-Target_28.png used on input line 70.
 (pdftex.def)             Requested size: 157.39035pt x 157.39035pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-IZ-Target_28.png, id=20, 375.4025pt x 428.60126pt>
+igures/CL0036-IZ-Target_28.png, id=377, 375.4025pt x 428.60126pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-IZ-Target_28.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-IZ-Target_28.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-IZ-Target_28.png used on input line 63.
-(pdftex.def)             Requested size: 131.39284pt x 150.01268pt.
+subtraction/new_report/figures/CL0036-IZ-Target_28.png used on input line 72.
+(pdftex.def)             Requested size: 150.15834pt x 171.43745pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-YJ-Target_28.png, id=21, 429.605pt x 378.41376pt>
+igures/CL0036-YJ-Target_28.png, id=378, 429.605pt x 378.41376pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-YJ-Target_28.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-YJ-Target_28.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-YJ-Target_28.png used on input line 65.
-(pdftex.def)             Requested size: 150.364pt x 132.4468pt.
+subtraction/new_report/figures/CL0036-YJ-Target_28.png used on input line 74.
+(pdftex.def)             Requested size: 171.83894pt x 151.36281pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_28_Hbeta.pdf, id=379, 1291.9157
+pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_28_Hbeta.pdf Graphic file 
+(type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_28_Hbeta.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_28_Hbet
+a.pdf used on input line 83.
+(pdftex.def)             Requested size: 581.3567pt x 174.02512pt.
+
+Overfull \hbox (400.68172pt too wide) in paragraph at lines 83--84
+ []|[]| 
+ []
+
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_28_OIII.pdf, id=380, 1296.52667
+pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_28_OIII.pdf Graphic file (
+type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_28_OIII.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_28_OIII
+.pdf used on input line 84.
+(pdftex.def)             Requested size: 583.43161pt x 174.02512pt.
+
+Overfull \hbox (402.75662pt too wide) in paragraph at lines 84--85
+ []|[]| 
+ []
+
+
+<../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_28_Halpha.pdf, id=381, 1292.919
+45pt x 386.72606pt>
+File: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_28_Halpha.pdf Graphic file
+ (type pdf)
+
+<use ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_28_Halpha.pdf>
+Package pdftex.def Info: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_28_Halp
+ha.pdf used on input line 85.
+(pdftex.def)             Requested size: 581.80838pt x 174.02512pt.
+
+Overfull \hbox (401.13339pt too wide) in paragraph at lines 85--86
+ []|[]| 
+ []
+
+
+Overfull \hbox (170.8587pt too wide) in paragraph at lines 68--87
+ [] 
+ []
+
+[3 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL003
+6-Target_28.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtrac
+tion/new_report/figures/CL0036-IZ-Target_28.png> </home/rburnet/S16work/diagnos
+tic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_28.png
+> <../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_28_Hbeta.pdf> <../figures/CL0
+036_IZ/COMBINE_SCI_RECONSTRUCTED_28_OIII.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_2
+8_OIII.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_28_Halpha.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_2
+8_Halpha.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
 
 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
-arget_34.png, id=22, 449.68pt x 449.68pt>
+arget_34.png, id=601, 449.68pt x 449.68pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
 036-Target_34.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
 36-Target_34.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
-T_images/CL0036/CL0036-Target_34.png used on input line 84.
+T_images/CL0036/CL0036-Target_34.png used on input line 97.
 (pdftex.def)             Requested size: 157.39035pt x 157.39035pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-YJ-Target_34.png, id=23, 428.60126pt x 374.39874pt>
+igures/CL0036-YJ-Target_34.png, id=602, 428.60126pt x 374.39874pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-YJ-Target_34.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-YJ-Target_34.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-YJ-Target_34.png used on input line 86.
-(pdftex.def)             Requested size: 150.01268pt x 131.04152pt.
- [2 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
-36-Target_28.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtra
-ction/new_report/figures/CL0036-IZ-Target_28.png> </home/rburnet/S16work/diagno
-stic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_28.pn
-g> </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL003
+subtraction/new_report/figures/CL0036-YJ-Target_34.png used on input line 99.
+(pdftex.def)             Requested size: 171.43745pt x 149.75684pt.
+
+<../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_34_Halpha.pdf, id=603, 1292.919
+45pt x 386.72606pt>
+File: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_34_Halpha.pdf Graphic file
+ (type pdf)
+
+<use ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_34_Halpha.pdf>
+Package pdftex.def Info: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_34_Halp
+ha.pdf used on input line 107.
+(pdftex.def)             Requested size: 581.80838pt x 174.02512pt.
+
+Overfull \hbox (401.13339pt too wide) in paragraph at lines 107--108
+ []|[]| 
+ []
+
+[4 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL003
 6-Target_34.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtrac
-tion/new_report/figures/CL0036-YJ-Target_34.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+tion/new_report/figures/CL0036-YJ-Target_34.png> <../figures/CL0036_YJ/COMBINE_
+SCI_RECONSTRUCTED_34_Halpha.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 
 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
-arget_3.png, id=32, 449.68pt x 449.68pt>
+arget_3.png, id=682, 449.68pt x 449.68pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
 036-Target_3.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
 36-Target_3.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
-T_images/CL0036/CL0036-Target_3.png used on input line 104.
+T_images/CL0036/CL0036-Target_3.png used on input line 120.
 (pdftex.def)             Requested size: 161.88467pt x 161.88467pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-IZ-Target_3.png, id=33, 375.4025pt x 424.58624pt>
+igures/CL0036-IZ-Target_3.png, id=683, 375.4025pt x 424.58624pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-IZ-Target_3.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-IZ-Target_3.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-IZ-Target_3.png used on input line 106.
-(pdftex.def)             Requested size: 131.39284pt x 148.6074pt.
+subtraction/new_report/figures/CL0036-IZ-Target_3.png used on input line 122.
+(pdftex.def)             Requested size: 150.15834pt x 169.83148pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-YJ-Target_3.png, id=34, 429.605pt x 377.41pt>
+igures/CL0036-YJ-Target_3.png, id=684, 429.605pt x 377.41pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-YJ-Target_3.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-YJ-Target_3.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-YJ-Target_3.png used on input line 108.
-(pdftex.def)             Requested size: 150.364pt x 132.09547pt.
+subtraction/new_report/figures/CL0036-YJ-Target_3.png used on input line 124.
+(pdftex.def)             Requested size: 171.83894pt x 150.96132pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_3_Hbeta.pdf, id=685, 1291.9157p
+t x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_3_Hbeta.pdf Graphic file (
+type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_3_Hbeta.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_3_Hbeta
+.pdf used on input line 133.
+(pdftex.def)             Requested size: 581.3567pt x 174.02512pt.
+
+Overfull \hbox (400.68172pt too wide) in paragraph at lines 133--134
+ []|[]| 
+ []
+
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_3_OIII.pdf, id=686, 1296.52667p
+t x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_3_OIII.pdf Graphic file (t
+ype pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_3_OIII.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_3_OIII.
+pdf used on input line 134.
+(pdftex.def)             Requested size: 583.43161pt x 174.02512pt.
+
+Overfull \hbox (402.75662pt too wide) in paragraph at lines 134--135
+ []|[]| 
+ []
+
+
+<../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_3_Halpha.pdf, id=687, 1304.4155
+3pt x 386.72606pt>
+File: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_3_Halpha.pdf Graphic file 
+(type pdf)
+
+<use ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_3_Halpha.pdf>
+Package pdftex.def Info: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_3_Halph
+a.pdf used on input line 135.
+(pdftex.def)             Requested size: 586.98157pt x 174.02512pt.
+
+Overfull \hbox (406.30658pt too wide) in paragraph at lines 135--136
+ []|[]| 
+ []
+
+
+Overfull \hbox (170.8587pt too wide) in paragraph at lines 118--137
+ [] 
+ []
+
+[5 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL003
+6-Target_3.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtract
+ion/new_report/figures/CL0036-IZ-Target_3.png> </home/rburnet/S16work/diagnosti
+c_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_3.png> <
+../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_3_Hbeta.pdf> <../figures/CL0036_
+IZ/COMBINE_SCI_RECONSTRUCTED_3_OIII.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_3
+_OIII.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_3_Halpha.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_3
+_Halpha.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
 
 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
-arget_5.png, id=35, 449.68pt x 449.68pt>
+arget_5.png, id=903, 449.68pt x 449.68pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
 036-Target_5.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
 36-Target_5.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
-T_images/CL0036/CL0036-Target_5.png used on input line 125.
+T_images/CL0036/CL0036-Target_5.png used on input line 147.
 (pdftex.def)             Requested size: 157.39035pt x 157.39035pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-IZ-Target_5.png, id=36, 375.4025pt x 428.60126pt>
+igures/CL0036-IZ-Target_5.png, id=904, 375.4025pt x 428.60126pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-IZ-Target_5.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-IZ-Target_5.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-IZ-Target_5.png used on input line 127.
-(pdftex.def)             Requested size: 131.39284pt x 150.01268pt.
+subtraction/new_report/figures/CL0036-IZ-Target_5.png used on input line 149.
+(pdftex.def)             Requested size: 150.15834pt x 171.43745pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-YJ-Target_5.png, id=37, 428.60126pt x 376.40625pt>
+igures/CL0036-YJ-Target_5.png, id=905, 428.60126pt x 376.40625pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-YJ-Target_5.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-YJ-Target_5.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-YJ-Target_5.png used on input line 129.
-(pdftex.def)             Requested size: 150.01268pt x 131.74416pt.
- [3 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
-36-Target_3.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtrac
-tion/new_report/figures/CL0036-IZ-Target_3.png> </home/rburnet/S16work/diagnost
-ic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_3.png> 
-</home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
-arget_5.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction
-/new_report/figures/CL0036-IZ-Target_5.png> </home/rburnet/S16work/diagnostic_o
-f_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+subtraction/new_report/figures/CL0036-YJ-Target_5.png used on input line 151.
+(pdftex.def)             Requested size: 171.43745pt x 150.55983pt.
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_5_Hbeta.pdf, id=906, 1291.9157p
+t x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_5_Hbeta.pdf Graphic file (
+type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_5_Hbeta.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_5_Hbeta
+.pdf used on input line 160.
+(pdftex.def)             Requested size: 581.3567pt x 174.02512pt.
+
+Overfull \hbox (400.68172pt too wide) in paragraph at lines 160--161
+ []|[]| 
+ []
+
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_5_OIII.pdf, id=907, 1296.52667p
+t x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_5_OIII.pdf Graphic file (t
+ype pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_5_OIII.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_5_OIII.
+pdf used on input line 161.
+(pdftex.def)             Requested size: 583.43161pt x 174.02512pt.
+
+Overfull \hbox (402.75662pt too wide) in paragraph at lines 161--162
+ []|[]| 
+ []
+
+
+<../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_5_Halpha.pdf, id=908, 1304.4155
+3pt x 386.72606pt>
+File: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_5_Halpha.pdf Graphic file 
+(type pdf)
+
+<use ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_5_Halpha.pdf>
+Package pdftex.def Info: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_5_Halph
+a.pdf used on input line 162.
+(pdftex.def)             Requested size: 586.98157pt x 174.02512pt.
+
+Overfull \hbox (406.30658pt too wide) in paragraph at lines 162--163
+ []|[]| 
+ []
+
+
+Overfull \hbox (170.8587pt too wide) in paragraph at lines 145--164
+ [] 
+ []
+
+[6 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL003
+6-Target_5.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtract
+ion/new_report/figures/CL0036-IZ-Target_5.png> </home/rburnet/S16work/diagnosti
+c_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_5.png> <
+../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_5_Hbeta.pdf> <../figures/CL0036_
+IZ/COMBINE_SCI_RECONSTRUCTED_5_OIII.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_5
+_OIII.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_5_Halpha.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_5
+_Halpha.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
 
 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
-arget_10.png, id=47, 449.68pt x 449.68pt>
+arget_10.png, id=1125, 449.68pt x 449.68pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
 036-Target_10.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
 36-Target_10.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
-T_images/CL0036/CL0036-Target_10.png used on input line 148.
+T_images/CL0036/CL0036-Target_10.png used on input line 175.
 (pdftex.def)             Requested size: 157.39035pt x 157.39035pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-IZ-Target_10.png, id=48, 374.39874pt x 425.59pt>
+igures/CL0036-IZ-Target_10.png, id=1126, 374.39874pt x 425.59pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-IZ-Target_10.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-IZ-Target_10.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-IZ-Target_10.png used on input line 150.
-(pdftex.def)             Requested size: 131.04152pt x 148.95872pt.
+subtraction/new_report/figures/CL0036-IZ-Target_10.png used on input line 177.
+(pdftex.def)             Requested size: 149.75684pt x 170.23297pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-YJ-Target_10.png, id=49, 430.60875pt x 378.41376pt>
+igures/CL0036-YJ-Target_10.png, id=1127, 430.60875pt x 378.41376pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-YJ-Target_10.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-YJ-Target_10.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-YJ-Target_10.png used on input line 152.
-(pdftex.def)             Requested size: 150.7153pt x 132.4468pt.
+subtraction/new_report/figures/CL0036-YJ-Target_10.png used on input line 179.
+(pdftex.def)             Requested size: 172.24043pt x 151.36281pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_10_Hbeta.pdf, id=1128, 1291.915
+7pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_10_Hbeta.pdf Graphic file 
+(type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_10_Hbeta.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_10_Hbet
+a.pdf used on input line 188.
+(pdftex.def)             Requested size: 581.3567pt x 174.02512pt.
+
+Overfull \hbox (400.68172pt too wide) in paragraph at lines 188--189
+ []|[]| 
+ []
+
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_10_OIII.pdf, id=1129, 1296.5266
+7pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_10_OIII.pdf Graphic file (
+type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_10_OIII.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_10_OIII
+.pdf used on input line 189.
+(pdftex.def)             Requested size: 583.43161pt x 174.02512pt.
+
+Overfull \hbox (402.75662pt too wide) in paragraph at lines 189--190
+ []|[]| 
+ []
+
+
+<../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_10_Halpha.pdf, id=1130, 1292.91
+945pt x 386.72606pt>
+File: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_10_Halpha.pdf Graphic file
+ (type pdf)
+
+<use ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_10_Halpha.pdf>
+Package pdftex.def Info: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_10_Halp
+ha.pdf used on input line 190.
+(pdftex.def)             Requested size: 581.80838pt x 174.02512pt.
+
+Overfull \hbox (401.13339pt too wide) in paragraph at lines 190--191
+ []|[]| 
+ []
+
+
+Overfull \hbox (170.8587pt too wide) in paragraph at lines 173--192
+ [] 
+ []
+
+[7 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL003
+6-Target_10.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtrac
+tion/new_report/figures/CL0036-IZ-Target_10.png> </home/rburnet/S16work/diagnos
+tic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_10.png
+> <../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_10_Hbeta.pdf> <../figures/CL0
+036_IZ/COMBINE_SCI_RECONSTRUCTED_10_OIII.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_1
+0_OIII.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_10_Halpha.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_1
+0_Halpha.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
 
 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
-arget_8.png, id=50, 449.68pt x 449.68pt>
+arget_8.png, id=1348, 449.68pt x 449.68pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
 036-Target_8.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
 36-Target_8.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
-T_images/CL0036/CL0036-Target_8.png used on input line 169.
+T_images/CL0036/CL0036-Target_8.png used on input line 202.
 (pdftex.def)             Requested size: 157.39035pt x 157.39035pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-IZ-Target_8.png, id=51, 376.40625pt x 427.5975pt>
+igures/CL0036-IZ-Target_8.png, id=1349, 376.40625pt x 427.5975pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-IZ-Target_8.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-IZ-Target_8.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-IZ-Target_8.png used on input line 171.
-(pdftex.def)             Requested size: 131.74416pt x 149.66136pt.
+subtraction/new_report/figures/CL0036-IZ-Target_8.png used on input line 204.
+(pdftex.def)             Requested size: 150.55983pt x 171.03596pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-YJ-Target_8.png, id=52, 429.605pt x 375.4025pt>
+igures/CL0036-YJ-Target_8.png, id=1350, 429.605pt x 375.4025pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-YJ-Target_8.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-YJ-Target_8.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-YJ-Target_8.png used on input line 173.
-(pdftex.def)             Requested size: 150.364pt x 131.39284pt.
- [4 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
-36-Target_10.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtra
-ction/new_report/figures/CL0036-IZ-Target_10.png> </home/rburnet/S16work/diagno
-stic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_10.pn
-g> </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL003
+subtraction/new_report/figures/CL0036-YJ-Target_8.png used on input line 206.
+(pdftex.def)             Requested size: 171.83894pt x 150.15834pt.
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_8_Hbeta.pdf, id=1351, 1291.9157
+pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_8_Hbeta.pdf Graphic file (
+type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_8_Hbeta.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_8_Hbeta
+.pdf used on input line 215.
+(pdftex.def)             Requested size: 581.3567pt x 174.02512pt.
+
+Overfull \hbox (400.68172pt too wide) in paragraph at lines 215--216
+ []|[]| 
+ []
+
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_8_OIII.pdf, id=1352, 1296.52667
+pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_8_OIII.pdf Graphic file (t
+ype pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_8_OIII.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_8_OIII.
+pdf used on input line 216.
+(pdftex.def)             Requested size: 583.43161pt x 174.02512pt.
+
+Overfull \hbox (402.75662pt too wide) in paragraph at lines 216--217
+ []|[]| 
+ []
+
+
+<../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_8_Halpha.pdf, id=1353, 1304.415
+53pt x 386.72606pt>
+File: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_8_Halpha.pdf Graphic file 
+(type pdf)
+
+<use ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_8_Halpha.pdf>
+Package pdftex.def Info: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_8_Halph
+a.pdf used on input line 217.
+(pdftex.def)             Requested size: 586.98157pt x 174.02512pt.
+
+Overfull \hbox (406.30658pt too wide) in paragraph at lines 217--218
+ []|[]| 
+ []
+
+
+Overfull \hbox (170.8587pt too wide) in paragraph at lines 200--219
+ [] 
+ []
+
+[8 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL003
 6-Target_8.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtract
 ion/new_report/figures/CL0036-IZ-Target_8.png> </home/rburnet/S16work/diagnosti
-c_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_8.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+c_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_8.png> <
+../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_8_Hbeta.pdf> <../figures/CL0036_
+IZ/COMBINE_SCI_RECONSTRUCTED_8_OIII.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_8
+_OIII.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_8_Halpha.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_8
+_Halpha.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
-arget_30.png, id=62, 449.68pt x 449.68pt>
+arget_30.png, id=1571, 449.68pt x 449.68pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
 036-Target_30.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
 36-Target_30.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
-T_images/CL0036/CL0036-Target_30.png used on input line 192.
+T_images/CL0036/CL0036-Target_30.png used on input line 230.
 (pdftex.def)             Requested size: 157.39035pt x 157.39035pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-IZ-Target_30.png, id=63, 375.4025pt x 427.5975pt>
+igures/CL0036-IZ-Target_30.png, id=1572, 375.4025pt x 427.5975pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-IZ-Target_30.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-IZ-Target_30.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-IZ-Target_30.png used on input line 194.
-(pdftex.def)             Requested size: 131.39284pt x 149.66136pt.
+subtraction/new_report/figures/CL0036-IZ-Target_30.png used on input line 232.
+(pdftex.def)             Requested size: 150.15834pt x 171.03596pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-YJ-Target_30.png, id=64, 429.605pt x 374.39874pt>
+igures/CL0036-YJ-Target_30.png, id=1573, 429.605pt x 374.39874pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-YJ-Target_30.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-YJ-Target_30.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-YJ-Target_30.png used on input line 196.
-(pdftex.def)             Requested size: 150.364pt x 131.04152pt.
+subtraction/new_report/figures/CL0036-YJ-Target_30.png used on input line 234.
+(pdftex.def)             Requested size: 171.83894pt x 149.75684pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_30_Hbeta.pdf, id=1574, 1291.915
+7pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_30_Hbeta.pdf Graphic file 
+(type pdf)
 
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_30_Hbeta.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_30_Hbet
+a.pdf used on input line 243.
+(pdftex.def)             Requested size: 581.3567pt x 174.02512pt.
+
+Overfull \hbox (400.68172pt too wide) in paragraph at lines 243--244
+ []|[]| 
  []
 
 
-</home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
-arget_7.png, id=65, 449.68pt x 449.68pt>
-File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
-036-Target_7.png Graphic file (type png)
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_30_OIII.pdf, id=1575, 1296.5266
+7pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_30_OIII.pdf Graphic file (
+type pdf)
 
-<use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
-36-Target_7.png>
-Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
-T_images/CL0036/CL0036-Target_7.png used on input line 213.
-(pdftex.def)             Requested size: 157.39035pt x 157.39035pt.
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_30_OIII.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_30_OIII
+.pdf used on input line 244.
+(pdftex.def)             Requested size: 583.43161pt x 174.02512pt.
 
-</home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-IZ-Target_7.png, id=66, 375.4025pt x 426.59375pt>
-File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
-ort/figures/CL0036-IZ-Target_7.png Graphic file (type png)
-
-<use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
-rt/figures/CL0036-IZ-Target_7.png>
-Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-IZ-Target_7.png used on input line 215.
-(pdftex.def)             Requested size: 131.39284pt x 149.31004pt.
-
-</home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-YJ-Target_7.png, id=67, 427.5975pt x 376.40625pt>
-File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
-ort/figures/CL0036-YJ-Target_7.png Graphic file (type png)
-
-<use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
-rt/figures/CL0036-YJ-Target_7.png>
-Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-YJ-Target_7.png used on input line 217.
-(pdftex.def)             Requested size: 149.66136pt x 131.74416pt.
- [5 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
-36-Target_30.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtra
-ction/new_report/figures/CL0036-IZ-Target_30.png> </home/rburnet/S16work/diagno
-stic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_30.pn
-g> </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL003
-6-Target_7.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtract
-ion/new_report/figures/CL0036-IZ-Target_7.png> </home/rburnet/S16work/diagnosti
-c_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_7.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
-
+Overfull \hbox (402.75662pt too wide) in paragraph at lines 244--245
+ []|[]| 
  []
 
 
-</home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
-arget_17.png, id=77, 449.68pt x 449.68pt>
-File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
-036-Target_17.png Graphic file (type png)
+<../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_30_Halpha.pdf, id=1576, 1292.91
+945pt x 386.72606pt>
+File: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_30_Halpha.pdf Graphic file
+ (type pdf)
 
-<use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
-36-Target_17.png>
-Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
-T_images/CL0036/CL0036-Target_17.png used on input line 236.
-(pdftex.def)             Requested size: 157.39035pt x 157.39035pt.
+<use ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_30_Halpha.pdf>
+Package pdftex.def Info: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_30_Halp
+ha.pdf used on input line 245.
+(pdftex.def)             Requested size: 581.80838pt x 174.02512pt.
 
-</home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-IZ-Target_17.png, id=78, 377.41pt x 429.605pt>
-File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
-ort/figures/CL0036-IZ-Target_17.png Graphic file (type png)
+Overfull \hbox (401.13339pt too wide) in paragraph at lines 245--246
+ []|[]| 
+ []
 
-<use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
-rt/figures/CL0036-IZ-Target_17.png>
-Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-IZ-Target_17.png used on input line 238.
-(pdftex.def)             Requested size: 132.09547pt x 150.364pt.
 
-</home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-YJ-Target_17.png, id=79, 427.5975pt x 375.4025pt>
-File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
-ort/figures/CL0036-YJ-Target_17.png Graphic file (type png)
+Overfull \hbox (170.8587pt too wide) in paragraph at lines 228--247
+ [] 
+ []
 
-<use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
-rt/figures/CL0036-YJ-Target_17.png>
-Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-YJ-Target_17.png used on input line 240.
-(pdftex.def)             Requested size: 149.66136pt x 131.39284pt.
+[9 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL003
+6-Target_30.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtrac
+tion/new_report/figures/CL0036-IZ-Target_30.png> </home/rburnet/S16work/diagnos
+tic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_30.png
+> <../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_30_Hbeta.pdf> <../figures/CL0
+036_IZ/COMBINE_SCI_RECONSTRUCTED_30_OIII.pdf
 
+pdfTeX warning: pdflatex (file ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_3
+0_OIII.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_30_Halpha.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_3
+0_Halpha.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>]
 Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 
 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
-arget_19.png, id=80, 449.68pt x 449.68pt>
+arget_7.png, id=1794, 449.68pt x 449.68pt>
+File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
+036-Target_7.png Graphic file (type png)
+
+<use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
+36-Target_7.png>
+Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
+T_images/CL0036/CL0036-Target_7.png used on input line 257.
+(pdftex.def)             Requested size: 157.39035pt x 157.39035pt.
+
+</home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
+igures/CL0036-IZ-Target_7.png, id=1795, 375.4025pt x 426.59375pt>
+File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
+ort/figures/CL0036-IZ-Target_7.png Graphic file (type png)
+
+<use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
+rt/figures/CL0036-IZ-Target_7.png>
+Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
+subtraction/new_report/figures/CL0036-IZ-Target_7.png used on input line 259.
+(pdftex.def)             Requested size: 150.15834pt x 170.63446pt.
+
+</home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
+igures/CL0036-YJ-Target_7.png, id=1796, 427.5975pt x 376.40625pt>
+File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
+ort/figures/CL0036-YJ-Target_7.png Graphic file (type png)
+
+<use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
+rt/figures/CL0036-YJ-Target_7.png>
+Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
+subtraction/new_report/figures/CL0036-YJ-Target_7.png used on input line 261.
+(pdftex.def)             Requested size: 171.03596pt x 150.55983pt.
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_7_Hbeta.pdf, id=1797, 1291.9157
+pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_7_Hbeta.pdf Graphic file (
+type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_7_Hbeta.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_7_Hbeta
+.pdf used on input line 270.
+(pdftex.def)             Requested size: 581.3567pt x 174.02512pt.
+
+Overfull \hbox (400.68172pt too wide) in paragraph at lines 270--271
+ []|[]| 
+ []
+
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_7_OIII.pdf, id=1798, 1296.52667
+pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_7_OIII.pdf Graphic file (t
+ype pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_7_OIII.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_7_OIII.
+pdf used on input line 271.
+(pdftex.def)             Requested size: 583.43161pt x 174.02512pt.
+
+Overfull \hbox (402.75662pt too wide) in paragraph at lines 271--272
+ []|[]| 
+ []
+
+
+<../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_7_Halpha.pdf, id=1799, 1292.919
+45pt x 386.72606pt>
+File: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_7_Halpha.pdf Graphic file 
+(type pdf)
+
+<use ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_7_Halpha.pdf>
+Package pdftex.def Info: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_7_Halph
+a.pdf used on input line 272.
+(pdftex.def)             Requested size: 581.80838pt x 174.02512pt.
+
+Overfull \hbox (401.13339pt too wide) in paragraph at lines 272--273
+ []|[]| 
+ []
+
+
+Overfull \hbox (170.8587pt too wide) in paragraph at lines 255--274
+ [] 
+ []
+
+[10 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
+36-Target_7.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtrac
+tion/new_report/figures/CL0036-IZ-Target_7.png> </home/rburnet/S16work/diagnost
+ic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_7.png> 
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_7_Hbeta.pdf> <../figures/CL0036
+_IZ/COMBINE_SCI_RECONSTRUCTED_7_OIII.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_7
+_OIII.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_7_Halpha.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_7
+_Halpha.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+
+</home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
+arget_17.png, id=2018, 449.68pt x 449.68pt>
+File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
+036-Target_17.png Graphic file (type png)
+
+<use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
+36-Target_17.png>
+Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
+T_images/CL0036/CL0036-Target_17.png used on input line 285.
+(pdftex.def)             Requested size: 157.39035pt x 157.39035pt.
+
+</home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
+igures/CL0036-IZ-Target_17.png, id=2019, 377.41pt x 429.605pt>
+File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
+ort/figures/CL0036-IZ-Target_17.png Graphic file (type png)
+
+<use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
+rt/figures/CL0036-IZ-Target_17.png>
+Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
+subtraction/new_report/figures/CL0036-IZ-Target_17.png used on input line 287.
+(pdftex.def)             Requested size: 150.96132pt x 171.83894pt.
+
+</home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
+igures/CL0036-YJ-Target_17.png, id=2020, 427.5975pt x 375.4025pt>
+File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
+ort/figures/CL0036-YJ-Target_17.png Graphic file (type png)
+
+<use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
+rt/figures/CL0036-YJ-Target_17.png>
+Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
+subtraction/new_report/figures/CL0036-YJ-Target_17.png used on input line 289.
+(pdftex.def)             Requested size: 171.03596pt x 150.15834pt.
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_17_Hbeta.pdf, id=2021, 1291.915
+7pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_17_Hbeta.pdf Graphic file 
+(type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_17_Hbeta.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_17_Hbet
+a.pdf used on input line 298.
+(pdftex.def)             Requested size: 581.3567pt x 174.02512pt.
+
+Overfull \hbox (400.68172pt too wide) in paragraph at lines 298--299
+ []|[]| 
+ []
+
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_17_OIII.pdf, id=2022, 1296.5266
+7pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_17_OIII.pdf Graphic file (
+type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_17_OIII.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_17_OIII
+.pdf used on input line 299.
+(pdftex.def)             Requested size: 583.43161pt x 174.02512pt.
+
+Overfull \hbox (402.75662pt too wide) in paragraph at lines 299--300
+ []|[]| 
+ []
+
+
+<../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_17_Halpha.pdf, id=2023, 1292.91
+945pt x 386.72606pt>
+File: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_17_Halpha.pdf Graphic file
+ (type pdf)
+
+<use ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_17_Halpha.pdf>
+Package pdftex.def Info: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_17_Halp
+ha.pdf used on input line 300.
+(pdftex.def)             Requested size: 581.80838pt x 174.02512pt.
+
+Overfull \hbox (401.13339pt too wide) in paragraph at lines 300--301
+ []|[]| 
+ []
+
+
+Overfull \hbox (170.8587pt too wide) in paragraph at lines 283--302
+ [] 
+ []
+
+[11 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
+36-Target_17.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtra
+ction/new_report/figures/CL0036-IZ-Target_17.png> </home/rburnet/S16work/diagno
+stic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_17.pn
+g> <../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_17_Hbeta.pdf> <../figures/CL
+0036_IZ/COMBINE_SCI_RECONSTRUCTED_17_OIII.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_1
+7_OIII.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_17_Halpha.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_1
+7_Halpha.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+
+</home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
+arget_19.png, id=2242, 449.68pt x 449.68pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
 036-Target_19.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
 36-Target_19.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
-T_images/CL0036/CL0036-Target_19.png used on input line 257.
+T_images/CL0036/CL0036-Target_19.png used on input line 312.
 (pdftex.def)             Requested size: 157.39035pt x 157.39035pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-IZ-Target_19.png, id=81, 376.40625pt x 429.605pt>
+igures/CL0036-IZ-Target_19.png, id=2243, 376.40625pt x 429.605pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-IZ-Target_19.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-IZ-Target_19.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-IZ-Target_19.png used on input line 259.
-(pdftex.def)             Requested size: 131.74416pt x 150.364pt.
+subtraction/new_report/figures/CL0036-IZ-Target_19.png used on input line 314.
+(pdftex.def)             Requested size: 150.55983pt x 171.83894pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-YJ-Target_19.png, id=82, 429.605pt x 376.40625pt>
+igures/CL0036-YJ-Target_19.png, id=2244, 429.605pt x 376.40625pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-YJ-Target_19.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-YJ-Target_19.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-YJ-Target_19.png used on input line 261.
-(pdftex.def)             Requested size: 150.364pt x 131.74416pt.
- [6 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
-36-Target_17.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtra
-ction/new_report/figures/CL0036-IZ-Target_17.png> </home/rburnet/S16work/diagno
-stic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_17.pn
-g> </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL003
-6-Target_19.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtrac
-tion/new_report/figures/CL0036-IZ-Target_19.png> </home/rburnet/S16work/diagnos
-tic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_19.png
+subtraction/new_report/figures/CL0036-YJ-Target_19.png used on input line 316.
+(pdftex.def)             Requested size: 171.83894pt x 150.55983pt.
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_19_Hbeta.pdf, id=2245, 1291.915
+7pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_19_Hbeta.pdf Graphic file 
+(type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_19_Hbeta.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_19_Hbet
+a.pdf used on input line 325.
+(pdftex.def)             Requested size: 581.3567pt x 174.02512pt.
+
+Overfull \hbox (400.68172pt too wide) in paragraph at lines 325--326
+ []|[]| 
+ []
+
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_19_OIII.pdf, id=2246, 1296.5266
+7pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_19_OIII.pdf Graphic file (
+type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_19_OIII.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_19_OIII
+.pdf used on input line 326.
+(pdftex.def)             Requested size: 583.43161pt x 174.02512pt.
+
+Overfull \hbox (402.75662pt too wide) in paragraph at lines 326--327
+ []|[]| 
+ []
+
+
+<../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_19_Halpha.pdf, id=2247, 1292.91
+945pt x 386.72606pt>
+File: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_19_Halpha.pdf Graphic file
+ (type pdf)
+
+<use ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_19_Halpha.pdf>
+Package pdftex.def Info: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_19_Halp
+ha.pdf used on input line 327.
+(pdftex.def)             Requested size: 581.80838pt x 174.02512pt.
+
+Overfull \hbox (401.13339pt too wide) in paragraph at lines 327--328
+ []|[]| 
+ []
+
+
+Overfull \hbox (170.8587pt too wide) in paragraph at lines 310--329
+ [] 
+ []
+
+[12 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
+36-Target_19.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtra
+ction/new_report/figures/CL0036-IZ-Target_19.png> </home/rburnet/S16work/diagno
+stic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_19.pn
+g> <../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_19_Hbeta.pdf> <../figures/CL
+0036_IZ/COMBINE_SCI_RECONSTRUCTED_19_OIII.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_1
+9_OIII.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_19_Halpha.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_1
+9_Halpha.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
 
  []
 
 
 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0036-T
-arget_6.png, id=92, 449.68pt x 449.68pt>
+arget_6.png, id=2465, 449.68pt x 449.68pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL0
 036-Target_6.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
 36-Target_6.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/figures/HS
-T_images/CL0036/CL0036-Target_6.png used on input line 280.
+T_images/CL0036/CL0036-Target_6.png used on input line 340.
 (pdftex.def)             Requested size: 157.39035pt x 157.39035pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-IZ-Target_6.png, id=93, 376.40625pt x 429.605pt>
+igures/CL0036-IZ-Target_6.png, id=2466, 376.40625pt x 429.605pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-IZ-Target_6.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-IZ-Target_6.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-IZ-Target_6.png used on input line 282.
-(pdftex.def)             Requested size: 131.74416pt x 150.364pt.
+subtraction/new_report/figures/CL0036-IZ-Target_6.png used on input line 342.
+(pdftex.def)             Requested size: 150.55983pt x 171.83894pt.
 
 </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_report/f
-igures/CL0036-YJ-Target_6.png, id=94, 426.59375pt x 377.41pt>
+igures/CL0036-YJ-Target_6.png, id=2467, 426.59375pt x 377.41pt>
 File: /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_rep
 ort/figures/CL0036-YJ-Target_6.png Graphic file (type png)
 
 <use /home/rburnet/S16work/diagnostic_of_objects/local_sky_subtraction/new_repo
 rt/figures/CL0036-YJ-Target_6.png>
 Package pdftex.def Info: /home/rburnet/S16work/diagnostic_of_objects/local_sky_
-subtraction/new_report/figures/CL0036-YJ-Target_6.png used on input line 284.
-(pdftex.def)             Requested size: 149.31004pt x 132.09547pt.
- [7 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
+subtraction/new_report/figures/CL0036-YJ-Target_6.png used on input line 344.
+(pdftex.def)             Requested size: 170.63446pt x 150.96132pt.
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_6_Hbeta.pdf, id=2468, 1291.9157
+pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_6_Hbeta.pdf Graphic file (
+type pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_6_Hbeta.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_6_Hbeta
+.pdf used on input line 353.
+(pdftex.def)             Requested size: 581.3567pt x 174.02512pt.
+
+Overfull \hbox (400.68172pt too wide) in paragraph at lines 353--354
+ []|[]| 
+ []
+
+
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_6_OIII.pdf, id=2469, 1296.52667
+pt x 386.72606pt>
+File: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_6_OIII.pdf Graphic file (t
+ype pdf)
+
+<use ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_6_OIII.pdf>
+Package pdftex.def Info: ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_6_OIII.
+pdf used on input line 354.
+(pdftex.def)             Requested size: 583.43161pt x 174.02512pt.
+
+Overfull \hbox (402.75662pt too wide) in paragraph at lines 354--355
+ []|[]| 
+ []
+
+
+<../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_6_Halpha.pdf, id=2470, 1292.919
+45pt x 386.72606pt>
+File: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_6_Halpha.pdf Graphic file 
+(type pdf)
+
+<use ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_6_Halpha.pdf>
+Package pdftex.def Info: ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_6_Halph
+a.pdf used on input line 355.
+(pdftex.def)             Requested size: 581.80838pt x 174.02512pt.
+
+Overfull \hbox (401.13339pt too wide) in paragraph at lines 355--356
+ []|[]| 
+ []
+
+
+Overfull \hbox (170.8587pt too wide) in paragraph at lines 338--357
+ [] 
+ []
+
+[13 </home/rburnet/S16work/diagnostic_of_objects/figures/HST_images/CL0036/CL00
 36-Target_6.png> </home/rburnet/S16work/diagnostic_of_objects/local_sky_subtrac
 tion/new_report/figures/CL0036-IZ-Target_6.png> </home/rburnet/S16work/diagnost
-ic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_6.png>]
- (./CL0036_diagnostic_report.aux) ) 
+ic_of_objects/local_sky_subtraction/new_report/figures/CL0036-YJ-Target_6.png> 
+<../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_6_Hbeta.pdf> <../figures/CL0036
+_IZ/COMBINE_SCI_RECONSTRUCTED_6_OIII.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_IZ/COMBINE_SCI_RECONSTRUCTED_6
+_OIII.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_6_Halpha.pdf
+
+pdfTeX warning: pdflatex (file ../figures/CL0036_YJ/COMBINE_SCI_RECONSTRUCTED_6
+_Halpha.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>] (./CL0036_diagnostic_report.aux) ) 
 Here is how much of TeX's memory you used:
- 4347 strings out of 493339
- 76623 string characters out of 6141383
- 128796 words of memory out of 5000000
- 7708 multiletter control sequences out of 15000+600000
+ 4529 strings out of 493339
+ 87123 string characters out of 6141383
+ 127822 words of memory out of 5000000
+ 7852 multiletter control sequences out of 15000+600000
  5339 words of font info for 22 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
- 42i,21n,40p,285b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr7.pfb>
-Output written on CL0036_diagnostic_report.pdf (7 pages, 814161 bytes).
+ 42i,21n,40p,284b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr7.pfb>
+Output written on CL0036_diagnostic_report.pdf (13 pages, 1485482 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 2698 PDF objects out of 2984 (max. 8388607)
+ 471 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 366 words of extra memory for PDF output out of 10000 (max. 10000000)
 
