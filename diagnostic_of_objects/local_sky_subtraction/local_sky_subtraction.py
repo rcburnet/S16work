@@ -148,7 +148,7 @@ for i in range(len(hdulist)):
             plt.ylabel('Flux (ergs cm$\mathregular{^{-2}}$ $\\AA\mathregular{^{-1}}$ s$\mathregular{^{-1}}$)',fontsize=10)
             plt.axis('tight')
 
-            # pick minimum and maximum y values
+            # pick minimum and maximum y values for plot (minimum = min of mean of target flux and sky flux)
             flux_domain = []
             sky_domain = []
             for m in range(len(x_IZ)):
