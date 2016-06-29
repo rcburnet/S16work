@@ -61,8 +61,11 @@ for i in range(len(CL0036_IZ_info)):
 x_YJ = np.linspace(1.0,1.359,2048)
 x_IZ = np.linspace(0.78,1.09,2048)
 
+m_IZ_list = []  #list of calculated M_IZ magnitudes, to be used in M_IZ_vs_M_Z.py to plot M_IZ vs M_Z
+m_Z_list = []   #list of retrieved Z magnitudes from the txt table files, to be used in M_IZ_vs_M_Z.py
+
 for i in range(len(hdulist)):
-    if not os.path.isfile('./figures/'+hdulist[i][62:]+'.pdf'):
+    if not False:
         hdulist1 = fits.open(hdulist[i])
         target_flux = []
         median_flux = []
@@ -92,6 +95,7 @@ for i in range(len(hdulist)):
         if 'IZ' in hdulist[i]:
             F0 = 7.63e-9
         mag = -2.5*np.log10(total_target_flux/(0.1*F0))
+        m_IZ_list.append(mag)
         #print hdulist[i][62:], mag
 
         #Now plot spectrum
@@ -104,29 +108,36 @@ for i in range(len(hdulist)):
                 if '_' in hdulist[i][-7:-5]:
                     if CL0034_info[k][0] == int(hdulist[i][-6:-5]):
                         z = CL0034_info[k][5]
+                        mag2 = CL0034_info[k][7]
                 else:
                     if CL0034_info[k][0] == int(hdulist[i][-7:-5]):
                         z = CL0034_info[k][5]
+                        mag2 = CL0034_info[k][7]
         if 'CL0036' in hdulist[i]:
             if 'IZ' in hdulist[i]:
                 for k in range(len(CL0036_IZ_info)):
                     if '_' in hdulist[i][-7:-5]:
                         if CL0036_IZ_info[k][0] == int(hdulist[i][-6:-5]):
                             z = CL0036_IZ_info[k][5]
+                            mag2 = CL0036_IZ_info[k][7]
                     else:
                         if CL0036_IZ_info[k][0] == int(hdulist[i][-7:-5]):
                             z = CL0036_IZ_info[k][5]
+                            mag2 = CL0036_IZ_info[k][7]
         if 'CL0036' in hdulist[i]:
             if 'YJ' in hdulist[i]:
                 for k in range(len(CL0036_YJ_info)):
                     if '_' in hdulist[i][-7:-5]:
                         if CL0036_YJ_info[k][0] == int(hdulist[i][-6:-5]):
                             z = CL0036_YJ_info[k][5]
+                            mag2 = CL0036_YJ_info[k][7]
                     else:
                         if CL0036_YJ_info[k][0] == int(hdulist[i][-7:-5]):
                             z = CL0036_YJ_info[k][5]
+                            mag2 = CL0036_YJ_info[k][7]
         #print hdulist[i], z
-        if 'YJ' in hdulist[i]:
+        m_Z_list.append(mag2)
+        if 'YJ' in hdulist[i] and not os.path.isfile('./figures/'+hdulist[i][62:-5]+'_Halpha.pdf'):
             #Plot Halpha
             line1, = plt.plot(x_YJ,median_flux, label='Target Flux')
             line6, = plt.plot(x_YJ,sky_flux, label='Sky Flux')
@@ -172,7 +183,7 @@ for i in range(len(hdulist)):
             plt.close()
             hdulist1.close()
 
-        if 'IZ' in hdulist[i]:
+        if 'IZ' in hdulist[i] and not os.path.isfile('./figures/'+hdulist[i][62:-5]+'_Hbeta.pdf') and not os.path.isfile('./figures/'+hdulist[i][62:-5]+'_OIII.pdf'):
             #Plot Hbeta
             line1, = plt.plot(x_IZ,median_flux, label='Target Flux')
             line6, = plt.plot(x_IZ,sky_flux, label='Sky Flux')
