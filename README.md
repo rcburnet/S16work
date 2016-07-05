@@ -27,6 +27,8 @@ These are the scripts designed for use on my laptop.
 
 ./txt\_tables/ contains the txt tables provided by Dr. Balogh which designate how bright the target in each arms is, their redshift, and other user data. It also contains a script on how to extract info from the txt tables if needed.
 
+./SAMI/ contains the scripts for my second project with SAMI survey data.
+
 
 Fwd_ Re_ kmos data.zip is the compressed .zip file from which the txt tables came from.
 
