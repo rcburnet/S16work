@@ -58,11 +58,13 @@ for i in range(len(sami_coord)):
         x2 = np.sin(phi2)*np.cos(theta2)
         y2 = np.sin(phi2)*np.sin(theta2)
         z2 = np.cos(phi2)
+
 #        dist = ((x1 - x2)**2 + (y1 - y2)**2 + (z1 - z2)**2)**0.5
 #                dist = ((np.sin(sami_coord[i][1]*np.pi/180.0)*np.cos(sami_coord[i][0]*np.pi/180.0) - np.sin(alfalfa_coord[j][1]*np.pi/180.0)*np.cos(alfalfa_coord[j][0]*np.pi/180.0))**2+(np.sin(sami_coord[i][1]*np.pi/180.0)*np.sin(sami_coord[i][0]*np.pi/180.0) - np.sin(alfalfa_coord[j][1]*np.pi/180.0)*np.sin(alfalfa_coord[j][0]*np.pi/180.0))**2+(np.cos(sami_coord[i][1]*np.pi/180.0) - np.cos(alfalfa_coord[j][1]*np.pi/180.0))**2)**0.5
     #    beta = np.arccos(1 - dist**2/2)*180.0/np.pi
         #beta = np.arccos(np.cos(phi1)*np.cos(phi2)+np.sin(phi1)*np.sin(phi2)*np.cos(theta1 - theta2))*180/np.pi
 ###        beta = np.arctan2((np.cos(phi2)*(np.sin(theta1-theta2))**2+(np.cos(phi1)*np.sin(phi2) - np.sin(phi1)*np.cos(phi2)*(np.cos(theta1-theta2))**2))**0.5,np.sin(phi1)*np.sin(phi2)+np.cos(phi1)*np.cos(phi2)*np.cos(theta1-theta2))
+
         beta = great_circle((theta1,phi1),(theta2,phi2)).meters*180.0/(np.pi*6371000)*3600
         new_closest[i].append(beta)
 
