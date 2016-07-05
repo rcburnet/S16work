@@ -1,0 +1,11 @@
+pair_sami_alfalfa.py is a script for looking at SAMI txt file and any ALFALFA csv file and prints out the closest pairs between the two surveys and their distances in arcseconds.
+
+SAMI_EarlyDataRelease.txt is the txt file for the SAMI survey targets.
+
+a40.datafile1.csv is the csv file for the a.40 ALFALFA survey targets.
+
+a70_160624.csv is the csv file for the a.70 ALFALFA survey targets. This txt file has the closest target pairings at 7 targets being below 0.09 arcseconds of distance and the two coordinates lying on the same target in SIMBAD (not the case for the other ALFALFA csv files).
+
+alfalfa.gridsa_160317.csv is the csv file for the a.100 ALFALFA survey targets over the lowest velocity quadrant (cz < 3200 km/s) only.
+
+
