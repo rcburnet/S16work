@@ -81,6 +81,7 @@ for i in range(len(hdulist)):
             hrange.append(False)
 
     summed_data = np.zeros([50,50])
+    data = hdulist1[0].data #Doing this again to bring back the NaN values
 
     for j in range(0,len(data)):
         if hrange[j] == True:
