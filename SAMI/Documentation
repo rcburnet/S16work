@@ -8,4 +8,16 @@ a70_160624.csv is the csv file for the a.70 ALFALFA survey targets. This txt fil
 
 alfalfa.gridsa_160317.csv is the csv file for the a.100 ALFALFA survey targets over the lowest velocity quadrant (cz < 3200 km/s) only.
 
-collapse_cube_complete.py is a script to create the Halpha image for each of the 7 SAMI sources and plot their spectra. Must be run in ~/SAMI/data (where the reduced and calibrated SAMI datacubes are)
+collapse_cube_Halpha_complete.py is a script to create the Halpha image for each of the 7 SAMI sources and plot their spectra, saving the fits images and pdf plots in the working directory.
+
+collapse_cube_continuum_complete.py is a script to create the continuum flux image (between Halpha + 7Ang and NII_2 - 7Ang) for each of the 7 SAMI sources and plot their spectra, saving the fits images and pdf plots in the working directory.
+
+SDSS_data_retrieval_request.csv is a csv file that contains the coordinates (RA, DEC) of the 7 SAMI sources to be used to retrieve the SDSS data. Pasted to the site: http://cas.sdss.org/dr7/en/tools/search/IQS.asp to output the following csv file for data retrieval.
+
+SDSS_data_retrieval_request_result.csv is the output CSV file from http://cas.sdss.org/dr7/en/tools/search/IQS.asp to be uploaded to http://das.sdss.org/www/html/post_fields.html to retrieve SDSS data (found in ~/SAMI/SDSS_data/) . See http://classic.sdss.org/dr7/tutorials/retrieveFITS.html for a tutorial on how to retrieve SDSS data.
+
+./continuum_images/ contains the images of the continuum flux of the 7 SAMI sources. They are screenshots of the fits files in ~/SAMI/data/continuum/ .
+
+./Halpha_images/ contains the Halpha images of the 7 SAMI sources. They are screenshots of the fits files in ~/SAMI/data/Halpha/ .
+
+./SDSS_images/ contains the rband SDSS images of the 7 sources, oriented the same as the SAMI data and includes a green circle that encloses the approximate size and location of the SAMI data. They are screenshots of the fits files in ~/SAMI/SDSS_data/ .
