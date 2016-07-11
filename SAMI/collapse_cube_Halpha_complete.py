@@ -1,4 +1,4 @@
-#Script to create collapsed cube between FWHM of Halpha profile (ie. create Halpha image) and plot spectrum
+#Script to create collapsed cube between FWHM of Halpha profile (ie. create Halpha image) and plot spectrum. Note that the flux is in units of 10**(-16) erg /s /cm**2 /angstrom /pixel, not in proper units. May need to multiply by number of pixels to get right units (?)
 
 from astropy.io import fits
 import numpy as np
