@@ -21,3 +21,5 @@ SDSS_data_retrieval_request_result.csv is the output CSV file from http://cas.sd
 ./Halpha_images/ contains the Halpha images of the 7 SAMI sources. They are screenshots of the fits files in ~/SAMI/data/Halpha/ .
 
 ./SDSS_images/ contains the rband SDSS images of the 7 sources, oriented the same as the SAMI data and includes a green circle that encloses the approximate size and location of the SAMI data. They are screenshots of the fits files in ~/SAMI/SDSS_data/ .
+
+./Halpha_to_SFR/ contains the scripts for converting Halpha to SFR using the relation in the Kennicutt 1998 (K98) article.
