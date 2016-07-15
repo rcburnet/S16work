@@ -92,6 +92,7 @@ for i in range(len(hdulist)):
     #convert Halpha_flux to luminosity
     L = 4 * np.pi * D**2.0 * integral
 
+    #Convert luminosity to SFR
     SFR = 7.9e-42 * L
 
     hdulist1[0].data = SFR
