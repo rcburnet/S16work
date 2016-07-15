@@ -93,7 +93,8 @@ for i in range(len(hdulist)):
     L = 4 * np.pi * D**2.0 * integral
 
     #Convert luminosity to SFR
-    SFR = 7.9e-42 * L
+    S = (D * 1000 / 3.0856776e+24) * 0.00014 * np.pi / 180.0 #number of pc per pix (width and length, NOT AREA.)
+    SFR = 7.9e-42 * L  / S**2.0 #Calculate SFR from luminosity, convert from SFR/pix to SFR/pc. My area conversion may be wrong, may not just be S^2, look further into it.
 
     hdulist1[0].data = SFR
     hdulist1[0].header['BUNIT'] = 'M_sun /yr /pixel'
