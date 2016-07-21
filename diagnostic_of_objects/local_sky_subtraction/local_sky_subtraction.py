@@ -95,7 +95,8 @@ for i in range(len(hdulist)):
         if 'IZ' in hdulist[i]:
             F0 = 7.63e-9
         mag = -2.5*np.log10(total_target_flux/(0.1*F0))
-        m_IZ_list.append(mag)
+        if 'IZ' in hdulist[i]:
+            m_IZ_list.append([hdulist[i],mag])
         #print hdulist[i][62:], mag
 
         #Now plot spectrum
@@ -136,7 +137,8 @@ for i in range(len(hdulist)):
                             z = CL0036_YJ_info[k][5]
                             mag2 = CL0036_YJ_info[k][7]
         #print hdulist[i], z
-        m_Z_list.append(mag2)
+        if 'IZ' in hdulist[i]:
+            m_Z_list.append(mag2)
         if 'YJ' in hdulist[i] and not os.path.isfile('./figures/'+hdulist[i][62:-5]+'_Halpha.pdf'):
             #Plot Halpha
             line1, = plt.plot(x_YJ,median_flux, label='Target Flux')
