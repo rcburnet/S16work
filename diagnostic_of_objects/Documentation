@@ -6,4 +6,4 @@ img_scale.py is a python script I found on the web that I use to create png imag
 
 /report/ contains the diagnostic report to be sent to Balogh
 
-/local_sky_subtraction/ contains the scripts and figures of my attempt at using the local sky around an elliptical aperture for each target and subtracting the flux of that sky from the each spaxel to ensure the aperture flux is positive and not negative (like it is right now for CL0034-IZ target 11). Started June 22. See Balogh's email on June 15 for information.
+/local_sky_subtraction/ contains the scripts and figures of my attempt at using the local sky around an elliptical aperture for each target and subtracting the flux of that sky from the each spaxel to ensure the aperture flux is positive and not negative (like it is right now for CL0034-IZ target 11). Started June 22. See Balogh's email on June 15 for information. Also contains script for plotting M_IZ vs M_Z of reported targets (M_IZ_vs_M_Z.py) and a script to calculate expected Halpha flux values from SFR(OII) as reported in Sean's txt files to be reported to the new diagnostic report (new\_report).

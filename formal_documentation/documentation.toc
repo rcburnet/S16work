@@ -1,0 +1,3 @@
+\contentsline {section}{\numberline {1}Introduction and Related Documents/Articles}{2}{section.1}
+\contentsline {section}{\numberline {2}May 1 - 12, 2016: Getting Started}{3}{section.2}
+\contentsline {section}{\numberline {3}May 12: Plotting spectrum of reduced data cubes and searching for signs of H$\alpha $}{3}{section.3}

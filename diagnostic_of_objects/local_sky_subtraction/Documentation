@@ -1,0 +1,15 @@
+Contains the scripts and figures of my attempt at using the local sky around an elliptical aperture for each target and subtracting the flux of that sky from the each spaxel to ensure the aperture flux is positive and not negative (like it is right now for CL0034-IZ target 11). Started June 22. See Balogh's email on June 15 for information. Also contains script for plotting M_IZ vs M_Z of reported targets (M_IZ_vs_M_Z.py) and a script to calculate expected Halpha flux values from SFR(OII) as reported in Sean's txt files to be reported to the new diagnostic report (new\_report).
+
+local_sky_subtraction.py is the script using the local sky around an elliptical aperture for each target and subtracting the flux of that sky from the each spaxel to ensure the aperture flux is positive and not negative (like it is right now for CL0034-IZ target 11).
+
+local_sky_subtraction_sky_arm_sky_frame_as_sky_flux.py is similar to the above script, except instead of using the local sky around an elliptical object for each target to subtract, it used that target's corresponding sky arm from the reduced sky frame as the sky to subtract.
+
+M_IZ_vs_M_Z.py is the script that plots M_IZ vs M_Z for each of the targets in the diagnostic reports.
+
+modules.py contains the modules used universally by all the scripts.
+
+SFR_to_Halpha.py is the script to calculate expected Halpha flux from reported SFR(OII) values as detailed in Sean's catalogue txt files in ~/S16work/txt_tables/.
+
+spaxel_define.py contains the elliptical aperatures used by the local_sky_subtraction.py script to differentiate between targets and local skies.
+
+./figures/ contains the figures from the scripts that produce figures.

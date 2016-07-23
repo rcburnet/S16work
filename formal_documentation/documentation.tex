@@ -1,0 +1,52 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage{geometry}
+\geometry{letterpaper, portrait, margin=0.5in}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{hyperref}
+\setlength{\parindent}{0pt}
+\renewcommand\refname{Related documents/articles to read:}
+
+\begin{document}
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction and Related Documents/Articles}
+
+This is a document describing what I did over the term. Similar to a journal except more formal. The first section (May 1 - 12, 2016) details how I got started and could be used as a starting point for anyone else who will carry on the work. In short, read through the science proposal and KMOS instrument explanation, read and follow the KMOS esoreflex tutorial, then read the KMOS pipeline manual and cookbook and everything about KMOS to get familiar with it, download the data and associated calibration frames and start reducing data with esoreflex and writing scripts for working with the data. All my work and scripts can be found on my github page: github.com/rcburnet/S16work .
+\begin{thebibliography}{1}
+\bibitem{github}My github page for all my scripts: \url{github.com/rcburnet/S16work}
+\bibitem{Proposal}Science Proposal: In $\sim$/S16work/ called proposal.pdf\\
+\bibitem{KMOS instrument explanation}KMOS instrument explanation (overview, description, etc.): \url{https://www.eso.org/sci/facilities/paranal/instruments/kmos.html}\\
+\bibitem{esoreflex installation}esoreflex installation (uses KEPLER to visually portray esorex pipeline workflows. Used to reduce KMOS data.): \url{http://www.eso.org/sci/software/pipelines/reflex_workflows/}\\
+\bibitem{KMOS esoreflex tutorial}KMOS esoreflex tutorial: \url{ftp://ftp.eso.org/pub/dfs/pipelines/kmos/kmos-reflex-tutorial-1.6.pdf}\\
+\bibitem{KMOS pipeline manual}KMOS pipeline manual: \url{ftp://ftp.eso.org/pub/dfs/pipelines/kmos/kmos-pipeline-manual-2.18.pdf}\\
+\bibitem{KMOS pipeline cookbook}KMOS pipeline cookbook: \url{ftp://ftp.eso.org/pub/dfs/pipelines/kmos/kmos-pipeline-cookbook-1.5.pdf}\\
+\bibitem{ESO Archive Query Form}ESO Archive Query Form: \url{http://archive.eso.org/eso/eso_archive_main.html}
+\bibitem{SAMI instrument front-page}SAMI instrument front-page: \url{http://sami-survey.org/}\\
+\bibitem{SAMI Early Data Release}SAMI Early Data Release (this is the data used): \url{http://sami-survey.org/edr}\\
+\bibitem{ALFALFA survey data}ALFALFA survey data: \url{http://egg.astro.cornell.edu/alfalfa/data/}\\
+\bibitem{K98}K98 (SFR from Halpha relation) article: \url{http://www.annualreviews.org/doi/pdf/10.1146/annurev.astro.36.1.189}\\
+
+\end{thebibliography}
+I began working on the desktop computer provided to me (stavrogin.uwaterloo.ca) but moved to my own laptop with Fedora 23 installed at a later date (May 24). Directory designations and filenames will change between the two workstations.\\
+
+\newpage
+
+\section{May 1 - 12, 2016: Getting Started}
+Spent most of my time understanding the KMOS data, esoreflex/esorex (the software package used to reduce and calibrate the KMOS data) pipelines and recipes, especially esoreflex and how to use it to reduce KMOS data. I would start first by reading through the science proposal \cite{Proposal}, then the KMOS instrument explanation \cite{KMOS instrument explanation} and then reading and following the KMOS esoreflex tutorial \cite{KMOS esoreflex tutorial} to get an understanding of the instrument, get a feel of the data reduction process and pipelines, and getting familiar with esoreflex before anything. For information on the pipelines and recipes used to reduce KMOS data with esoreflex/esorex and to understand what esoreflex does to reduce and calibrate the data, look into documents \cite{KMOS pipeline manual} and \cite{KMOS pipeline cookbook}. I would recommend reading anything related to KMOS (documents/articles above as well as anything in the bookmarks.html bookmark file in $\sim$/S16work/bookmarks.html) after you familiarized yourself with the tutorial. The tutorial tells you how to install esoreflex and how to use it. During the installation of esoreflex, it provides you the option to download demo data you can use as you follow the tutorial. I suggest doing that to get familiar with the kinds of data you will be working with and the data reduction pipelines and recipes before going into the real data reduction yourself and reading deeper into the esoreflex/esorex pipelines and recipes as they can be a cumbersome read.\\
+
+After going through the tutorial and reading through anything to do with KMOS and esoreflex - after getting familiar with the data and data reduction process - you should download the KMOS data that you will be working with. To download the KMOS data, use the ESO Archive Query Form \cite{ESO Archive Query Form} with program ID: 093.A-0625 . This is the program that Balogh's data was assigned with, all the data I worked with was designated by that program ID. Put that program ID under the program ID text box then click ``search" and it'll send you to the data retrieval page. Mark everything for installation, click ``request marked dataset" and sign in or sign up to the ESO User Portal. Give a good description for the data, select ``Selected files + associated raw calibrations (if available)" to select both the raw science frames and the calibration frames associated with them (to be used with the esoreflex/esorex pipelines to reduce the data and carry out calibrations), click ``submit" and then download the files to your working directory. Note that all the science frames and associated calibration frames are together over 10GB, so make sure you have the space to accommodate. Uncompress the data and you're done! Note that you will need to change your RAW$\_$DATA$\_$DIR designation in the KMOS esoreflex workflow to the directory you downloaded your raw data to so that it can use the data. Once it's all set-up, you are ready to reduce the KMOS data yourself. Read the KMOS esoreflex tutorial, pipeline manual, and cookbook if you haven't already before you run esoreflex to reduce the data so you understand what each step of the workflow does: how the calibration data is processed and used, how the science frames are reduced, etc. \\
+
+\section{May 12: Plotting spectrum of reduced data cubes and searching for signs of H$\alpha$}
+After I familiarized myself with KMOS (the data, data reduction process, and esoreflex and its pipelines/recipes), I came across my first problem with the final reduced data cubes that esoreflex outputted after reducing the KMOS data: there was no sign of any sort of target anywhere! When looking through the data cubes is ds9, no target seemed to pop up. With the demo data, you could clearly see some bright object in the center of each cube as you go through the wavelength slices, but the KMOS data cubes had no such thing. We thought that this might be because the objects we are looking at are much fainter than the demo objects, so they won't pop out as much when going through the slices, but they should sitll have detectable and noticeable H$\alpha$ flux. Our next step was to see if we could detect any H$\alpha$.\\
+
+I created the script ``total$\_$flux$\_$vs$\_$wavelength.py" to plot the spectrum of the reduced data cubes (Flux vs. Wavelength). Total flux is defined as the total sum of every pixel flux for a particular wavelength slice. I plotted that total flux against wavelength slice to see the spectrum for each target data cube. I also plotted the location of where we'd expect to see H$\alpha$ based on the red shift of the cluster that the target belonged to (either CL0034 or CL0036, see proposal for details. Note that I could have done it using each targets' individual redshift as I have the information for each target as reported in Sean's txt table files found in $\sim$/S16work/txt$\_$tables/, however at the time I didn't, I only had the redshifts for the clusters and not for each individual target which is why I plotted the location of the H$\alpha$ line for the cluster instead of the individual target) to see if there was any peak in that general location that could be H$\alpha$. However, there was no peak - no detectable H$\alpha$ - for any of the targets. Another problem was some of the targets had an overall negative flux (ie. the continuum was below zero). This all pointed to the likely possibility that there was something going wrong with the sky subtraction during data reduction with the esoreflex/esorex pipeline.
+\end{document}
