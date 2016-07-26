@@ -3,6 +3,9 @@ import numpy as np
 from scipy import spatial
 from geopy.distance import great_circle
 
+
+# Read SAMI and ALFALFA text files to extract coordinates
+
 sami = open('SAMI_EarlyDataRelease.txt')
 sami_lines = sami.readlines()
 
@@ -34,19 +37,27 @@ for i in range(len(alfalfa_lines)):
     if i != 0:
         alfalfa_coord.append((float(alfalfa_lines[i][4]),float(alfalfa_lines[i][5])))
 
-closest = scipy.spatial.distance.cdist(sami_coord, alfalfa_coord)
+## One method of finding closest pairs:
+
+#closest = scipy.spatial.distance.cdist(sami_coord, alfalfa_coord)
 
 #for i in range(len(closest)):
 #    print min(closest[i]), sami_coord[i], alfalfa_coord[np.where(closest[i] == min(closest[i]))[0]]
 
-## Other method
+## Other method (better):
 
 r = 1
 
-new_closest = []
+new_closest = []    #Array to hold closest pairs between SAMI targets and ALFALFA survey data detections
+within_ALFALFA = [] #Array to hold coordinates of SAMI targets that are within ALFALFA survey area, regardless of whether or not they have HI detections in the ALFALFA data
 
 for i in range(len(sami_coord)):
     new_closest.append([])
+    # Find SAMI targets that are within ALFALFA range
+    if (sami_coord[i][0] < 247.5 and sami_coord[i][0] > 112.5) or sami_coord[i][0] < 45.0  or sami_coord[i][0] > 345.0:
+        if sami_coord[i][1] < 36.0 and sami_coord[i][1] > 0.0:
+            within_ALFALFA.append(sami_coord[i])
+    # Find closest pairs
     for j in range(len(alfalfa_coord)):
         theta1 = sami_coord[i][0]*np.pi/180.0
         phi1 = sami_coord[i][1]*np.pi/180.0
@@ -70,6 +81,12 @@ for i in range(len(sami_coord)):
 
 new_closest = np.array(new_closest)
 
-#print new_closest
+# Print closest pairs between SAMI data and ALFALFA survey detections
 for i in range(len(new_closest)):
     print min(new_closest[i]), sami_coord[i], alfalfa_coord[np.where(new_closest[i] == min(new_closest[i]))[0]]
+print '\n'
+
+# Print all SAMI targets that are within ALFALFA survey range
+print len(within_ALFALFA)
+for i in range(len(within_ALFALFA)):
+    print within_ALFALFA[i]
