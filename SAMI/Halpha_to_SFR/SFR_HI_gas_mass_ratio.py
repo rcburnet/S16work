@@ -25,12 +25,12 @@ for i in range(len(hdulist)):
     HI_gas_mass = 0.0
 
     if '216843' in hdulist[i]:
-        x = np.linspace(6210.35,7375.84,2048)
-        z = 0.02382
-        D = 106.6
-        S = 0.99
-        W = 142
-        HI_gas_mass = 10**9.42 #9.42 from catalog (log(HI_gas_mass)). Units of solar mass.
+        x = np.linspace(6210.35,7375.84,2048)   #Wavelength range of SAMI data
+        z = 0.02382 #Redshift as detailed in SAMI-EDR catalogue
+        D = 106.6   #Distance in Mpc as detailed in ALFALFA a.70 catalogue
+        S = 0.99    #Peak HI flux as detailed in ALFALFA a.70 catalogue
+        W = 142     #Velocity width as detailed in ALFALFA a.70 catalogue
+        HI_gas_mass = 10**9.42 #9.42 from ALFALFA a.70 catalog (log(HI_gas_mass)). Units of solar mass.
     if '220371' in hdulist[i]:
         x = np.linspace(6261.12,7425.48,2048)
         z = 0.02025
@@ -78,6 +78,6 @@ for i in range(len(hdulist)):
     A = (D * 1000)**2 * (np.cos(np.pi/2.0 - theta) - np.cos(np.pi/2.0 - theta + 0.00014 * np.pi / 180.0)) * (0.00014 * np.pi / 180.0) #area in pc^2 of 1 pix. Area derived from surface element integral over 1 pix area. pi/2 - theta since declination starts from equator (pi/2), not from zenith (0.0).
 
     tot_SFR = np.sum(data) * A  #tot SFR is the sum of the flux elements (dSFR * A summed, or the sum of SFR * A)
-    #HI_gas_mass = 2.356e5 * D**2.0 * S    #calculation of HI gas mass to the first order in units of solar masses.
+    #HI_gas_mass1 = 2.356e5 * D**2.0 * S    #calculation of HI gas mass to the first order in units of solar masses.
     SFR_HI_gas_mass_ratio = tot_SFR / HI_gas_mass
     print hdulist[i], SFR_HI_gas_mass_ratio

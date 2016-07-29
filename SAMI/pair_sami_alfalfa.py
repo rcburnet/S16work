@@ -54,7 +54,7 @@ within_ALFALFA = [] #Array to hold coordinates of SAMI targets that are within A
 for i in range(len(sami_coord)):
     new_closest.append([])
     # Find SAMI targets that are within ALFALFA range
-    if (sami_coord[i][0] < 247.5 and sami_coord[i][0] > 112.5) or sami_coord[i][0] < 45.0  or sami_coord[i][0] > 345.0:
+    if (sami_coord[i][0] < 247.5 and sami_coord[i][0] > 112.5) or sami_coord[i][0] < 45.0  or sami_coord[i][0] > 330.0:
         if sami_coord[i][1] < 36.0 and sami_coord[i][1] > 0.0:
             within_ALFALFA.append(sami_coord[i])
     # Find closest pairs
