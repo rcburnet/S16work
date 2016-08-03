@@ -1,4 +1,4 @@
-# Script to calculate upper limit to HI gas mass of the 58 SAMI targets in the ALFALFA survey area that don't have (yet or ever from ALFALFA) HI detections associated with them in the survey data. Calculates the limiting integrated flux density using the formula found in S. di Serego Alighieri et al, 2007 (http://egg.astro.cornell.edu/index.php/pubs/alfalfa_etg1.pdf) and then uses that limiting flux density to calculate an upper limit to each of the target's HI gas mass using the HI gas mass formula found in Giovanelli et al, 2005 (https://arxiv.org/pdf/astro-ph/0508301v1.pdf). Prints results to terminal and outputs to text file "HI_gas_mass_upper_limits.txt".
+# Script to calculate upper limit to HI gas mass of the 58 SAMI targets in the ALFALFA survey area that don't have (yet or ever from ALFALFA) HI detections associated with them in the survey data. Calculates the 50% completeness limit from code 1 sources with equations 4 and 5 found in Haynes et al 2011 (https://arxiv.org/pdf/1109.0027v1.pdf) and then uses that flux density to calculate an upper limit to each of the target's HI gas mass using the HI gas mass formula found in Giovanelli et al, 2005 (https://arxiv.org/pdf/astro-ph/0508301v1.pdf). Prints results to terminal and outputs to text file "HI_gas_mass_upper_limits.txt".
 
 #Note: This prints and outputs expected upper limit of HI mass for ALL SAMI targets in ALFALFA survey area (including those that ALFALFA has detected HI for), therefore must ignore those targets which have detected HI in the ALFALFA survey as we don't need to calculate the upper limit to the HI gas mass for those targets (as we already have their actual HI gas mass). I've kept them in for diagnostic purposes, to see if the actual HI gas masses are greater than the upper limits calculated here (expected). Of course, this is assuming they all have the average a.70 survey 50% velocity width and rms noise values; some targets will have less than the average values, resulting in perhaps less actual HI gas mass than calculated upper limit which assumes average a.70 values.
  
@@ -8,7 +8,7 @@ from astropy.cosmology import FlatLambdaCDM
 cosmo = FlatLambdaCDM(H0=67.8, Om0=0.308)   #Planck 2015 parameters
 
 
-#Extract required data (coordinates and redshifts of SAMI targets, average 50% velocity width and average rms noise at 10km/s of ALFALFA detections
+#Extract required data (coordinates and redshifts of SAMI targets and average 50% velocity width of ALFALFA detections)
 sami = open('../SAMI_EarlyDataRelease.txt')
 sami_lines = sami.readlines()
 
@@ -35,17 +35,14 @@ for i in range(len(sami_lines)):
             sami_coord.append((float(sami_lines[i][3]),float(sami_lines[i][8])))
 
 alfalfa_W = []  #ALFALFA 50% velocity widths
-alfalfa_rms = []    #ALFALFA rms noise at 10km/s
 alfalfa_coord = []
 
 for i in range(len(alfalfa_lines)):
     if i != 0:
         alfalfa_coord.append((float(alfalfa_lines[i][4]),float(alfalfa_lines[i][5])))
         alfalfa_W.append(float(alfalfa_lines[i][7]))
-        alfalfa_rms.append(float(alfalfa_lines[i][12]))
 
 ave_W = np.mean(alfalfa_W)  #average 50% velocity width of ALFALFA survey detections
-ave_rms = np.mean(alfalfa_rms)  #average rms noise at 10km/s of ALFALFA survey detections
 
 #Find SAMI targets that are within ALFALFA survey area
 new_closest = []    #Array to hold closest pairs between SAMI targets and ALFALFA survey data detections
@@ -72,22 +69,24 @@ for i in range(len(sami_z)):
 
 #Calculate HI gas mass upper limits of SAMI targets
 
-S_N = 6.5   #Detection threshold of ALFALFA survey data HI detections
+log_S_21_90 = 0.5 * np.log10(ave_W) - 1.14   #log of 90% completeness limit integrated flux density from Haynes et al 2011 (https://arxiv.org/pdf/1109.0027v1.pdf)
 
-Flim = 4.46e-3 * S_N * np.sqrt(ave_W) * ave_rms #Limiting integrated flux density of ALFALFA survey from S. di Serego Alighieri et al, 2007, units are Jy km/s 
+log_S_21_50 = log_S_21_90 - 0.067   #log of 50% completeness limit integrated flux density
 
-print ave_W, ave_rms, Flim
+S_21_50 = 10**(log_S_21_50) #50% completeness limit integrated flux density, units are in Jy km/s
+
+print ave_W, S_21_50
 
 HI_gas_mass = []
 
 #Write to txt file
 
-text_file = open('HI_gas_mass_upper_limits_using_Flim.txt', 'w')
+text_file = open('HI_gas_mass_upper_limits_using_50_percent_completeness_limit.txt', 'w')
 
 text_file.write('SAMI coord, calculated HI gas mass upper limits (1e6 M_sun), actual HI gas mass (1e6 M_sun) \n')
 
 for i in range(len(sami_D)):
-    HI_gas_mass.append(2.356e5 * sami_D[i]**2.0 * Flim/1e6)  #upper limit to HI gas mass of SAMI targets using Giovanelli et al, 2005 relations, units are 1e6 M_sun
+    HI_gas_mass.append(2.356e5 * sami_D[i]**2.0 * S_21_50/1e6)  #upper limit to HI gas mass of SAMI targets using Giovanelli et al, 2005 relations, units are 1e6 M_sun
     print within_ALFALFA[i], '%i' % HI_gas_mass[i] #print coordinates of SAMI targets in ALFALFA survey area and associated upper limit HI gas mass
     if 139.77630112 == within_ALFALFA[i][0]:
         text_file.write(str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '1120' + '\n')
