@@ -12,6 +12,8 @@ collapse_cube_Halpha_complete.py is a script to create the Halpha image for each
 
 collapse_cube_continuum_complete.py is a script to create the continuum flux image (between Halpha + 7Ang and NII_2 - 7Ang) for each of the 7 SAMI sources and plot their spectra, saving the fits images and pdf plots in the working directory.
 
+collapse_cube_Halpha_calculated_50_percent_velocity_widths.py is a script that calculates the FWHM velocity dispersion (50% velocity width?) of the Halpha line profile from the SAMI data. Originally thought could be used for 50% velocity widths in /HI_gas_mass_upper_limits/HI_gas_mass_upper_limits_using_50_percent_completeness_limit.py instead of the average 50% velocity width of the a.70 catalog to calculate upper limits to HI gas mass, but Balogh said that is not the case.
+
 SDSS_data_retrieval_request.csv is a csv file that contains the coordinates (RA, DEC) of the 7 SAMI sources to be used to retrieve the SDSS data. Pasted to the site: http://cas.sdss.org/dr7/en/tools/search/IQS.asp to output the following csv file for data retrieval.
 
 SDSS_data_retrieval_request_result.csv is the output CSV file from http://cas.sdss.org/dr7/en/tools/search/IQS.asp to be uploaded to http://das.sdss.org/www/html/post_fields.html to retrieve SDSS data (found in ~/SAMI/SDSS_data/) . See http://classic.sdss.org/dr7/tutorials/retrieveFITS.html for a tutorial on how to retrieve SDSS data.
@@ -23,3 +25,5 @@ SDSS_data_retrieval_request_result.csv is the output CSV file from http://cas.sd
 ./SDSS_images/ contains the rband SDSS images of the 7 sources, oriented the same as the SAMI data and includes a green circle that encloses the approximate size and location of the SAMI data. They are screenshots of the fits files in ~/SAMI/SDSS_data/ .
 
 ./Halpha_to_SFR/ contains the scripts for converting Halpha to SFR using the relation in the Kennicutt 1998 (K98) article.
+
+./HI_gas_mass_upper_limits/ contains scripts for calculating the upper limits to the HI gas mass of the 65 SAMI targets that are within the ALFALFA survey area. Two methods are employed. The correct method is used in the script HI_gas_mass_upper_limits_using_50_percent_completeness_limit.py .

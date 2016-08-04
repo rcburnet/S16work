@@ -1,4 +1,6 @@
-#Script to calculate velocity dispersion (perhaps can be used for 50% velocity widths of targets foruse in calculating HI gas mass upper limit?) using FWHM of Halpha line profile and redshifted observed Halpha line.
+#Script to calculate velocity dispersion (perhaps can be used for 50% velocity widths of targets foruse in calculating HI gas mass upper limit?) using FWHM of Halpha line profile and redshifted observed Halpha line. 
+
+#Not useful. Balogh said the Halpha velocity widths are not representative of the HI velocity widths. Stick with using average 50% velocity widths of a.70 catalog.
 
 from astropy.io import fits
 import numpy as np
