@@ -24,6 +24,6 @@ SDSS_data_retrieval_request_result.csv is the output CSV file from http://cas.sd
 
 ./SDSS_images/ contains the rband SDSS images of the 7 sources, oriented the same as the SAMI data and includes a green circle that encloses the approximate size and location of the SAMI data. They are screenshots of the fits files in ~/SAMI/SDSS_data/ .
 
-./Halpha_to_SFR/ contains the scripts for converting Halpha to SFR using the relation in the Kennicutt 1998 (K98) article.
+./Halpha_to_SFR/ contains the scripts for converting Halpha to SFR using the relation in the Kennicutt 1998 (K98) article of the 7 SAMI targets that have HI detections.
 
-./HI_gas_mass_upper_limits/ contains scripts for calculating the upper limits to the HI gas mass of the 65 SAMI targets that are within the ALFALFA survey area. Two methods are employed. The correct method is used in the script HI_gas_mass_upper_limits_using_50_percent_completeness_limit.py .
+./HI_gas_mass_upper_limits/ contains scripts for calculating the upper limits to the HI gas mass of the 65 SAMI targets that are within the ALFALFA survey area. Two methods are employed. The correct method is used in the script HI_gas_mass_upper_limits_using_50_percent_completeness_limit.py . Also contains script to calulate SFR to HI gas mass ratio, similar to script in /Halpha_to_SFR/ except it includes the 58 targets without HI detections using their upper limits to HI gas mass in the ratio, and it plots SFR/Mgas vs Mstar .

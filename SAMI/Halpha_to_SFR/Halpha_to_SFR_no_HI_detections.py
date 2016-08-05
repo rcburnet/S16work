@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Script to convert Halpha to SFR of 7 SAMI sources. First, calculate mean continuum, subtract Halpha flux to continuum, integrate over Halpha profile wavelength range to get total flux for every pixel, convert that flux to luminosity with known distances from ALFALFA csv files, then use K98 Halpha luminosity to SFR relation to generate SFR map of sources.
+# Script to convert Halpha to SFR of 58 SAMI sources that are within ALFALFA survey area but do not have HI detections. First, calculate mean continuum, subtract Halpha flux to continuum, integrate over Halpha profile wavelength range to get total flux for every pixel, convert that flux to luminosity using lumonisity distances (calculated using astropy.cosmology module), then use K98 Halpha luminosity to SFR relation to generate SFR map of sources. 
 
 # ***MUST BE RUN IN WORKING DIRECTORY WHERE YOU WANT TO PUT FITS FILES IN
 
@@ -9,46 +9,76 @@ import numpy as np
 import os
 import fnmatch
 import matplotlib.pyplot as plt
+from astropy.cosmology import FlatLambdaCDM
+cosmo = FlatLambdaCDM(H0=67.8, Om0=0.308)   #Planck 2015 parameters
 
+
+#Retrieve filenames of raw SAMI data cubes
 hdulist = []
 filename_list = []
 
-for root,dirnames,filenames in os.walk('/home/rburnet/SAMI/data/with_HI_detections/'):  #change this to directory with raw fits files
+for root,dirnames,filenames in os.walk('/home/rburnet/SAMI/data/without_HI_detections/'):  #change this to directory with raw fits files
     for filename in fnmatch.filter(filenames, '[0-9]*red*[0-9].fits'):
         hdulist.append(os.path.join(root, filename))
         filename_list.append(filename)
 
+
+#Extract GAMA id's from filenames
+GAMA_name_list = []
+
+for i in range(len(filename_list)):
+    if '_' in filename_list[i][0:6]:
+        GAMA_name_list.append(filename_list[i][0:5])
+    else:
+        GAMA_name_list.append(filename_list[i][0:6])
+
+
+#Extract required data (coordinates and redshifts of SAMI targets)
+sami = open('/home/rburnet/S16work/SAMI/SAMI_EarlyDataRelease.txt')
+sami_lines = sami.readlines()
+
+for i in range(len(sami_lines)):
+    sami_lines[i] = sami_lines[i].split(' ')
+
+sami.close()
+
+sami_coord = []
+sami_z = []
+
+for j in range(len(GAMA_name_list)):
+    for i in range(len(sami_lines)):
+        if i != 0 and i != 108:
+            if GAMA_name_list[j] in sami_lines[i]:
+                try:
+                    sami_coord.append((float(sami_lines[i][3]),float(sami_lines[i][7])))
+                    try:
+                        sami_z.append(float(sami_lines[i][16]))
+                    except:
+                        sami_z.append(float(sami_lines[i][17]))
+                except:
+                    sami_coord.append((float(sami_lines[i][3]),float(sami_lines[i][8])))
+                    try:
+                        sami_z.append(float(sami_lines[i][16]))
+                    except:
+                        sami_z.append(float(sami_lines[i][17]))
+
+
+#Calculate luminosity distance of SAMI targets using redshifts
+sami_D = []
+
+for i in range(len(sami_z)):
+    sami_D.append(cosmo.luminosity_distance(sami_z[i]).value)
+
+x = np.linspace(6843.01442183-0.568812591597*1023,6843.01442183+0.568812591597*1024,2048)
+
+#Create SFR images
 for i in range(len(hdulist)):
     hdulist1 = fits.open(hdulist[i])
-
-    if '216843' in hdulist[i]:
-        x = np.linspace(6210.35,7375.84,2048)
-        z = 0.02382
-        D = 106.6 * 3.0856776e+24  #Mpc to cm
-    if '220371' in hdulist[i]:
-        x = np.linspace(6261.12,7425.48,2048)
-        z = 0.02025
-        D = 90.8 * 3.0856776e+24
-    if '279917' in hdulist[i]:
-        x = np.linspace(6210.35,7375.84,2048)
-        z = 0.01792
-        D = 79.3 * 3.0856776e+24
-    if '623641' in hdulist[i]:
-        x = np.linspace(6210.35,7375.84,2048)
-        z = 0.01780
-        D = 77.9 * 3.0856776e+24
-    if '623726' in hdulist[i]:
-        x = np.linspace(6210.35,7375.84,2048)
-        z = 0.01786
-        D = 79.0 * 3.0856776e+24
-    if '79635' in hdulist[i]:
-        x = np.linspace(6210.35,7375.84,2048)
-        z = 0.04006
-        D = 175.8 * 3.0856776e+24
-    if '91924' in hdulist[i]:
-        x = np.linspace(6261.12,7425.48,2048)
-        z = 0.05251
-        D = 228.2 * 3.0856776e+24
+    centre_wavelength = hdulist1[0].header['CRVAL3']
+    increment = hdulist1[0].header['CDELT3']
+    x = np.linspace(centre_wavelength - increment * 1023, centre_wavelength + increment * 1024, 2048)
+    D = sami_D[i] * 3.0856776e+24  #Mpc to cm
+    z = sami_z[i]
 
     halpha = 6562.8 #Angstroms
 
@@ -97,4 +127,3 @@ for i in range(len(hdulist)):
     hdulist1[0].header['BUNIT'] = 'M_sun /yr /pc^2'
     hdulist1.writeto(filename_list[i]+'SFR.fits')
     hdulist1.close()
-

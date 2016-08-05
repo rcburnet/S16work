@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 hdulist = []
 filename_list = []
 
-for root,dirnames,filenames in os.walk('/home/rburnet/SAMI/data/'):
+for root,dirnames,filenames in os.walk('/home/rburnet/SAMI/data/with_HI_detections/'):
     for filename in fnmatch.filter(filenames, '[0-9]*red*[0-9].fits'):
         hdulist.append(os.path.join(root, filename))
         filename_list.append(filename)

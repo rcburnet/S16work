@@ -7,10 +7,17 @@ import numpy as np
 import os
 import fnmatch
 
+# Import HI gas mass upper limits corresponding SAMI names of both targets without HI detections and targets with HI detections
+from HI_gas_mass_upper_limits_using_50_percent_completeness_limit import HI_gas_mass_excluding_HI_detections
+from HI_gas_mass_upper_limits_using_50_percent_completeness_limit import hdulist_within_ALFALFA_excluding_HI_detections
+from HI_gas_mass_upper_limits_using_50_percent_completeness_limit import hdulist_within_ALFALFA_of_HI_detections
+
 hdulist = []
 filename_list = []
 
-for root,dirnames,filenames in os.walk('/home/rburnet/SAMI/data/SFR/with_HI_detections/'):
+SFR_HI_gas_mass_ratio_list = []
+
+for root,dirnames,filenames in os.walk('/home/rburnet/SAMI/data/SFR/with_HI_detections'):
     for filename in fnmatch.filter(filenames, '*.fits'):
         hdulist.append(os.path.join(root, filename))
         filename_list.append(filename)
@@ -80,4 +87,11 @@ for i in range(len(hdulist)):
     tot_SFR = np.sum(data) * A  #tot SFR is the sum of the flux elements (dSFR * A summed, or the sum of SFR * A)
     #HI_gas_mass1 = 2.356e5 * D**2.0 * S    #calculation of HI gas mass to the first order in units of solar masses.
     SFR_HI_gas_mass_ratio = tot_SFR / HI_gas_mass
-    print hdulist[i], SFR_HI_gas_mass_ratio
+    SFR_HI_gas_mass_ratio_list.append(SFR_HI_gas_mass_ratio)
+
+SFR_HI_gas_mass_upper_limits_ratio = [] #SFR to HI gas mass ratio using upper limits of targets without HI detections
+
+#for i in range(len(hdulist_within_ALFALFA_excluding_HI_detections)):
+        
+
+print SFR_HI_gas_mass_ratio_list
