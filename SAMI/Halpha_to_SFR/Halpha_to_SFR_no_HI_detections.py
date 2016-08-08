@@ -1,6 +1,8 @@
 #!/usr/bin/python
 
-# Script to convert Halpha to SFR of 58 SAMI sources that are within ALFALFA survey area but do not have HI detections. First, calculate mean continuum, subtract Halpha flux to continuum, integrate over Halpha profile wavelength range to get total flux for every pixel, convert that flux to luminosity using lumonisity distances (calculated using astropy.cosmology module), then use K98 Halpha luminosity to SFR relation to generate SFR map of sources. 
+# Script to convert Halpha to SFR of 58 SAMI sources that are within ALFALFA survey area but do not have HI detections. First, calculate mean continuum, subtract Halpha flux to continuum, integrate over Halpha profile wavelength range to get total flux for every pixel, convert that flux to luminosity using lumonisity distances (calculated using astropy.cosmology module), then use K98 Halpha luminosity to SFR relation to generate SFR map of sources.
+
+#Script also calciulates HI gas mass upper limits of 58 SAMI targets and calculates the SFR/HI gas mass upper limits value and prints them to terminal.
 
 # ***MUST BE RUN IN WORKING DIRECTORY WHERE YOU WANT TO PUT FITS FILES IN
 
@@ -32,6 +34,22 @@ for i in range(len(filename_list)):
     else:
         GAMA_name_list.append(filename_list[i][0:6])
 
+#Extract ALFALFA survey a.70 velocity widths
+alfalfa = open('../a70_160624.csv')
+alfalfa_lines = alfalfa.readlines()
+
+for i in range(len(alfalfa_lines)):
+    alfalfa_lines[i] = alfalfa_lines[i].split(',')
+
+alfalfa.close()
+
+alfalfa_W = []  #ALFALFA 50% velocity widths
+
+for i in range(len(alfalfa_lines)):
+    if i != 0:
+        alfalfa_W.append(float(alfalfa_lines[i][7]))
+
+ave_W = np.mean(alfalfa_W)  #average 50% velocity width of ALFALFA survey detections
 
 #Extract required data (coordinates and redshifts of SAMI targets)
 sami = open('/home/rburnet/S16work/SAMI/SAMI_EarlyDataRelease.txt')
@@ -126,4 +144,24 @@ for i in range(len(hdulist)):
     hdulist1[0].data = SFR
     hdulist1[0].header['BUNIT'] = 'M_sun /yr /pc^2'
     hdulist1.writeto(filename_list[i]+'SFR.fits')
+
+    #Now calculate SFR to HI gas mass ratios using upper limits to HI gas mass
+
+    #Calculate HI gas mass upper limits of SAMI targets
+    log_S_21_90 = 0.5 * np.log10(ave_W) - 1.14   #log of 90% completeness limit integrated flux density from Haynes et al 2011 (https://arxiv.org/pdf/1109.0027v1.pdf)
+
+    log_S_21_50 = log_S_21_90 - 0.067   #log of 50% completeness limit integrated flux density
+
+    S_21_50 = 10**(log_S_21_50) #50% completeness limit integrated flux density, units are in Jy km/s
+
+    HI_gas_mass = 2.356e5 * (D / 3.0856776e+24)**2.0 * S_21_50  #upper limit to HI gas mass of SAMI targets using Giovanelli et al, 2005 relations. Units are in solar masses
+    data = SFR
+
+    data = np.nan_to_num(data)
+
+    tot_SFR = np.sum(data) * A  #tot SFR is the sum of the flux elements (dSFR * A summed, or the sum of SFR * A)
+    SFR_HI_gas_mass_ratio = tot_SFR / HI_gas_mass
+    print hdulist[i], SFR_HI_gas_mass_ratio #prints name of fits file processed and the SFR/HI gas mass upper limits ratio (corresponds to lower limit on ratio)
+
     hdulist1.close()
+
