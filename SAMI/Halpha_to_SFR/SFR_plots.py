@@ -35,7 +35,7 @@ plt.ylabel('Log SFR (M$_\odot$/yr)', fontsize=10)
 plt.xlabel('Log M$_{gas}$ (M$_\odot$)', fontsize=10)
 plt.axis('tight')
 lgd = plt.legend(bbox_to_anchor=(1.02, 1.02), loc=2, fontsize=10)
-plt.savefig('SFR_vs_HI_gas_mass.pdf',bbox_extra_artists=(lgd,),bbox_inches='tight')
+plt.savefig('figures/SFR_plots/SFR_vs_HI_gas_mass.pdf',bbox_extra_artists=(lgd,),bbox_inches='tight')
 plt.close()
 
 #plot SFR/HI gas mass ratio vs Mstar
@@ -48,6 +48,6 @@ plt.ylabel('Log SFR/M$_{gas}$ (yr$^{-1}$)', fontsize=10)
 plt.xlabel('Log M$_{*}$ (M$_\odot$)', fontsize=10)
 plt.axis('tight')
 lgd = plt.legend(bbox_to_anchor=(1.02, 1.02), loc=2, fontsize=10)
-plt.savefig('SFR_HI_gas_mass_ratio_vs_Mstar.pdf',bbox_extra_artists=(lgd,),bbox_inches='tight')
+plt.savefig('figures/SFR_plots/SFR_HI_gas_mass_ratio_vs_Mstar.pdf',bbox_extra_artists=(lgd,),bbox_inches='tight')
 plt.close()
 

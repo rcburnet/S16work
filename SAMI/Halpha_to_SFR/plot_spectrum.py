@@ -112,7 +112,7 @@ for i in range(len(hdulist)):
         plt.setp(line9, linewidth=0.1)
 
         print filename_list[i], z
-        plt.savefig('figures/'+filename_list[i]+'.pdf')
+        plt.savefig('figures/spectra/'+filename_list[i]+'.pdf')
         plt.close()
         hdulist1.close()
     except:
