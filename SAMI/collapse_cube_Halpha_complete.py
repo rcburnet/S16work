@@ -15,6 +15,8 @@ for root,dirnames,filenames in os.walk('/home/rburnet/SAMI/data/with_HI_detectio
         hdulist.append(os.path.join(root, filename))
         filename_list.append(filename)
 
+FWHM_length = []    #list of lengths of FWHM_x lists
+
 for i in range(len(hdulist)):
     hdulist1 = fits.open(hdulist[i])
 
@@ -72,6 +74,8 @@ for i in range(len(hdulist)):
                 FWHM_y.append(total_flux[j])
                 FWHM_x.append(x[j])
 
+    FWHM_length.append(len(FWHM_x)) #list of FWHM_x lengths to be used to calculate average length and to help with calculating Halpha Flux upper limits, SFR upper limits, and SFR/HI gas mass ratios of the 23 SAMI targets that don't have detectable Halpha lines (23 of the 58).
+
     hrange = [] #list of True/False values. True for wavelength slices inside of FWHM range. False otherwise. To be used to choose slices to include in collapsed cube.
     
     for j in range(len(x)):
@@ -89,9 +93,12 @@ for i in range(len(hdulist)):
         if hrange[j] == True:
             summed_data += data[j]  #summed_data is summed data within FWHM profile. ie. the collapsed Halpha image
 
+    #Write to fits file. Remove quotation marks.
+    '''
     hdulist1[0].data = summed_data
 
     hdulist1.writeto(filename_list[i]+'collapsed.fits')
+    '''
 
     #Plot
     line1, = plt.plot(x,total_flux)
@@ -127,3 +134,5 @@ for i in range(len(hdulist)):
     plt.close()
 
     hdulist1.close()
+
+#print FWHM_length, len(FWHM_length), np.mean(FWHM_length)

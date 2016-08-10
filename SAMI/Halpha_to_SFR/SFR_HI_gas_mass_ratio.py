@@ -15,6 +15,12 @@ for root,dirnames,filenames in os.walk('/home/rburnet/SAMI/data/SFR/with_HI_dete
         hdulist.append(os.path.join(root, filename))
         filename_list.append(filename)
 
+GAMA_name_list_with_HI_detections = []  #list of GAMA names of the 7 targets
+SFR_HI_gas_mass_ratio_list_with_HI_detections  =[]  #list of SFR HI gas mass ratio of the 7 targets
+HI_gas_mass_list_with_HI_detections = []    #HI gas mass list
+tot_SFR_list_with_HI_detections = []    #SFR list
+sami_Mstar_list_with_HI_detections = [] #Mstar list
+
 for i in range(len(hdulist)):
     hdulist1 = fits.open(hdulist[i])
 
@@ -31,6 +37,8 @@ for i in range(len(hdulist)):
         S = 0.99    #Peak HI flux as detailed in ALFALFA a.70 catalogue
         W = 142     #Velocity width as detailed in ALFALFA a.70 catalogue
         HI_gas_mass = 10**9.42 #9.42 from ALFALFA a.70 catalog (log(HI_gas_mass)). Units of solar mass.
+        GAMA_name_list_with_HI_detections.append(216843)    #GAMA name of SAMI target
+        sami_Mstar_list_with_HI_detections.append(10**9.26) #Mstar as detailed in SAMI-EDR catalogue. This is stellar mass within aperture.
     if '220371' in hdulist[i]:
         x = np.linspace(6261.12,7425.48,2048)
         z = 0.02025
@@ -38,6 +46,8 @@ for i in range(len(hdulist)):
         S = 1.06
         W = 187 
         HI_gas_mass = 10**9.31
+        GAMA_name_list_with_HI_detections.append(220371)
+        sami_Mstar_list_with_HI_detections.append(10**9.53)
     if '279917' in hdulist[i]:
         x = np.linspace(6210.35,7375.84,2048)
         z = 0.01792
@@ -45,6 +55,8 @@ for i in range(len(hdulist)):
         S = 1.76
         W = 143
         HI_gas_mass = 10**9.42
+        GAMA_name_list_with_HI_detections.append(279917)
+        sami_Mstar_list_with_HI_detections.append(10**9.32)
     if '623641' in hdulist[i]:
         x = np.linspace(6210.35,7375.84,2048)
         z = 0.01780
@@ -52,6 +64,8 @@ for i in range(len(hdulist)):
         S = 0.79
         W = 135
         HI_gas_mass = 10**9.05
+        GAMA_name_list_with_HI_detections.append(623641)
+        sami_Mstar_list_with_HI_detections.append(10**9.31)
     if '623726' in hdulist[i]:
         x = np.linspace(6210.35,7375.84,2048)
         z = 0.01786
@@ -59,6 +73,8 @@ for i in range(len(hdulist)):
         S = 1.82
         W = 141
         HI_gas_mass = 10**9.43
+        GAMA_name_list_with_HI_detections.append(623726)
+        sami_Mstar_list_with_HI_detections.append(10**8.64)
     if '79635' in hdulist[i]:
         x = np.linspace(6210.35,7375.84,2048)
         z = 0.04006
@@ -66,6 +82,8 @@ for i in range(len(hdulist)):
         S = 2.20
         W = 347
         HI_gas_mass = 10**10.21
+        GAMA_name_list_with_HI_detections.append(79635)
+        sami_Mstar_list_with_HI_detections.append(10**10.46)
     if '91924' in hdulist[i]:
         x = np.linspace(6261.12,7425.48,2048)
         z = 0.05251
@@ -73,6 +91,8 @@ for i in range(len(hdulist)):
         S = 1.43
         W = 63
         HI_gas_mass = 10**10.24
+        GAMA_name_list_with_HI_detections.append(91924)
+        sami_Mstar_list_with_HI_detections.append(10**10.60)
 
     theta = hdulist1[0].header['CATADEC']*np.pi/180.0   #Extract declination of source
     A = (D * 1000)**2 * (np.cos(np.pi/2.0 - theta) - np.cos(np.pi/2.0 - theta + 0.00014 * np.pi / 180.0)) * (0.00014 * np.pi / 180.0) #area in pc^2 of 1 pix. Area derived from surface element integral over 1 pix area. pi/2 - theta since declination starts from equator (pi/2), not from zenith (0.0).
@@ -80,4 +100,11 @@ for i in range(len(hdulist)):
     tot_SFR = np.sum(data) * A  #tot SFR is the sum of the flux elements (dSFR * A summed, or the sum of SFR * A)
     #HI_gas_mass1 = 2.356e5 * D**2.0 * S    #calculation of HI gas mass to the first order in units of solar masses.
     SFR_HI_gas_mass_ratio = tot_SFR / HI_gas_mass
-    print hdulist[i], SFR_HI_gas_mass_ratio
+    
+    SFR_HI_gas_mass_ratio_list_with_HI_detections.append(SFR_HI_gas_mass_ratio)
+
+    HI_gas_mass_list_with_HI_detections.append(HI_gas_mass)
+
+    tot_SFR_list_with_HI_detections.append(tot_SFR)
+
+    print GAMA_name_list_with_HI_detections[i], SFR_HI_gas_mass_ratio_list_with_HI_detections[i]

@@ -2,7 +2,9 @@
 
 # Script to convert Halpha to SFR of 58 SAMI sources that are within ALFALFA survey area but do not have HI detections. First, calculate mean continuum, subtract Halpha flux to continuum, integrate over Halpha profile wavelength range to get total flux for every pixel, convert that flux to luminosity using lumonisity distances (calculated using astropy.cosmology module), then use K98 Halpha luminosity to SFR relation to generate SFR map of sources.
 
-#Script also calciulates HI gas mass upper limits of 58 SAMI targets and calculates the SFR/HI gas mass upper limits value and prints them to terminal.
+#23 of the 58 targets do not have detectable Halpha lines (and thus uncalculable SFRs). For these targets, an upper limit to Halpha flux (and thus SFR) is calculated using 3 sigma detection limit (see Balogh August 9th email and August 9th and 10th notes for details).
+
+#Script also calciulates HI gas mass upper limits of 58 SAMI targets and calculates the SFR/HI gas mass upper limits value and prints them to terminal. 
 
 # ***MUST BE RUN IN WORKING DIRECTORY WHERE YOU WANT TO PUT FITS FILES IN
 
@@ -26,13 +28,13 @@ for root,dirnames,filenames in os.walk('/home/rburnet/SAMI/data/without_HI_detec
 
 
 #Extract GAMA id's from filenames
-GAMA_name_list = []
+GAMA_name_list_no_HI_detections = []
 
 for i in range(len(filename_list)):
     if '_' in filename_list[i][0:6]:
-        GAMA_name_list.append(filename_list[i][0:5])
+        GAMA_name_list_no_HI_detections.append(filename_list[i][0:5])
     else:
-        GAMA_name_list.append(filename_list[i][0:6])
+        GAMA_name_list_no_HI_detections.append(filename_list[i][0:6])
 
 #Extract ALFALFA survey a.70 velocity widths
 alfalfa = open('../a70_160624.csv')
@@ -51,8 +53,8 @@ for i in range(len(alfalfa_lines)):
 
 ave_W = np.mean(alfalfa_W)  #average 50% velocity width of ALFALFA survey detections
 
-#Extract required data (coordinates and redshifts of SAMI targets)
-sami = open('/home/rburnet/S16work/SAMI/SAMI_EarlyDataRelease.txt')
+#Extract required data (coordinates, redshifts, and Mstar of SAMI targets)
+sami = open('/home/rburnet/S16work/SAMI/SAMI_EarlyDataRelease_modified.txt')
 sami_lines = sami.readlines()
 
 for i in range(len(sami_lines)):
@@ -62,23 +64,15 @@ sami.close()
 
 sami_coord = []
 sami_z = []
+sami_Mstar_list_no_HI_detections = []
 
-for j in range(len(GAMA_name_list)):
+for j in range(len(GAMA_name_list_no_HI_detections)):
     for i in range(len(sami_lines)):
         if i != 0 and i != 108:
-            if GAMA_name_list[j] in sami_lines[i]:
-                try:
-                    sami_coord.append((float(sami_lines[i][3]),float(sami_lines[i][7])))
-                    try:
-                        sami_z.append(float(sami_lines[i][16]))
-                    except:
-                        sami_z.append(float(sami_lines[i][17]))
-                except:
-                    sami_coord.append((float(sami_lines[i][3]),float(sami_lines[i][8])))
-                    try:
-                        sami_z.append(float(sami_lines[i][16]))
-                    except:
-                        sami_z.append(float(sami_lines[i][17]))
+            if GAMA_name_list_no_HI_detections[j] in sami_lines[i]:
+                sami_coord.append((float(sami_lines[i][1]),float(sami_lines[i][2])))
+                sami_z.append(float(sami_lines[i][6]))
+                sami_Mstar_list_no_HI_detections.append(10**float(sami_lines[i][14]))
 
 
 #Calculate luminosity distance of SAMI targets using redshifts
@@ -88,6 +82,16 @@ for i in range(len(sami_z)):
     sami_D.append(cosmo.luminosity_distance(sami_z[i]).value)
 
 x = np.linspace(6843.01442183-0.568812591597*1023,6843.01442183+0.568812591597*1024,2048)
+
+SFR_HI_gas_mass_ratio_list_no_HI_detections_detectable_Halpha = []    #SFR to HI gas mass ratio list of 35 targets with detectable Halpha
+SFR_HI_gas_mass_ratio_list_no_HI_detections_no_detectable_Halpha = []    #SFR to HI gas mass ratio list of 23 targets with no detectable Halpha
+HI_gas_mass_list_no_HI_detections_detectable_Halpha = []  #HI gas mass list of 35 targets with detectable Halpha
+HI_gas_mass_list_no_HI_detections_no_detectable_Halpha = []  #HI gas mass list of 23 targets with no detectable Halpha
+tot_SFR_list_no_HI_detections_detectable_Halpha = []  #SFR list of 35 targets with detectable Halpha
+tot_SFR_list_no_HI_detections_no_detectable_Halpha = []  #SFR list of 23 targets with no detectable Halpha
+Mstar_list_no_HI_detections_detectable_Halpha = []  #Mstar list of 35 targets with detectable Halpha
+Mstar_list_no_HI_detections_no_detectable_Halpha = []   #Mstar list of 23 targets with no detectable Halpha
+SFR_HI_gas_mass_ratio_list_no_HI_detections = []
 
 #Create SFR images
 for i in range(len(hdulist)):
@@ -112,6 +116,17 @@ for i in range(len(hdulist)):
     for j in range(len(data)):
         if x[j] > l+7 and x[j] < NII_2-7:    #Only place values between Halpha+7 and NII_2-7 (to get continuum)
             continuum_flux.append(data[j])
+    
+    #Total summed continuum flux
+    total_continuum_flux = []
+
+    continuum_flux_np_array = np.array(continuum_flux)
+    for j in range(len(continuum_flux_np_array)):
+        total_continuum_flux.append(np.sum(continuum_flux_np_array[j][~np.isnan(continuum_flux_np_array[j])]))
+
+    total_continuum_flux = np.array(total_continuum_flux)
+
+    stdev = np.std(total_continuum_flux)    #standard deviation of total continuum flux, used to calculate upper limit Halpha flux of 23 targets without detectable Halpha lines
 
     #continuum is mean over continuum wavelength range for each pixel, 50x50 array where each pixel is the continuum flux mean for that specific pixel.
     continuum_flux = np.mean(continuum_flux, axis=0)
@@ -133,6 +148,11 @@ for i in range(len(hdulist)):
 
     integral * dx / 2.0  #final integrated array
 
+    #If fits file is from one of the 23 targets that don't have detectable Halpha, the following 3 sigma detection limit calculation is used instead to calculate integrated flux:
+    for j in ['91963', '77710', '599838', '289089', '279878', '288992', '599689', '373173', '91999', '289185', '417580', '618143', '345820', '373248', '386268', '517205', '381229', '220383', '230776', '617989', '417486', '279886', '230829']:
+        if j in hdulist[i]:
+            integral = 3 * np.sqrt(6.69 * stdev**2.0)    #F = 3 * sqrt(sum of all std dev/spectral pix) or = 3 * sqrt(N * std dev/spectral pix) where N is 6.69 (average FWHM length of of Halpha lines of targets with detectable Halpha lines) and std dev/spectral pix is the standard deviation of the continuum flux (assumed to be a global value) calculated above in stdev.
+
     #convert Halpha_flux to luminosity
     L = 4 * np.pi * D**2.0 * integral
 
@@ -140,10 +160,13 @@ for i in range(len(hdulist)):
     theta = hdulist1[0].header['CATADEC']*np.pi/180.0   #Extract declination of source
     A = (D * 1000 / 3.0856776e+24)**2 * (np.cos(np.pi/2.0 - theta) - np.cos(np.pi/2.0 - theta + 0.00014 * np.pi / 180.0)) * (0.00014 * np.pi / 180.0) #area in pc^2 of 1 pix. Area derived from surface element integral over 1 pix area. pi/2 - theta since declination starts from equator (pi/2), not from zenith (0.0).
     SFR = 7.9e-42 * L  / A #Calculate SFR from luminosity, convert from SFR/pix to SFR/pc^2.
-
+    
+    #Write new SFR data cubes. DEPRECATED: This no longer works as this script now calculates upper limit SFR to 23 targets that have no detectable Halpha in such a way that I can no longer create SFR cubes for those targets. Functionality to write SFR cubes now moved to script Halpha_to_SFR_no_HI_detections_write_cubes.py which DOES NOT calculate SFR upper limits and instead assumes that all 58 targets have detectable Halpha (false assumption).
+    '''
     hdulist1[0].data = SFR
     hdulist1[0].header['BUNIT'] = 'M_sun /yr /pc^2'
     hdulist1.writeto(filename_list[i]+'SFR.fits')
+    '''
 
     #Now calculate SFR to HI gas mass ratios using upper limits to HI gas mass
 
@@ -160,8 +183,24 @@ for i in range(len(hdulist)):
     data = np.nan_to_num(data)
 
     tot_SFR = np.sum(data) * A  #tot SFR is the sum of the flux elements (dSFR * A summed, or the sum of SFR * A)
+
     SFR_HI_gas_mass_ratio = tot_SFR / HI_gas_mass
-    print hdulist[i], SFR_HI_gas_mass_ratio #prints name of fits file processed and the SFR/HI gas mass upper limits ratio (corresponds to lower limit on ratio)
+
+    SFR_HI_gas_mass_ratio_list_no_HI_detections.append(SFR_HI_gas_mass_ratio)
+
+    for j in ['91963', '77710', '599838', '289089', '279878', '288992', '599689', '373173', '91999', '289185', '417580', '618143', '345820', '373248', '386268', '517205', '381229', '220383', '230776', '617989', '417486', '279886', '230829']:
+        if j in hdulist[i]:
+            HI_gas_mass_list_no_HI_detections_no_detectable_Halpha.append(HI_gas_mass)
+            tot_SFR_list_no_HI_detections_no_detectable_Halpha.append(tot_SFR)
+            SFR_HI_gas_mass_ratio_list_no_HI_detections_no_detectable_Halpha.append(SFR_HI_gas_mass_ratio)
+            Mstar_list_no_HI_detections_no_detectable_Halpha.append(sami_Mstar_list_no_HI_detections[i])
+    for j in ['79693', '79710', '79712', '209181', '218713', '218717', '220320', '230714', '272831', '279818', '279891', '279943', '289116', '289200', '302846', '302994', '325390', '373202', '373284', '377962', '381215', '417568', '422639', '422683', '517164', '517302', '599582', '599761', '599877', '617945', '618152', '623620', '623679', '623712', '623722']:
+        if j in hdulist[i]:
+            HI_gas_mass_list_no_HI_detections_detectable_Halpha.append(HI_gas_mass)
+            tot_SFR_list_no_HI_detections_detectable_Halpha.append(tot_SFR)
+            SFR_HI_gas_mass_ratio_list_no_HI_detections_detectable_Halpha.append(SFR_HI_gas_mass_ratio)
+            Mstar_list_no_HI_detections_detectable_Halpha.append(sami_Mstar_list_no_HI_detections[i])
+
+    print GAMA_name_list_no_HI_detections[i], SFR_HI_gas_mass_ratio_list_no_HI_detections[i]  #prints GAMA names of targets and their SFR/HI gas mass upper limits ratio (corresponds to lower limit on ratio)
 
     hdulist1.close()
-
