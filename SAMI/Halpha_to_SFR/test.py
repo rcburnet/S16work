@@ -1,3 +1,5 @@
+#test script that attempts to generate a curve of growth using data from APT. Probably useless.
+
 #import imexam
 import numpy as np
 import matplotlib.pyplot as plt
