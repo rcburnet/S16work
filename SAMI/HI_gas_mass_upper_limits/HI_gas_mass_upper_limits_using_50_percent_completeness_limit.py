@@ -9,7 +9,7 @@ cosmo = FlatLambdaCDM(H0=67.8, Om0=0.308)   #Planck 2015 parameters
 
 
 #Extract required data (coordinates and redshifts of SAMI targets and average 50% velocity width of ALFALFA detections)
-sami = open('../SAMI_EarlyDataRelease.txt')
+sami = open('../SAMI_EarlyDataRelease_modified.txt')
 sami_lines = sami.readlines()
 
 for i in range(len(sami_lines)):
@@ -33,12 +33,8 @@ hdulist = []    #SAMI names
 
 for i in range(len(sami_lines)):
     if i != 0 and i != 108:
-        try:
-            sami_coord.append((float(sami_lines[i][3]),float(sami_lines[i][7])))
-            hdulist.append(sami_lines[i][0])
-        except:
-            sami_coord.append((float(sami_lines[i][3]),float(sami_lines[i][8])))
-            hdulist.append(sami_lines[i][0])
+        sami_coord.append((float(sami_lines[i][1]),float(sami_lines[i][2])))
+        hdulist.append(sami_lines[i][0])
 
 alfalfa_W = []  #ALFALFA 50% velocity widths
 alfalfa_coord = []
@@ -56,6 +52,8 @@ within_ALFALFA = [] #Array to hold coordinates of SAMI targets that are within A
 sami_z = [] #SAMI redshifts
 hdulist_within_ALFALFA = [] #SAMI names of SAMI targets withing ALFALFA survey area
 
+gama_name_list = []
+
 for i in range(len(sami_coord)):
     new_closest.append([])
     # Find SAMI targets that are within ALFALFA range
@@ -63,10 +61,8 @@ for i in range(len(sami_coord)):
         if sami_coord[i][1] < 36.0 and sami_coord[i][1] > 0.0:
             within_ALFALFA.append(sami_coord[i])
             hdulist_within_ALFALFA.append(hdulist[i])
-            try:
-                sami_z.append(float(sami_lines[i+1][16]))
-            except:
-                sami_z.append(float(sami_lines[i+1][17]))
+            sami_z.append(float(sami_lines[i+1][6]))
+            gama_name_list.append(sami_lines[i+1][17])
 
 #Calculate luminosity distance of SAMI targets using redshifts
 
@@ -91,7 +87,7 @@ HI_gas_mass = []
 
 text_file = open('HI_gas_mass_upper_limits_using_50_percent_completeness_limit.txt', 'w')
 
-text_file.write('SAMI coord, calculated HI gas mass upper limits (1e6 M_sun), actual HI gas mass (1e6 M_sun) \n')
+text_file.write('GAMA name, SAMI coord, calculated HI gas mass upper limits (1e6 M_sun), actual HI gas mass (1e6 M_sun) \n')
 
 hdulist_within_ALFALFA_of_HI_detections = []    #list of SAMI names of targets with known HI detections
 
@@ -99,28 +95,28 @@ for i in range(len(sami_D)):
     HI_gas_mass.append(2.356e5 * sami_D[i]**2.0 * S_21_50/1e6)  #upper limit to HI gas mass of SAMI targets using Giovanelli et al, 2005 relations, units are 1e6 M_sun
     print within_ALFALFA[i], '%i' % HI_gas_mass[i] #print coordinates of SAMI targets in ALFALFA survey area and associated upper limit HI gas mass
     if 139.77630112 == within_ALFALFA[i][0]:
-        text_file.write(str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '1120' + '\n')
+        text_file.write(str(gama_name_list[i])+', '+str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '1120' + '\n')
         hdulist_within_ALFALFA_of_HI_detections.append(hdulist_within_ALFALFA[i])
     elif 139.99533336 == within_ALFALFA[i][0]:
-        text_file.write(str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '2630' + '\n')
+        text_file.write(str(gama_name_list[i])+', '+str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '2630' + '\n')
         hdulist_within_ALFALFA_of_HI_detections.append(hdulist_within_ALFALFA[i])
     elif 140.09157464 == within_ALFALFA[i][0]:
-        text_file.write(str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '2690' + '\n')
+        text_file.write(str(gama_name_list[i])+', '+str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '2690' + '\n')
         hdulist_within_ALFALFA_of_HI_detections.append(hdulist_within_ALFALFA[i])
     elif 140.19242092 == within_ALFALFA[i][0]:
-        text_file.write(str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '2630' + '\n')
+        text_file.write(str(gama_name_list[i])+', '+str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '2630' + '\n')
         hdulist_within_ALFALFA_of_HI_detections.append(hdulist_within_ALFALFA[i])
     elif 181.237152 == within_ALFALFA[i][0]:
-        text_file.write(str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '2040' + '\n')
+        text_file.write(str(gama_name_list[i])+', '+str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '2040' + '\n')
         hdulist_within_ALFALFA_of_HI_detections.append(hdulist_within_ALFALFA[i])
     elif 214.25699075 == within_ALFALFA[i][0]:
-        text_file.write(str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '17380' + '\n')
+        text_file.write(str(gama_name_list[i])+', '+str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '17380' + '\n')
         hdulist_within_ALFALFA_of_HI_detections.append(hdulist_within_ALFALFA[i])
     elif 222.51551376 == within_ALFALFA[i][0]:
-        text_file.write(str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '16220' + '\n')
+        text_file.write(str(gama_name_list[i])+', '+str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + ', ' + '16220' + '\n')
         hdulist_within_ALFALFA_of_HI_detections.append(hdulist_within_ALFALFA[i])
     else:
-        text_file.write(str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + '\n')
+        text_file.write(str(gama_name_list[i])+', '+str(within_ALFALFA[i]) + ', ' + str('%i' % HI_gas_mass[i]) + '\n')
 
 hdulist_within_ALFALFA_excluding_HI_detections = [] #list of SAMI names excluding the targets with known HI detections
 HI_gas_mass_excluding_HI_detections = []    #HI gas mass upper limits excluding the targets with known HI detections
