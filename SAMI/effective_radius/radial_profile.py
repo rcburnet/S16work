@@ -1,4 +1,4 @@
-# Script to plot radial profile of fits file.
+# Script to plot radial profile of fits file. Modified from a post on stackexchange. Can't find where exactly I got it.
 
 from astropy.io import fits
 import os

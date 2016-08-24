@@ -1,4 +1,4 @@
-# Convolve PSF and image fits of 7 SAMI targets with HI detections
+# Convolve PSF and image fits of 7 SAMI targets with HI detections. INCORRECT METHOD. DO NOT USE. We want to convolve the MODEL not the DATA.
 
 from astropy.convolution import convolve, convolve_fft
 from astropy.io import fits

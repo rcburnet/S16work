@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Introduction and Related Documents/Articles}{3}{section.1}
+\contentsline {section}{\numberline {2}Sources' Description}{3}{section.2}
+\contentsline {section}{\numberline {3}Work}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}July 4: Getting Started}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}July 11 - July 22: Creating H$\alpha $ and continuum images}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}July 25 - August 12: Converting HI flux to HI gas mass, converting H$\alpha $ flux to SFR, calculating SFR/HI gas mass ratios, plotting SFR/HI gas mass vs M$_{star}$ and SFR vs HI gas mass}{6}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}August 15: Attempt at Sersic Profile fit, documentation}{7}{subsection.3.4}

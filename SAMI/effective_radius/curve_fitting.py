@@ -1,4 +1,4 @@
-# Fit exponential curve to data with convolution. Ydata will be actual radial profile values. Second array of convolution will be PSF. curve_fit from scipy.optimize is used to fit model to data.
+# Fit exponential curve to data with convolution. Ydata will be actual radial profile values. Second array of convolution will be PSF. curve_fit from scipy.optimize is used to fit model to data. INCORRECT METHOD. DO NOT USE.
 
 import numpy as np
 from scipy.optimize import curve_fit
