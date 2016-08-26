@@ -29,8 +29,6 @@ sami_coord = [] #SAMI coordinates
 
 hdulist = []    #SAMI names
 
-#print len(sami_lines[1])
-
 for i in range(len(sami_lines)):
     if i != 0 and i != 108:
         sami_coord.append((float(sami_lines[i][1]),float(sami_lines[i][2])))
@@ -83,7 +81,7 @@ print ave_W, S_21_50
 
 HI_gas_mass = []
 
-#Write to txt file
+#Write to text file
 
 text_file = open('HI_gas_mass_upper_limits_using_50_percent_completeness_limit.txt', 'w')
 

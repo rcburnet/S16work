@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Script to convert Halpha to SFR of 58 SAMI sources that are within ALFALFA survey area but do not have HI detections. First, calculate mean continuum, subtract Halpha flux to continuum, integrate over Halpha profile wavelength range to get total flux for every pixel, convert that flux to luminosity using lumonisity distances (calculated using astropy.cosmology module), then use K98 Halpha luminosity to SFR relation to generate SFR map of sources. 
+#Script to convert Halpha to SFR of 58 SAMI sources that are within ALFALFA survey area but do not have HI detections. First, calculate mean continuum, subtract Halpha flux to continuum, integrate over Halpha profile wavelength range to get total flux for every pixel, convert that flux to luminosity using lumonisity distances (calculated using astropy.cosmology module), then use K98 Halpha luminosity to SFR relation to generate SFR map of sources. 
 
 # ***MUST BE RUN IN WORKING DIRECTORY WHERE YOU WANT TO PUT FITS FILES IN
 

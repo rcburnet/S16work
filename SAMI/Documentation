@@ -28,4 +28,4 @@ SDSS_data_retrieval_request_result.csv is the output CSV file from http://cas.sd
 
 ./HI_gas_mass_upper_limits/ contains scripts for calculating the upper limits to the HI gas mass of the 65 SAMI targets that are within the ALFALFA survey area. Two methods are employed. The correct method is used in the script HI_gas_mass_upper_limits_using_50_percent_completeness_limit.py .
 
-./effective_radius/ scripts for calculating effective radius of all 65 SAMI targets within ALFALFA survey area. Secondary star data is used for PSF to convolve SAMI images. Convolved images' radial profiles are plotted. Effective radii are calculated from radial profiles where I(0) and I_e intersect (I(0) = I_e * e^(b), see the email I sent to Balogh on August 15 and script comments for details).
+./effective_radius/ scripts for calculating effective radii of all 65 SAMI targets within ALFALFA survey area. Secondary star data is used for PSF to convolve SAMI images. Convolved images' radial profiles are plotted. Effective radii are calculated from radial profiles where I(0) and I_e intersect (I(0) = I_e * e^(b), see the email I sent to Balogh on August 15 and script comments for details).

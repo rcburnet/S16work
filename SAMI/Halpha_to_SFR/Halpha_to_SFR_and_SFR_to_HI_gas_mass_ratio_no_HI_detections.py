@@ -111,7 +111,7 @@ for i in range(len(hdulist)):
     Halpha_flux = []    #the flux within the Halpha profile
     continuum_flux = [] #the continuum flux (between Halpha+7 and NII_2-7)
     
-    # retrieve continuum flux
+    #Retrieve continuum flux
     data = hdulist1[0].data * 1e-16
     for j in range(len(data)):
         if x[j] > l+7 and x[j] < NII_2-7:    #Only place values between Halpha+7 and NII_2-7 (to get continuum)

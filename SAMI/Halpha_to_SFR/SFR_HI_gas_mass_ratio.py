@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Script to calculate SFR/HI gas mass ratio for each of the 7 SAMI targets. SFR is total (integrated) SFR from the SFR datacubes created by Halpha_to_SFR.py script. HI gas mass is calculated using the first order approximation as detailed in https://iopscience.iop.org/article/10.1086/497431/pdf from the ALFALFA survey data. The calculation is not needed as the HI mass is already computed and presented in the a.70 catalog. Kept calculation in script (commented out) in case I want to look at it or need it in the future.
+#Script to calculate SFR/HI gas mass ratio for each of the 7 SAMI targets. SFR is total (integrated) SFR from the SFR datacubes created by Halpha_to_SFR.py script. HI gas mass is calculated using the first order approximation as detailed in https://iopscience.iop.org/article/10.1086/497431/pdf from the ALFALFA survey data. The calculation is not needed as the HI mass is already computed and presented in the a.70 catalog. Kept calculation in script (commented out) in case I want to look at it or need it in the future.
 
 from astropy.io import fits
 import numpy as np

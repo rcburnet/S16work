@@ -36,6 +36,7 @@ for i in range(len(filename_list)):
     else:
         GAMA_name_list.append(filename_list[i][0:6])
 
+#For each target, plot radial profile
 for k in range(len(hdulist)):
     
     print filename_list[k]
@@ -61,7 +62,7 @@ for k in range(len(hdulist)):
 
     plt.plot(x, I_e_list)    #plot I_e
 
-    #attempt at finding point of intersection
+    #attempt at finding point of intersection, must uncomment
     '''
     i = 1
     j = 0

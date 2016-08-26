@@ -27,8 +27,8 @@ def func2(R, n, I_0, R_e):
 
 Rdata = np.linspace(0,8,8)  #this will be R values of radial profile of target
 
-#Y = func(Rdata, 1.0, 5, 12)
-#Ydata = Y + 0.2 * np.random.normal(size=len(Rdata))
+##Y = func(Rdata, 1.0, 5, 12)
+##Ydata = Y + 0.2 * np.random.normal(size=len(Rdata))
 
 Ydata = np.array([5,4.3,2.1,1.0,0.3,0.2,0.1,0.01])  #this will be radial profile of target
 

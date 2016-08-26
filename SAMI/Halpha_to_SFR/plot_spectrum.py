@@ -16,8 +16,6 @@ for root,dirnames,filenames in os.walk('/home/rburnet/SAMI/data/without_HI_detec
         hdulist.append(os.path.join(root, filename))
         filename_list.append(filename)
 
-#hdulist1 = fits.open('/home/rburnet/SAMI/data/without_HI_detections/623712_red_7_Y13SAR1_P009_09T015.fits')
-
 FWHM_length = []    #list of lengths of FWHM_x lists for the 35 targets that have detectable Halpha lines
 
 for i in range(len(hdulist)):

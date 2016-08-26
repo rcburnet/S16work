@@ -16,6 +16,7 @@ print '\n'
 print '58 targets with no HI detection \n'
 from Halpha_to_SFR_and_SFR_to_HI_gas_mass_ratio_no_HI_detections import GAMA_name_list_no_HI_detections, SFR_HI_gas_mass_ratio_list_no_HI_detections_detectable_Halpha, SFR_HI_gas_mass_ratio_list_no_HI_detections_no_detectable_Halpha, HI_gas_mass_list_no_HI_detections_detectable_Halpha, tot_SFR_list_no_HI_detections_detectable_Halpha, HI_gas_mass_list_no_HI_detections_no_detectable_Halpha, tot_SFR_list_no_HI_detections_no_detectable_Halpha, Mstar_list_no_HI_detections_detectable_Halpha, Mstar_list_no_HI_detections_no_detectable_Halpha
 
+#Use stats to calculate line of best fit parameters
 slope, intercept, r_value, p_value, std_err = stats.linregress(np.log10(HI_gas_mass_list_no_HI_detections_detectable_Halpha), np.log10(tot_SFR_list_no_HI_detections_detectable_Halpha))
 r_squared = r_value**2.0
 best_fit = slope * np.log10(HI_gas_mass_list_no_HI_detections_detectable_Halpha) + intercept
@@ -29,7 +30,6 @@ fig = plt.figure()
 plt.scatter(np.log10(HI_gas_mass_list_with_HI_detections), np.log10(tot_SFR_list_with_HI_detections), label = 'Targets with HI detections', color = 'red')
 plt.scatter(np.log10(HI_gas_mass_list_no_HI_detections_detectable_Halpha), np.log10(tot_SFR_list_no_HI_detections_detectable_Halpha), label = 'Targets with no HI detections, \ndetectable Halpha', color = 'blue')
 plt.scatter(np.log10(HI_gas_mass_list_no_HI_detections_no_detectable_Halpha), np.log10(tot_SFR_list_no_HI_detections_no_detectable_Halpha), label = 'Targets with no HI detections, \nno detectable Halpha', color = 'green')
-#plt.plot(np.log10(HI_gas_mass_list_no_HI_detections_detectable_Halpha), best_fit, color = 'black')
 plt.title('SFR vs HI gas mass of 65 SAMI targets in ALFALFA survey area', fontsize=10)
 plt.ylabel('Log SFR (M$_\odot$/yr)', fontsize=10)
 plt.xlabel('Log M$_{gas}$ (M$_\odot$)', fontsize=10)

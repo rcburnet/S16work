@@ -68,7 +68,7 @@ for i in range(len(hdulist)):
     #continuum is mean over continuum wavelength range for each pixel, 50x50 array where each pixel is the continuum flux mean for that specific pixel.
     continuum_flux = np.mean(continuum_flux, axis=0)
  
-    # subtract Halpha profile from continuum, then integrate over Halpha profile to get Halpha flux
+    #subtract Halpha profile from continuum, then integrate over Halpha profile to get Halpha flux
     for j in range(len(data)):
         if x[j] > l-7 and x[j] < l+7:   #look over Halpha profile and a little in the continuum to subtract continuum from flux and then integrate
             Halpha_flux.append(data[j] - continuum_flux)

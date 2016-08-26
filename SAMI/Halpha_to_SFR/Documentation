@@ -2,7 +2,7 @@ Halpha_to_SFR_and_SFR_to_HI_gas_mass_ratio_no_HI_detections.py	:
 script to convert Halpha to SFR of all 58 targets. 23 targets do not have detectable Halpha lines, and so an upper limit to Halpha flux (and SFR) is calculated using a 3 sigma detection limit (see Balogh August 9th email and August 9th and 10th notes). Then it calculates SFR to HI gas mass ratios for those targets and prints them to terminal.
 
 Halpha_to_SFR_no_HI_detections_write_cubes.py :
-deprecated version of above Halpha_to_SFR_and_SFR_to_HI_gas_mass_ratio_no_HI_detections.py script that does no take into consideration that some targets don't have detectable Halpha lines and instead assumed they do. Calculates Halpha and SFR the normal way. Results in negative SFRs and Halpha flux. Kept since it has functionality to write SFRs to SFR data cubes, which new script does not.
+deprecated version of above Halpha_to_SFR_and_SFR_to_HI_gas_mass_ratio_no_HI_detections.py script that does not take into consideration that some targets don't have detectable Halpha lines and instead assumed they do. Calculates Halpha and SFR the normal way. Results in negative SFRs and Halpha flux. Kept since it has functionality to write SFRs to SFR data cubes, which new script does not.
 
 Halpha_to_SFR.py :
 script to convert Halpha to SFR and write SFR to SFR data cubes for 7 SAMI targets that have HI detections.
